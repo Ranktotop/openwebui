@@ -8,7 +8,7 @@ env:
   IMG_VERSION: "0.0.03" # <--- Adjust this to trigger a new build
 
 jobs:
-  build-doc_server:
+  build-morphik-ui:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
