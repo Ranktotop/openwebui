@@ -22,8 +22,7 @@ RUN npm install
 # Dev-Port freigeben
 EXPOSE 3000
 
-# API URL auf Morphik Server setzen
-ENV NEXT_PUBLIC_API_URL=http://morphik_server:8000
+# ENV Variable setzen, um Watchpack Polling zu aktivieren
 ENV WATCHPACK_POLLING=true
 
 # Dev-Server starten
