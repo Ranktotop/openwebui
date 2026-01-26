@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtuelle Umgebungen
+.venv/
+venv/
+.env/
+*.env
+node_modules/
+
+# Editor-/Systemdateien
+.DS_Store
+Thumbs.db
+
+# Build-/Dist-/Egg-Ordner
+build/
+dist/
+*.egg-info/
+
+# Tests/Cache
+.pytest_cache/
+.coverage
+temp/
+
+#DB
+*.db
+
+#tests
+/test_results/
+/logs/
+/input
+/job_files/
+
+#requirements
+*_dev.in
+*_dev.txt
+*_cpu.in
+*_gpu.in
