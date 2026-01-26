@@ -33,7 +33,7 @@ jobs:
       - name: Build Docker image
         if: steps.hub-check.outputs.skip_build == 'false'
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/morphikui:${IMG_VERSION} -f .docker/Dockerfile_morphik .
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/morphikui:${IMG_VERSION} -f .docker/Dockerfile .
 
       - name: Push Docker image
         if: steps.hub-check.outputs.skip_build == 'false'

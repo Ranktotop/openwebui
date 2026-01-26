@@ -102,7 +102,7 @@ main(){
 
   local REPO="morphikui"
   local TAG="latest"
-  local DOCKERFILE="${DOCKERFILE:-$ROOT/.docker/Dockerfile_morphik}"
+  local DOCKERFILE="${DOCKERFILE:-$ROOT/.docker/Dockerfile}"
 
   [[ -f "$DOCKERFILE" ]] || { log_e "Dockerfile nicht gefunden: $DOCKERFILE"; exit 1; }
 
