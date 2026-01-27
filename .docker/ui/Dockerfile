@@ -7,7 +7,7 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 
 # Git & bash für Repo klonen
-RUN apk add --no-cache git bash curl
+RUN apk add --no-cache git bash
 
 # Morphik Core Repo klonen
 RUN git clone --depth 1 https://github.com/morphik-org/morphik-core.git .
@@ -31,6 +31,9 @@ RUN npm run build
 FROM node:20-alpine
 
 WORKDIR /app
+
+# curl für Healthcheck installieren
+RUN apk add --no-cache curl
 
 # Copy Production Build
 COPY --from=builder /app/ee/ui-component/.next ./.next
