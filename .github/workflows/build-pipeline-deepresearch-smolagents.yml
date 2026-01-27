@@ -33,7 +33,7 @@ jobs:
       - name: Build Docker image
         if: steps.hub-check.outputs.skip_build == 'false'
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/openwebui:pipeline-deepresearch-smolagents-${IMG_VERSION} -f .docker/morphik/ui/Dockerfile .
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/openwebui:pipeline-deepresearch-smolagents-${IMG_VERSION} -f .docker/pipelines/deepresearch/SmolAgents/Dockerfile .
 
       - name: Push Docker image
         if: steps.hub-check.outputs.skip_build == 'false'
