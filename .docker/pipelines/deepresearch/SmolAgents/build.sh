@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Build & Push: <namespace>/morphik:ui-latest
+# Build & Push: <namespace>/openwebui:pipeline-deepresearch-smolagents-latest
 # - Prüft, ob :latest schon existiert und fragt nach Überschreiben
 # - Erwartet: DOCKERHUB_USERNAME, DOCKERHUB_TOKEN, optional DOCKERHUB_ORG
 
@@ -100,9 +100,9 @@ main(){
   local ROOT; ROOT="$(find_root)"
   cd "$ROOT"
 
-  local REPO="morphik"
-  local TAG="ui-latest"
-  local DOCKERFILE="${DOCKERFILE:-$ROOT/.docker/ui/Dockerfile}"
+  local REPO="openwebui"
+  local TAG="pipeline-deepresearch-smolagents-latest"
+  local DOCKERFILE="${DOCKERFILE:-$ROOT/.docker/pipelines/deepresearch/SmolAgents/Dockerfile}"
 
   [[ -f "$DOCKERFILE" ]] || { log_e "Dockerfile nicht gefunden: $DOCKERFILE"; exit 1; }
 
