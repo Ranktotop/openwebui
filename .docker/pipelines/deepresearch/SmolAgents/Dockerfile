@@ -13,5 +13,7 @@ RUN git clone https://github.com/elabbarw/aiagent_playground.git && \
     cp aiagent_playground/openwebui/pipelines/deepresearch/requirements.txt /app/ && \
     rm -rf aiagent_playground
 
+EXPOSE 9099
+
 # Install Python dependencies
 RUN pip install -r requirements.txt
