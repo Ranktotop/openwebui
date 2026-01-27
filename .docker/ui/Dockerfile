@@ -15,13 +15,17 @@ RUN git clone --depth 1 https://github.com/morphik-org/morphik-core.git .
 # Ins UI-Verzeichnis wechseln
 WORKDIR /app/ee/ui-component
 
+# WICHTIG: Ersetze localhost:8000 mit /api im Source-Code
+RUN find . -type f \( -name "*.ts" -o -name "*.tsx" -o -name "*.js" -o -name "*.jsx" \) \
+    -exec sed -i 's|http://localhost:8000|/api|g' {} \;
+
 # Node Dependencies installieren
 RUN npm install --legacy-peer-deps
 
 # ESLint beim Build deaktivieren
 RUN echo 'module.exports = { eslint: { ignoreDuringBuilds: true } }' > next.config.js
 
-# Production Build mit relativer URL für nginx
+# Production Build
 ENV NEXT_PUBLIC_API_URL=/api
 RUN npm run build
 
