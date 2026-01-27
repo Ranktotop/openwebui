@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Build & Push: <namespace>/morphikui:latest
+# Build & Push: <namespace>/morphik:ui-latest
 # - Prüft, ob :latest schon existiert und fragt nach Überschreiben
 # - Erwartet: DOCKERHUB_USERNAME, DOCKERHUB_TOKEN, optional DOCKERHUB_ORG
 
@@ -100,9 +100,9 @@ main(){
   local ROOT; ROOT="$(find_root)"
   cd "$ROOT"
 
-  local REPO="morphikui"
-  local TAG="latest"
-  local DOCKERFILE="${DOCKERFILE:-$ROOT/.docker/Dockerfile}"
+  local REPO="morphik"
+  local TAG="nginx-latest"
+  local DOCKERFILE="${DOCKERFILE:-$ROOT/.docker/nginx/Dockerfile}"
 
   [[ -f "$DOCKERFILE" ]] || { log_e "Dockerfile nicht gefunden: $DOCKERFILE"; exit 1; }
 

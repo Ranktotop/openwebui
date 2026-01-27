@@ -1,4 +1,4 @@
-name: Build & Push Morphik Docker Image to Docker Hub
+name: Build & Push Morphik NGINX Docker Image to Docker Hub
 
 on:
   push:
@@ -8,7 +8,7 @@ env:
   IMG_VERSION: "0.0.04" # <--- Adjust this to trigger a new build
 
 jobs:
-  build-morphik-ui:
+  build-morphik-nginx:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -24,7 +24,7 @@ jobs:
         id: hub-check
         shell: bash
         run: |
-          if docker manifest inspect ${{ secrets.DOCKERHUB_USERNAME }}/morphikui:${IMG_VERSION} > /dev/null 2>&1; then
+          if docker manifest inspect ${{ secrets.DOCKERHUB_USERNAME }}/morphik:nginx-${IMG_VERSION} > /dev/null 2>&1; then
             echo "skip_build=true" >> $GITHUB_OUTPUT
           else
             echo "skip_build=false" >> $GITHUB_OUTPUT
@@ -33,15 +33,15 @@ jobs:
       - name: Build Docker image
         if: steps.hub-check.outputs.skip_build == 'false'
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/morphikui:${IMG_VERSION} -f .docker/Dockerfile .
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/morphik:nginx-${IMG_VERSION} -f .docker/nginx/Dockerfile .
 
       - name: Push Docker image
         if: steps.hub-check.outputs.skip_build == 'false'
         run: |
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/morphikui:${IMG_VERSION}
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/morphik:nginx-${IMG_VERSION}
 
       - name: Push Docker image as latest
         if: steps.hub-check.outputs.skip_build == 'false'
         run: |
-          docker tag ${{ secrets.DOCKERHUB_USERNAME }}/morphikui:${IMG_VERSION} ${{ secrets.DOCKERHUB_USERNAME }}/morphikui:latest
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/morphikui:latest
+          docker tag ${{ secrets.DOCKERHUB_USERNAME }}/morphik:nginx-${IMG_VERSION} ${{ secrets.DOCKERHUB_USERNAME }}/morphik:nginx-latest
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/morphik:nginx-latest
