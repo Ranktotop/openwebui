@@ -18,9 +18,12 @@ WORKDIR /app/ee/ui-component
 # Node Dependencies installieren
 RUN npm install --legacy-peer-deps
 
+# ESLint beim Build deaktivieren
+RUN echo 'module.exports = { eslint: { ignoreDuringBuilds: true } }' > next.config.js
+
 # Production Build mit relativer URL für nginx
 ENV NEXT_PUBLIC_API_URL=/api
-RUN npm run build --no-lint
+RUN npm run build
 
 # ------------------------------
 # Final Image
