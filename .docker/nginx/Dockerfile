@@ -4,8 +4,8 @@ FROM nginx:alpine
 RUN apk add --no-cache gettext
 
 # Kopiere Template und Entrypoint
-COPY nginx.conf.template /etc/nginx/nginx.conf.template
-COPY entrypoint.sh /entrypoint.sh
+COPY .docker/nginx/nginx.conf.template /etc/nginx/nginx.conf.template
+COPY .docker/nginx/entrypoint.sh /entrypoint.sh
 
 # Mache Entrypoint ausführbar
 RUN chmod +x /entrypoint.sh
