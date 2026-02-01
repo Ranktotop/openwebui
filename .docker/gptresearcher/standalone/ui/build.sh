@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Build & Push: <namespace>/openwebui:morphik-ui-latest
+# Build & Push: <namespace>/openwebui:gptresearcher-standalone-ui-latest
 # - Prüft, ob :latest schon existiert und fragt nach Überschreiben
 # - Erwartet: DOCKERHUB_USERNAME, DOCKERHUB_TOKEN, optional DOCKERHUB_ORG
 
@@ -101,8 +101,8 @@ main(){
   cd "$ROOT"
 
   local REPO="openwebui"
-  local TAG="gptresearcher-standalone-latest"
-  local DOCKERFILE="${DOCKERFILE:-$ROOT/.docker/gptresearcher/standalone/Dockerfile}"
+  local TAG="gptresearcher-standalone-ui-latest"
+  local DOCKERFILE="${DOCKERFILE:-$ROOT/.docker/gptresearcher/standalone/ui/Dockerfile}"
 
   [[ -f "$DOCKERFILE" ]] || { log_e "Dockerfile nicht gefunden: $DOCKERFILE"; exit 1; }
 
