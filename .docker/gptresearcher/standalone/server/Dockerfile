@@ -1,8 +1,9 @@
 # Stage 1: Browser and build tools installation
 FROM python:3.12-slim-bookworm AS install-browser
 
-# Installiere grundlegende Tools
+# 1. Installiere Tools (WICHTIG: git muss hier dabei sein)
 RUN apt-get update && apt-get install -y \
+    git \
     wget \
     curl \
     gnupg \
@@ -11,23 +12,21 @@ RUN apt-get update && apt-get install -y \
     ca-certificates \
     --no-install-recommends
 
-# --- INSTALLATION GOOGLE CHROME (STABLE) ---
-# Wir nutzen das offizielle .deb Paket, damit apt alle fehlenden Libs (libasound, libnss, etc.) automatisch zieht.
+# 2. INSTALLATION GOOGLE CHROME (STABLE)
+# Das .deb Paket installiert Chrome automatisch nach /usr/bin/google-chrome (bereits im PATH)
 RUN wget -q -O google-chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
     && apt-get install -y ./google-chrome.deb \
     && rm google-chrome.deb
 
-# --- INSTALLATION CHROMEDRIVER ---
-# Ermittle die installierte Chrome-Version und lade den exakt passenden Treiber
+# 3. INSTALLATION CHROMEDRIVER
+# Wir verschieben den Treiber nach /usr/local/bin/, was ebenfalls Standard-PATH ist.
 RUN CHROME_VERSION=$(google-chrome --version | awk '{print $3}') \
     && echo "Installed Chrome Version: $CHROME_VERSION" \
-    # Hole die URL für den passenden Chromedriver von der offiziellen JSON-API
     && DRIVER_URL=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json" | \
     jq -r --arg VER "$CHROME_VERSION" '.versions[] | select(.version==$VER) | .downloads.chromedriver[] | select(.platform=="linux64") | .url') \
-    # Fallback: Falls exakte Version nicht im JSON ist (passiert bei ganz neuen Updates), nimm die Latest Version URL
+    # Fallback logik falls exakte Version nicht im JSON
     && if [ -z "$DRIVER_URL" ]; then \
-    echo "Exakte Version nicht gefunden, suche Major-Version..."; \
-    MAJOR_VER=$(echo $CHROME_VERSION | cut -d. -f1); \
+    echo "Exakte Version nicht gefunden, nutze Latest Stable..."; \
     DRIVER_URL=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json" | \
     jq -r '.channels.Stable.downloads.chromedriver[] | select(.platform=="linux64") | .url'); \
     fi \
@@ -38,12 +37,9 @@ RUN CHROME_VERSION=$(google-chrome --version | awk '{print $3}') \
     && chmod +x /usr/local/bin/chromedriver \
     && rm -rf chromedriver.zip chromedriver-linux64
 
-# Firefox/Gecko (optional, falls benötigt, sonst entfernen um Image klein zu halten)
-RUN apt-get install -y firefox-esr \
-    && wget https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz \
-    && tar -xvzf geckodriver-v0.36.0-linux64.tar.gz \
-    && mv geckodriver /usr/local/bin/ \
-    && rm geckodriver-v0.36.0-linux64.tar.gz
+# 4. PATH TEST (Zur Sicherheit)
+# Dieser Befehl schlägt fehl, wenn Chrome oder Driver nicht im Path sind -> Build bricht ab.
+RUN google-chrome --version && chromedriver --version
 
 # Aufräumen
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
@@ -54,6 +50,7 @@ FROM install-browser AS gpt-researcher-install
 ENV PIP_ROOT_USER_ACTION=ignore
 WORKDIR /usr/src/app
 
+# Jetzt funktioniert git clone, da git in Stage 1 installiert wurde
 RUN git clone https://github.com/assafelovic/gpt-researcher.git ./
 
 RUN pip install --upgrade pip && \
