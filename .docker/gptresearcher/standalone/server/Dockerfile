@@ -53,6 +53,15 @@ WORKDIR /usr/src/app
 # Jetzt funktioniert git clone, da git in Stage 1 installiert wurde
 RUN git clone https://github.com/assafelovic/gpt-researcher.git ./
 
+# --- FIX: FORCE HEADLESS & DOCKER OPTIONS ---
+# Wir nutzen sed, um die Zeilen VOR der Treiber-Initialisierung einzufügen.
+# WICHTIG: Die 16 Leerzeichen am Anfang sind für die Python-Einrückung notwendig!
+RUN sed -i "/self.driver = webdriver.Chrome(options=options)/i \\
+    options.add_argument('--headless')\\n\
+    options.add_argument('--no-sandbox')\\n\
+    options.add_argument('--disable-dev-shm-usage')" \
+    /usr/src/app/gpt_researcher/scraper/browser/browser.py
+
 RUN pip install --upgrade pip && \
     pip install selenium && \
     pip install --no-cache-dir -r requirements.txt --upgrade --prefer-binary && \
