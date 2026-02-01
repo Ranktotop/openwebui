@@ -1,0 +1,45 @@
+name: Build & Push GPT Researcher Pipeline Queue Server Docker Image to Docker Hub
+
+on:
+  push:
+    branches: [dev]
+
+env:
+  IMG_VERSION: "0.0.01" # <--- Adjust this to trigger a new build
+
+jobs:
+  build-gpt-researcher-pipeline-queue-server:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Check if Docker image version already exists on Docker Hub
+        id: hub-check
+        shell: bash
+        run: |
+          if docker manifest inspect ${{ secrets.DOCKERHUB_USERNAME }}/openwebui:gptresearcher-pipeline-queue-server-${IMG_VERSION} > /dev/null 2>&1; then
+            echo "skip_build=true" >> $GITHUB_OUTPUT
+          else
+            echo "skip_build=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Build Docker image
+        if: steps.hub-check.outputs.skip_build == 'false'
+        run: |
+          docker build --build-arg VERSION=${IMG_VERSION} -t ${{ secrets.DOCKERHUB_USERNAME }}/openwebui:gptresearcher-pipeline-queue-server-${IMG_VERSION} -f .docker/gptresearcher/pipeline/queueserver/Dockerfile .
+      - name: Push Docker image
+        if: steps.hub-check.outputs.skip_build == 'false'
+        run: |
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/openwebui:gptresearcher-pipeline-queue-server-${IMG_VERSION}
+      - name: Push Docker image as latest
+        if: steps.hub-check.outputs.skip_build == 'false'
+        run: |
+          docker tag ${{ secrets.DOCKERHUB_USERNAME }}/openwebui:gptresearcher-pipeline-queue-server-${IMG_VERSION} ${{ secrets.DOCKERHUB_USERNAME }}/openwebui:gptresearcher-pipeline-queue-server-latest
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/openwebui:gptresearcher-pipeline-queue-server-latest
