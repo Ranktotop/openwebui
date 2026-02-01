@@ -1,29 +1,40 @@
 services:
-  gpt-researcher:
+  server:
     image: ranktotop/openwebui:gptresearcher-standalone-latest
     environment: 
       OPENAI_API_KEY: ${OPENAI_API_KEY}
       OPENAI_BASE_URL: ${OPENAI_BASE_URL}
-      TAVILY_API_KEY: ${TAVILY_API_KEY}
-      LANGCHAIN_API_KEY: ${LANGCHAIN_API_KEY}
-      LOGGING_LEVEL: INFO
+      TAVILY_API_KEY: ${TAVILY_API_KEY:-}
+      LANGCHAIN_API_KEY: ${LANGCHAIN_API_KEY:-}
+      LOGGING_LEVEL: ${LOGGING_LEVEL:-INFO}
       # Image generation (optional - set to enable inline images in reports)
-      GOOGLE_API_KEY: ${GOOGLE_API_KEY}
+      GOOGLE_API_KEY: ${GOOGLE_API_KEY:-}
       IMAGE_GENERATION_ENABLED: ${IMAGE_GENERATION_ENABLED:-false}
       IMAGE_GENERATION_MODEL: ${IMAGE_GENERATION_MODEL:-gemini-2.0-flash-preview-image-generation}
       IMAGE_GENERATION_MAX_IMAGES: ${IMAGE_GENERATION_MAX_IMAGES:-3}
     restart: unless-stopped
+    networks:
+      default:
+        aliases:
+          - gptresearcher-server
     ports:
-      - ${GPT_RESEARCHER_UI_PORT:-8000}:8000
+      - ${GPTRESEARCHER_SERVER_PORT:-8000}:8000
       
-  gptr-nextjs:
+  ui:
     image: ranktotop/openwebui:gptresearcher-standalone-ui-latest
     stdin_open: true
     environment:
       CHOKIDAR_USEPOLLING: "true"
-      LOGGING_LEVEL: INFO
-      NEXT_PUBLIC_GA_MEASUREMENT_ID: ${NEXT_PUBLIC_GA_MEASUREMENT_ID}
+      LOGGING_LEVEL: ${LOGGING_LEVEL:-INFO}
+      NEXT_PUBLIC_GA_MEASUREMENT_ID: ${NEXT_PUBLIC_GA_MEASUREMENT_ID:-}
       NEXT_PUBLIC_GPTR_API_URL: ${NEXT_PUBLIC_GPTR_API_URL}
-    restart: always
+    restart: unless-stopped
     ports:
-      - 3000:3000
+      - ${GPTRESEARCHER_UI_PORT:-3000}:3000
+    networks:
+      default:
+        aliases:
+          - gptresearcher-ui
+
+networks:
+  default:
