@@ -2,16 +2,37 @@ services:
   server:
     image: ranktotop/openwebui:gptresearcher-standalone-latest
     environment: 
+      # General
+      LOGGING_LEVEL: ${LOGGING_LEVEL:-INFO}
+      LANGUAGE: ${LANGUAGE:-german}
+      REPORT_SOURCE: ${REPORT_SOURCE:-web}
+      SCRAPER: ${SCRAPER:-bs} # beautiful soup by default
+      # External APIs
       OPENAI_API_KEY: ${OPENAI_API_KEY}
       OPENAI_BASE_URL: ${OPENAI_BASE_URL}
+      GOOGLE_API_KEY: ${GOOGLE_API_KEY:-}
+      RETRIEVER: searx
+      SEARX_URL: ${SEARX_URL}
       TAVILY_API_KEY: ${TAVILY_API_KEY:-}
       LANGCHAIN_API_KEY: ${LANGCHAIN_API_KEY:-}
-      LOGGING_LEVEL: ${LOGGING_LEVEL:-INFO}
-      # Image generation (optional - set to enable inline images in reports)
-      GOOGLE_API_KEY: ${GOOGLE_API_KEY:-}
+      # Images
       IMAGE_GENERATION_ENABLED: ${IMAGE_GENERATION_ENABLED:-false}
-      IMAGE_GENERATION_MODEL: ${IMAGE_GENERATION_MODEL:-gemini-2.0-flash-preview-image-generation}
+      IMAGE_GENERATION_MODEL: ${IMAGE_GENERATION_MODEL:-gemini-2.5-flash-image}
       IMAGE_GENERATION_MAX_IMAGES: ${IMAGE_GENERATION_MAX_IMAGES:-3}
+      # Models
+      EMBEDDING: ${EMBEDDING:-text-embedding-3-small}
+      FAST_LLM: ${FAST_LLM:-gpt-4o-mini}
+      SMART_LLM: ${SMART_LLM:-gpt-4.1}
+      STRATEGIC_LLM: ${STRATEGIC_LLM:-o4-mini}
+      # Others
+      SIMILARITY_THRESHOLD: ${SIMILARITY_THRESHOLD:-0.42}
+      CURATE_SOURCES: ${CURATE_SOURCES:-false}
+      FAST_TOKEN_LIMIT: ${FAST_TOKEN_LIMIT:-2000}
+      SMART_TOKEN_LIMIT: ${SMART_TOKEN_LIMIT:-4000}
+      STRATEGIC_TOKEN_LIMIT: ${STRATEGIC_TOKEN_LIMIT:-4000}
+      BROWSE_CHUNK_MAX_LENGTH: ${BROWSE_CHUNK_MAX_LENGTH:-8192}
+      SUMMARY_TOKEN_LIMIT: ${SUMMARY_TOKEN_LIMIT:-700}
+      TEMPERATURE: ${TEMPERATURE:-0.4}
     restart: unless-stopped
     networks:
       default:
@@ -23,9 +44,9 @@ services:
   ui:
     image: ranktotop/openwebui:gptresearcher-standalone-ui-latest
     environment:
-      CHOKIDAR_USEPOLLING: "true"
+      # General
       LOGGING_LEVEL: ${LOGGING_LEVEL:-INFO}
-      NEXT_PUBLIC_GA_MEASUREMENT_ID: ${NEXT_PUBLIC_GA_MEASUREMENT_ID:-}
+      CHOKIDAR_USEPOLLING: "true"
       NEXT_PUBLIC_GPTR_API_URL: ${NEXT_PUBLIC_GPTR_API_URL}
     restart: unless-stopped
     ports:

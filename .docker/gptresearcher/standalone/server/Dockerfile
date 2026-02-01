@@ -20,6 +20,67 @@ RUN apt-get update \
     && rm geckodriver-v0.36.0-${GECKO_ARCH}.tar.gz \
     && rm -rf /var/lib/apt/lists/*  # Clean up apt lists to reduce image size
 
+# install selenium
+# Installiere benötigte Systempakete und fehlende Bibliotheken für Chromedriver
+RUN apt-get update && \
+    apt-get install -y \
+    git \
+    wget \
+    unzip \
+    xvfb \
+    cron \
+    gnupg2 \
+    curl \
+    jq \
+    nano \
+    libglib2.0-0 \
+    libnss3 \
+    libnspr4 \
+    libxshmfence1 \
+    libxrandr2 \
+    libx11-xcb1 \
+    libxcb-dri3-0 \
+    libxcomposite1 \
+    libdbus-1-3 \
+    libatk1.0-0 \
+    libatk-bridge2.0-0 \
+    libcups2 \
+    libatspi2.0-0 \
+    libxdamage1 \
+    libgbm1 \
+    libxkbcommon0 \
+    libpango-1.0-0 \
+    libcairo2 \
+    libasound2 \
+    && apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Definiere Umgebungsvariablen für die Download-URLs
+ENV JSON_URL="https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json"
+
+# Lade und installiere Google Chrome und ChromeDriver
+RUN set -ex; \
+    # Hole Download-URLs für Chrome und ChromeDriver aus dem JSON
+    CHROME_URL=$(curl -s $JSON_URL | jq -r '.channels.Stable.downloads.chrome[] | select(.platform=="linux64").url'); \
+    CHROMEDRIVER_URL=$(curl -s $JSON_URL | jq -r '.channels.Stable.downloads.chromedriver[] | select(.platform=="linux64").url'); \
+    # Lade Chrome und ChromeDriver herunter
+    wget -q $CHROME_URL -O chrome-linux64.zip; \
+    wget -q $CHROMEDRIVER_URL -O chromedriver-linux64.zip; \
+    # Entpacke und installiere Chrome und ChromeDriver
+    unzip chrome-linux64.zip -d /opt/chrome; \
+    unzip chromedriver-linux64.zip -d /opt/chromedriver; \
+    # Erstelle symbolische Links
+    find /opt/chrome -name 'chrome' -type f -exec ln -sf {} /usr/bin/google-chrome \;; \
+    find /opt/chromedriver -name 'chromedriver' -type f -exec ln -sf {} /usr/local/bin/chromedriver \;; \
+    chmod +x /usr/local/bin/chromedriver
+
+# Füge eine neue RUN-Anweisung hinzu, um die Abhängigkeiten von Chromedriver zu überprüfen
+RUN ldd /usr/local/bin/chromedriver || true
+RUN ldd /usr/bin/google-chrome || true
+
+# Add to path
+ENV PATH="/usr/local/bin/chromedriver:/usr/bin/google-chrome:${PATH}"
+
 # Stage 2: Python dependencies installation
 FROM install-browser AS gpt-researcher-install
 
@@ -27,10 +88,10 @@ ENV PIP_ROOT_USER_ACTION=ignore
 WORKDIR /usr/src/app
 
 # install git and clone repo
-RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
 RUN git clone https://github.com/assafelovic/gpt-researcher.git ./
 
 RUN pip install --upgrade pip && \
+    pip install selenium && \
     pip install --no-cache-dir -r requirements.txt --upgrade --prefer-binary && \
     pip install --no-cache-dir -r multi_agents/requirements.txt --upgrade --prefer-binary
 
