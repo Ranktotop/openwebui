@@ -49,12 +49,11 @@ RUN git clone https://github.com/assafelovic/gpt-researcher.git ./
 # 1. Headless aktivieren (Verhindert GUI-Fehler)
 RUN sed -i 's/self.headless = False/self.headless = True/' /usr/src/app/gpt_researcher/scraper/browser/browser.py
 
-# 2. CRASH FIX: Remote-Debugging-Port entfernen (Verhindert "disconnected"-Fehler)
+# 2. CRASH FIX: Remote-Debugging-Port entfernen
 RUN sed -i '/--remote-debugging-port=9222/d' /usr/src/app/gpt_researcher/scraper/browser/browser.py
 
-# 3. STABILITÄT: GPU deaktivieren (Verhindert Renderer-Crashes bei komplexen Seiten)
-# Wir fügen --disable-gpu und --window-size nach der Zeile "--no-sandbox" ein.
-RUN sed -i '/options.add_argument("--no-sandbox")/a \        options.add_argument("--disable-gpu")\n        options.add_argument("--window-size=1920,1080")' /usr/src/app/gpt_researcher/scraper/browser/browser.py
+# 3. STABILITÄT: GPU deaktivieren (SICHERE METHODE)
+RUN sed -i 's/options.add_argument("--no-sandbox")/options.add_argument("--no-sandbox"); options.add_argument("--disable-gpu"); options.add_argument("--window-size=1920,1080")/' /usr/src/app/gpt_researcher/scraper/browser/browser.py
 
 RUN pip install --upgrade pip && \
     pip install selenium && \
