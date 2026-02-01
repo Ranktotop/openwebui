@@ -1,6 +1,7 @@
 services:
   server:
     image: ranktotop/openwebui:gptresearcher-standalone-latest
+    # Settings. See here https://docs.gptr.dev/docs/gpt-researcher/gptr/config
     environment: 
       # General
       LOGGING_LEVEL: ${LOGGING_LEVEL:-INFO}
@@ -15,15 +16,21 @@ services:
       SEARX_URL: ${SEARX_URL}
       TAVILY_API_KEY: ${TAVILY_API_KEY:-}
       LANGCHAIN_API_KEY: ${LANGCHAIN_API_KEY:-}
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-}
       # Images
       IMAGE_GENERATION_ENABLED: ${IMAGE_GENERATION_ENABLED:-false}
       IMAGE_GENERATION_MODEL: ${IMAGE_GENERATION_MODEL:-gemini-2.5-flash-image}
       IMAGE_GENERATION_MAX_IMAGES: ${IMAGE_GENERATION_MAX_IMAGES:-3}
       # Models
-      EMBEDDING: ${EMBEDDING:-text-embedding-3-small}
-      FAST_LLM: ${FAST_LLM:-gpt-4o-mini}
+      EMBEDDING: ${EMBEDDING:-text-embedding-3-small} # e.g: ollama:nomic-embed-text
+      FAST_LLM: ${FAST_LLM:-gpt-4o-mini} # e.g: litellm:perplexity/pplx-7b-chat
       SMART_LLM: ${SMART_LLM:-gpt-4.1}
       STRATEGIC_LLM: ${STRATEGIC_LLM:-o4-mini}
+      # Deep Research
+      DEEP_RESEARCH_BREADTH: ${DEEP_RESEARCH_BREADTH:-4}
+      DEEP_RESEARCH_DEPTH: ${DEEP_RESEARCH_DEPTH:-2}
+      DEEP_RESEARCH_CONCURRENCY: ${DEEP_RESEARCH_CONCURRENCY:-1}
+      TOTAL_WORDS: ${TOTAL_WORDS:-2500}
       # Others
       SIMILARITY_THRESHOLD: ${SIMILARITY_THRESHOLD:-0.42}
       CURATE_SOURCES: ${CURATE_SOURCES:-false}
@@ -33,6 +40,8 @@ services:
       BROWSE_CHUNK_MAX_LENGTH: ${BROWSE_CHUNK_MAX_LENGTH:-8192}
       SUMMARY_TOKEN_LIMIT: ${SUMMARY_TOKEN_LIMIT:-700}
       TEMPERATURE: ${TEMPERATURE:-0.4}
+      # Files
+      DOC_PATH: ${DOC_PATH:-./my-docs}
     restart: unless-stopped
     networks:
       default:
