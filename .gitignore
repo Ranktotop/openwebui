@@ -5,6 +5,8 @@ __pycache__/
 # Virtuelle Umgebungen
 .venv/
 venv/
+.venv_test/
+venv_test/
 .env/
 *.env
 node_modules/

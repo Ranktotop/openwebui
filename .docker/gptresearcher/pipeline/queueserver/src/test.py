@@ -7,6 +7,20 @@ import asyncio
 import json
 import websockets
 from datetime import datetime
+import os
+
+QUEUE_SERVER_DOMAIN = os.environ["QUEUE_SERVER_DOMAIN"]  # e.g., "localhost:8001"
+GPTRESEARCHER_DOMAIN = os.environ["GPTRESEARCHER_DOMAIN"]  # e.g., "localhost:8000"
+USE_SSL = False
+
+
+def get_url(domain: str, use_ws: bool, path: str = "") -> str:
+    """Construct WebSocket URL"""
+    protocol = "ws" if use_ws else "http"
+    protocol += "s" if USE_SSL else ""
+    if path:
+        return f"{protocol}://{domain}/{path.lstrip('/')}"
+    return f"{protocol}://{domain}"
 
 
 async def test_research_request(client_id: int, query: str, delay: float = 0):
@@ -21,7 +35,7 @@ async def test_research_request(client_id: int, query: str, delay: float = 0):
     if delay > 0:
         await asyncio.sleep(delay)
 
-    uri = "ws://localhost:8001/ws"
+    uri = get_url(QUEUE_SERVER_DOMAIN, use_ws=True, path="/ws")
     print(f"\n[Client {client_id}] Connecting to {uri}...")
 
     try:
@@ -77,7 +91,7 @@ async def test_queue_status():
 
     try:
         async with aiohttp.ClientSession() as session:
-            async with session.get('http://localhost:8001/status') as response:
+            async with session.get(get_url(QUEUE_SERVER_DOMAIN, use_ws=False, path="/status")) as response:
                 data = await response.json()
                 print(f"\nQueue Status:")
                 print(f"  - Queue Size: {data['queue_size']}")
@@ -134,7 +148,7 @@ async def test_health_check():
 
     try:
         async with aiohttp.ClientSession() as session:
-            async with session.get('http://localhost:8001/') as response:
+            async with session.get(get_url(QUEUE_SERVER_DOMAIN, use_ws=False, path="/")) as response:
                 data = await response.json()
                 print(f"\nHealth Check Response:")
                 for key, value in data.items():
@@ -149,8 +163,8 @@ async def main():
     print("GPT-Researcher Queue Server Test Suite")
     print("="*60)
     print("\nMake sure:")
-    print("  1. Queue Server is running on localhost:8001")
-    print("  2. GPT-Researcher is running on localhost:8000")
+    print(f"  1. Queue Server is running on {QUEUE_SERVER_DOMAIN}")
+    print(f"  2. GPT-Researcher is running on {GPTRESEARCHER_DOMAIN}")
     print()
     input("Press Enter to start tests...")
 
@@ -161,7 +175,7 @@ async def main():
     await test_queue_status()
 
     # Single request test
-    # await test_single_request()
+    await test_single_request()
 
     # Queue behavior test
     # await test_queue_behavior()

@@ -18,6 +18,25 @@
                 "MAX_CONCURRENT_RESEARCH": "1",
                 "VERSION": "dev"
             }
+        },
+        {
+            "name": "Test: GPTResearchQueueServer",
+            "type": "debugpy",
+            "request": "launch",
+            "python": "${workspaceFolder}/.docker/gptresearcher/pipeline/queueserver/src/.venv_test/Scripts/python.exe",
+            "program": "${workspaceFolder}/.docker/gptresearcher/pipeline/queueserver/src/test.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}",
+                "ROOT_DIR": "${workspaceFolder}",
+                "LOGGING_LEVEL": "DEBUG",
+                "QUEUE_SERVER_DOMAIN": "localhost:8001",
+                "GPTRESEARCHER_DOMAIN": "192.168.2.200:9177",
+                "MAX_CONCURRENT_RESEARCH": "1",
+                "VERSION": "dev"
+            }
         }
     ]
 }
