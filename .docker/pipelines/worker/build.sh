@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Build & Push: <namespace>/openwebui:pipeline-deepresearch-smolagents-latest
+# Build & Push: <namespace>/openwebui:pipeline-worker-latest
 # - Prüft, ob :latest schon existiert und fragt nach Überschreiben
 # - Erwartet: DOCKERHUB_USERNAME, DOCKERHUB_TOKEN, optional DOCKERHUB_ORG
 
@@ -101,8 +101,8 @@ main(){
   cd "$ROOT"
 
   local REPO="openwebui"
-  local TAG="pipeline-deepresearch-smolagents-latest"
-  local DOCKERFILE="${DOCKERFILE:-$ROOT/.docker/pipelines/deepresearch/SmolAgents/Dockerfile}"
+  local TAG="pipeline-worker-latest"
+  local DOCKERFILE="${DOCKERFILE:-$ROOT/.docker/pipelines/worker/Dockerfile}"
 
   [[ -f "$DOCKERFILE" ]] || { log_e "Dockerfile nicht gefunden: $DOCKERFILE"; exit 1; }
 
