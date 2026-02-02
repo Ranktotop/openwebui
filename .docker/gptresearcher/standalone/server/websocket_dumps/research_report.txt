@@ -1,0 +1,78 @@
+start {"task":"What are the latest news on ai","report_type":"research_report","report_source":"web","tone":"Objective","query_domains":[],"mcp_enabled":false,"mcp_strategy":"fast","mcp_configs":[]}	198	
+14:15:37.709
+{"query":"What are the latest news on ai","sources":[],"context":[],"report":""}	80	
+14:15:37.711
+{"type":"logs","content":"starting_research","output":"🔍 Starting the research task for 'What are the latest news on ai'...","metadata":null}	142	
+14:15:39.576
+{"type":"logs","content":"agent_generated","output":"📰 News Analyst Agent","metadata":null}	92	
+14:15:39.577
+{"type":"logs","content":"planning_research","output":"🌐 Browsing the web to learn more about the task: What are the latest news on ai...","metadata":null}	156	
+14:15:39.578
+{"type":"logs","content":"planning_research","output":"🤔 Planning the research strategy and subtasks...","metadata":null}	122	
+14:15:42.678
+{"type":"logs","content":"subqueries","output":"🗂️ I will conduct my research based on the following queries: ['site:reuters.com artificial intelligence news February 2026 regulation ethics breakthroughs', 'site:news.google.com/topics/CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRlpXNHRSMElvQUFQAQ \"Artificial intelligence\" latest news February 2026', '\"latest AI research breakthroughs\" February 2026 global overview', 'What are the latest news on ai']...","metadata":["site:reuters.com artificial intelligence news February 2026 regulation ethics breakthroughs","site:news.google.com/topics/CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRlpXNHRSMElvQUFQAQ \"Artificial intelligence\" latest news February 2026","\"latest AI research breakthroughs\" February 2026 global overview","What are the latest news on ai"]}	803	
+14:15:52.380
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'site:reuters.com artificial intelligence news February 2026 regulation ethics breakthroughs'...","metadata":null}	203	
+14:15:52.387
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'site:news.google.com/topics/CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRlpXNHRSMElvQUFQAQ \"Artificial intelligence\" latest news February 2026'...","metadata":null}	248	
+14:15:52.387
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for '\"latest AI research breakthroughs\" February 2026 global overview'...","metadata":null}	178	
+14:15:52.388
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'What are the latest news on ai'...","metadata":null}	142	
+14:15:52.388
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.artificialintelligence-news.com/\n","metadata":"https://www.artificialintelligence-news.com/"}	192	
+14:15:53.228
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://techcrunch.com/category/artificial-intelligence/\n","metadata":"https://techcrunch.com/category/artificial-intelligence/"}	216	
+14:15:53.230
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.reuters.com/technology/artificial-intelligence/\n","metadata":"https://www.reuters.com/technology/artificial-intelligence/"}	222	
+14:15:53.233
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://news.mit.edu/topic/artificial-intelligence2\n","metadata":"https://news.mit.edu/topic/artificial-intelligence2"}	206	
+14:15:53.233
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.theguardian.com/technology/artificialintelligenceai\n","metadata":"https://www.theguardian.com/technology/artificialintelligenceai"}	230	
+14:15:53.235
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	135	
+14:15:53.236
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	103	
+14:15:53.236
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	135	
+14:15:53.337
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 0 URLs...","metadata":null}	103	
+14:15:53.338
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 0 pages of content","metadata":null}	101	
+14:15:53.339
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 0 new images from 0 total images","metadata":[]}	114	
+14:15:53.340
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	93	
+14:15:53.341
+{"type":"logs","content":"subquery_context_not_found","output":"🤷 No content found for 'site:news.google.com/topics/CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRlpXNHRSMElvQUFQAQ \"Artificial intelligence\" latest news February 2026'...","metadata":null}	247	
+14:15:53.342
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.reuters.com/sustainability/boards-policy-regulation/eu-delay-high-risk-ai-rules-until-2027-after-big-tech-pushback-2025-11-19/\n","metadata":"https://www.reuters.com/sustainability/boards-policy-regulation/eu-delay-high-risk-ai-rules-until-2027-after-big-tech-pushback-2025-11-19/"}	380	
+14:15:53.420
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.reuters.com/technology/artificial-intelligence/eu-lays-out-guidelines-misuse-ai-by-employers-websites-police-2025-02-04/\n","metadata":"https://www.reuters.com/technology/artificial-intelligence/eu-lays-out-guidelines-misuse-ai-by-employers-websites-police-2025-02-04/"}	368	
+14:15:53.421
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.reuters.com/technology/artificial-intelligence/europe-looks-embrace-ai-paris-summits-2nd-day-while-global-consensus-unclear-2025-02-11/\n","metadata":"https://www.reuters.com/technology/artificial-intelligence/europe-looks-embrace-ai-paris-summits-2nd-day-while-global-consensus-unclear-2025-02-11/"}	398	
+14:15:53.424
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.reuters.com/sustainability/boards-policy-regulation/eu-ease-ai-privacy-rules-critics-warn-caving-big-tech-trump-2025-11-19/\n","metadata":"https://www.reuters.com/sustainability/boards-policy-regulation/eu-ease-ai-privacy-rules-critics-warn-caving-big-tech-trump-2025-11-19/"}	374	
+14:15:53.426
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	135	
+14:15:53.426
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 4 URLs...","metadata":null}	103	
+14:15:53.426
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	135	
+14:15:53.474
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 0 URLs...","metadata":null}	103	
+14:15:53.474
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 0 pages of content","metadata":null}	101	
+14:15:53.475
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 0 new images from 0 total images","metadata":[]}	114	
+14:15:53.476
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	93	
+14:15:53.477
+{"type":"logs","content":"subquery_context_not_found","output":"🤷 No content found for '\"latest AI research breakthroughs\" February 2026 global overview'...","metadata":null}	177	
+14:15:53.478
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 0 pages of content","metadata":null}	101	
+14:16:03.044
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 0 new images from 0 total images","metadata":[]}	114	
+14:16:03.045
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	93	
+14:16:03.045

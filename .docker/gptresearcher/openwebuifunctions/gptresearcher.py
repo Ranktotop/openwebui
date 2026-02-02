@@ -2,8 +2,15 @@
 title: GPT Researcher Remote Pipe (Robust)
 author: Marc Meese & Gemini
 author_url: https://github.com/assafelovic/gpt-researcher
-version: 2.1.0
+version: 2.3.0
 requirements: aiohttp
+
+Changelog v2.3.0:
+- CRITICAL FIX: Report chunks are now accumulated instead of overwritten
+- Added ping/pong keepalive handling for long-running research
+- Improved PATH message handling (distinguish final paths from deep research paths)
+- Better logging with report statistics
+- Enhanced VERBOSE mode output
 """
 
 import os
@@ -110,6 +117,13 @@ class Pipe:
                         if msg.type == aiohttp.WSMsgType.TEXT:
                             data = msg.data
                             
+                            # Handle ping/pong keepalive (server sends "ping" every 30s)
+                            if data == "ping":
+                                await ws.send_str("pong")
+                                if self.valves.VERBOSE:
+                                    print("[KEEPALIVE] Sent pong")
+                                continue
+                            
                             if data.startswith('{"type":'):
                                 try:
                                     json_data = json.loads(data)
@@ -140,22 +154,38 @@ class Pipe:
 
                                     # --- REPORT handling ---
                                     elif msg_type == "report":
-                                        # Whenever we get a report chunk or full report, save it.
-                                        # Usually 'output' contains the markdown.
+                                        # CRITICAL: Reports come in CHUNKS, must accumulate!
                                         if output:
-                                            final_report = output
-                                            print("Report received in stream.")
+                                            final_report += output  # <- ACCUMULATE chunks
+                                            if self.valves.VERBOSE:
+                                                print(f"[REPORT CHUNK] Added {len(output)} chars (total: {len(final_report)})")
                                     
-                                    # --- PATH handling (Deep Research) ---
+                                    # --- PATH handling ---
                                     elif msg_type == "path":
-                                        path_info = output
-                                        await _emitter({
-                                            "type": "status",
-                                            "data": {
-                                                "description": f"Deep Dive: {path_info.get('query', 'Exploring...')}",
-                                                "done": False
-                                            }
-                                        })
+                                        # Check if this is the final report paths (dict with pdf/docx/md keys)
+                                        # or a Deep Research path (dict with 'query' key)
+                                        if isinstance(output, dict):
+                                            if any(key in output for key in ['pdf', 'docx', 'md', 'json']):
+                                                # Final report paths received - we're done!
+                                                print("Final report paths received, finishing...")
+                                                await _emitter({
+                                                    "type": "status",
+                                                    "data": {
+                                                        "description": "Research completed!",
+                                                        "done": True
+                                                    }
+                                                })
+                                                # Break the loop to return the report
+                                                break
+                                            elif 'query' in output:
+                                                # Deep Research sub-path
+                                                await _emitter({
+                                                    "type": "status",
+                                                    "data": {
+                                                        "description": f"Deep Dive: {output.get('query', 'Exploring...')}",
+                                                        "done": False
+                                                    }
+                                                })
 
                                 except json.JSONDecodeError:
                                     pass
@@ -170,6 +200,7 @@ class Pipe:
             # --- FINALIZE ---
             # If the connection closed (even with error) but we have the report, return it!
             if final_report:
+                print(f"✅ Research completed! Report size: {len(final_report)} chars")
                 await _emitter({"type": "status", "data": {"description": "Research Completed.", "done": True}})
                 return final_report
             

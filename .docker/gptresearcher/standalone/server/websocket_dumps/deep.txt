@@ -1,0 +1,1584 @@
+start {"task":"Analysiere die Entwicklung von Video-KI im Bezug auf Endverbraucher. Welche Entwicklunsgsprünge gab es und wann wird Video-KI auch lange Videos kostengünstig generieren können.","report_type":"deep","report_source":"web","tone":"Objective","query_domains":[],"mcp_enabled":false,"mcp_strategy":"fast","mcp_configs":[]}	333
+14:44:37.139
+{"query":"Analysiere die Entwicklung von Video-KI im Bezug auf Endverbraucher. Welche Entwicklunsgsprünge gab es und wann wird Video-KI auch lange Videos kostengünstig generieren können.","sources":[],"context":[],"report":""}	226
+14:44:37.142
+{"type":"logs","content":"starting_research","output":"🔍 Starting the research task for 'Video-KI Entwicklungsgeschichte Endverbraucher Technologie Meilensteine GAN Diffusionsmodelle bis 2020'...","metadata":null}	213
+14:45:08.834
+{"type":"logs","content":"agent_generated","output":"🤖 Tech Historian Agent","metadata":null}	93
+14:45:08.837
+{"type":"logs","content":"planning_research","output":"🌐 Browsing the web to learn more about the task: Video-KI Entwicklungsgeschichte Endverbraucher Technologie Meilensteine GAN Diffusionsmodelle bis 2020...","metadata":null}	227
+14:45:08.838
+{"type":"logs","content":"planning_research","output":"🤔 Planning the research strategy and subtasks...","metadata":null}	121
+14:45:09.729
+{"type":"logs","content":"subqueries","output":"🗂️ I will conduct my research based on the following queries: ['Video-KI Endverbraucher Entwicklungsgeschichte: GAN und Diffusionsmodelle Meilensteine bis 2020', 'Evolution von VideoGAN und latenten Diffusionsmodellen in der Verbraucher-KI bis 2020', 'Technologische Meilensteine der Endnutzer-Video-KI: VAE-basierte Diffusion und GANs bis 2020', 'Video-KI Entwicklungsgeschichte Endverbraucher Technologie Meilensteine GAN Diffusionsmodelle bis 2020']...","metadata":["Video-KI Endverbraucher Entwicklungsgeschichte: GAN und Diffusionsmodelle Meilensteine bis 2020","Evolution von VideoGAN und latenten Diffusionsmodellen in der Verbraucher-KI bis 2020","Technologische Meilensteine der Endnutzer-Video-KI: VAE-basierte Diffusion und GANs bis 2020","Video-KI Entwicklungsgeschichte Endverbraucher Technologie Meilensteine GAN Diffusionsmodelle bis 2020"]}	904
+14:45:19.138
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Video-KI Endverbraucher Entwicklungsgeschichte: GAN und Diffusionsmodelle Meilensteine bis 2020'...","metadata":null}	206
+14:45:19.140
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Evolution von VideoGAN und latenten Diffusionsmodellen in der Verbraucher-KI bis 2020'...","metadata":null}	196
+14:45:19.143
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Technologische Meilensteine der Endnutzer-Video-KI: VAE-basierte Diffusion und GANs bis 2020'...","metadata":null}	203
+14:45:19.144
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Video-KI Entwicklungsgeschichte Endverbraucher Technologie Meilensteine GAN Diffusionsmodelle bis 2020'...","metadata":null}	213
+14:45:19.145
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://the-decoder.de/kuenstliche-intelligenz-begriffe-erklaerung/\n","metadata":"https://the-decoder.de/kuenstliche-intelligenz-begriffe-erklaerung/"}	238
+14:45:20.221
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://wan2.video/de/ai-video-timeline\n","metadata":"https://wan2.video/de/ai-video-timeline"}	182
+14:45:20.224
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.nomos-elibrary.de/10.5771/9783748929970.pdf\n","metadata":"https://www.nomos-elibrary.de/10.5771/9783748929970.pdf"}	214
+14:45:20.228
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://link.springer.com/article/10.1007/s00287-020-01280-5\n","metadata":"https://link.springer.com/article/10.1007/s00287-020-01280-5"}	224
+14:45:20.228
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.th-koeln.de/mam/downloads/projekte_und_publikationen_2021_digital.pdf\n","metadata":"https://www.th-koeln.de/mam/downloads/projekte_und_publikationen_2021_digital.pdf"}	266
+14:45:20.228
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:45:20.228
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:45:20.228
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://ki-techlab.de/ki-news/stabile-video-diffusion-latente-video-diffusionsmodelle-fuer-grosse-datensaetze/\n","metadata":"https://ki-techlab.de/ki-news/stabile-video-diffusion-latente-video-diffusionsmodelle-fuer-grosse-datensaetze/"}	324
+14:45:20.257
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.vaiflux.com/blog/ai-evolution-of-generative-video-models\n","metadata":"https://www.vaiflux.com/blog/ai-evolution-of-generative-video-models"}	240
+14:45:20.258
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.drupal.org/files/issues/2025-09-06/2112.10752v2_sample_translated.pdf\n","metadata":"https://www.drupal.org/files/issues/2025-09-06/2112.10752v2_sample_translated.pdf"}	266
+14:45:20.260
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.unite.ai/de/Stabile-Videodiffusion%2C-latente-Videodiffusionsmodelle-f%C3%BCr-gro%C3%9Fe-Datens%C3%A4tze/\n","metadata":"https://www.unite.ai/de/Stabile-Videodiffusion%2C-latente-Videodiffusionsmodelle-f%C3%BCr-gro%C3%9Fe-Datens%C3%A4tze/"}	338
+14:45:20.262
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:45:20.263
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 4 URLs...","metadata":null}	102
+14:45:20.263
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://kuenstlich-intelligent.de/de/generative-modelle/\n","metadata":"https://kuenstlich-intelligent.de/de/generative-modelle/"}	216
+14:45:20.272
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.computerweekly.com/de/feature/GAN-versus-VAE-Was-ist-der-bessere-generative-KI-Ansatz\n","metadata":"https://www.computerweekly.com/de/feature/GAN-versus-VAE-Was-ist-der-bessere-generative-KI-Ansatz"}	298
+14:45:20.274
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://link.springer.com/book/10.1007/978-3-658-45242-1\n","metadata":"https://link.springer.com/book/10.1007/978-3-658-45242-1"}	216
+14:45:20.278
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.toolify.ai/de/ai-news-de/die-entwicklung-generativer-ki-gan-vae-transformer-und-gpt-1431043\n","metadata":"https://www.toolify.ai/de/ai-news-de/die-entwicklung-generativer-ki-gan-vae-transformer-und-gpt-1431043"}	310
+14:45:20.279
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://gpt5.blog/videogan/\n","metadata":"https://gpt5.blog/videogan/"}	158
+14:45:20.281
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:45:20.282
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:45:20.282
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.computerweekly.com/de/tipp/Die-Geschichte-der-kuenstlichen-Intelligenz-eine-Zeitleiste\n","metadata":"https://www.computerweekly.com/de/tipp/Die-Geschichte-der-kuenstlichen-Intelligenz-eine-Zeitleiste"}	300
+14:45:20.295
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://de.linkedin.com/pulse/gans-vs-diffusion-models-battle-generative-techniques-amit-kharche-gh8mf?tl=de\n","metadata":"https://de.linkedin.com/pulse/gans-vs-diffusion-models-battle-generative-techniques-amit-kharche-gh8mf?tl=de"}	320
+14:45:20.296
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.bmftr.bund.de/SharedDocs/Downloads/DE/s/wechselseitige-entgrenzung-lang.pdf?__blob=publicationFile&v=3\n","metadata":"https://www.bmftr.bund.de/SharedDocs/Downloads/DE/s/wechselseitige-entgrenzung-lang.pdf?__blob=publicationFile&v=3"}	332
+14:45:20.298
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:45:20.299
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 3 URLs...","metadata":null}	102
+14:45:20.299
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+14:45:29.953
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 7 total images","metadata":["https://the-decoder.de/wp-content/uploads/2022/08/ki_unsplash.jpg","https://pubads.g.doubleclick.net/gampad/ad?iu=/270604982/springerlink/287/article&sz=728x90&pos=top&articleid=s00287-020-01280-5","https://media.springernature.com/w92h120/springer-static/cover-hires/book/978-3-658-32474-2?as=webp","https://media.springernature.com/w92h120/springer-static/cover-hires/book/978-3-662-68684-3?as=webp"]}	515
+14:45:29.954
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:45:29.955
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Video-KI Entwicklungsgeschichte Endverbraucher Technologie Meilensteine GAN Diffusionsmodelle bis 2020...","metadata":null}	226
+14:45:29.957
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 4 pages of content","metadata":null}	100
+14:45:31.341
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 11 total images","metadata":["https://ki-techlab.de/wp-content/uploads/2023/11/Stable-Video-Diffusion-Image-to-Video-1000x600.png","https://www.ki-techlab.de/wp-content/uploads/2023/11/1-6.png","https://www.ki-techlab.de/wp-content/uploads/2023/11/2-7.png","https://www.ki-techlab.de/wp-content/uploads/2023/11/3-7.png"]}	404
+14:45:31.344
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:45:31.345
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Evolution von VideoGAN und latenten Diffusionsmodellen in der Verbraucher-KI bis 2020...","metadata":null}	209
+14:45:31.348
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 2 pages of content","metadata":null}	100
+14:45:31.605
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 11 total images","metadata":["https://media.licdn.com/dms/image/v2/D4D12AQFNsthpPTwSFQ/article-cover_image-shrink_720_1280/B4DZg1BSF0GgAI-/0/1753236193212?e=2147483647&v=beta&t=bd41zFaqWMQ5Viur8ZW5Ix26S16axVaoo8soyoYSUos","https://media.licdn.com/dms/image/v2/D4D12AQEw_6RHt44pQA/series-logo_image-shrink_100_100/B4DZbzIrhbGkAU-/0/1747835864207?e=2147483647&v=beta&t=s_4hbKAFzEoX0Wzu97k8hl79kp_TgD699B2xIpaUVgo","https://media.licdn.com/dms/image/v2/D4D03AQG-8PO2x-H5mQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1691513724865?e=2147483647&v=beta&t=zG80fazNYA3r3JFs-IRUZln2thQebhoadPxiWltI1L0","https://media.licdn.com/dms/image/v2/D4D12AQGFIjNiuGc-kw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1704948960703?e=2147483647&v=beta&t=Zwe5tUTvR1JxfolhO37gTAp354_T0Su-C5qh8nJFEww"]}	922
+14:45:31.607
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:45:31.608
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Video-KI Endverbraucher Entwicklungsgeschichte: GAN und Diffusionsmodelle Meilensteine bis 2020...","metadata":null}	219
+14:45:31.608
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:45:32.115
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:45:32.236
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:45:32.384
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+14:45:33.062
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 23 total images","metadata":["https://media.springernature.com/full/springer-static/cover-hires/book/978-3-658-45242-1","https://gpt5.blog/wp-content/uploads/2025/06/videogan-990x445.jpg","https://kuenstlich-intelligent.de/wp-content/uploads/2024/08/Generative-Models-VAEs-GANs-diffusion-transformers-NeRFs-1024x585.webp","https://www.toolify.ai/toolify-seo/images/arrowright_outlined.svg"]}	474
+14:45:33.064
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:45:33.065
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Technologische Meilensteine der Endnutzer-Video-KI: VAE-basierte Diffusion und GANs bis 2020...","metadata":null}	216
+14:45:33.067
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:45:35.376
+{"type":"logs","content":"research_step_finalized","output":"Finalized research step.\n💸 Total Research Costs: $0.011468560000000001","metadata":null}	150
+14:45:35.378
+{"type":"logs","content":"image_planning","output":"🎨 Analyzing research context for visualization opportunities...","metadata":null}	133
+14:45:35.380
+{"type":"logs","content":"image_concepts_identified","output":"🖼️ Identified 1 visualization concepts, generating images...","metadata":null}	141
+14:45:43.584
+{"type":"logs","content":"image_generating","output":"🖼️ Generating image 1/1: Generative Models Comparison Chart...","metadata":null}	134
+14:45:43.585
+{"type":"logs","content":"images_ready","output":"✅ 1 images ready for report embedding","metadata":null}	105
+14:45:54.040
+{"type":"logs","content":"starting_research","output":"🔍 Starting the research task for 'Multimodale KI Cloud-basierte Rendering-Dienste Open-Source Video-KI Kurzvideos Qualitäts- und Kostenanalyse seit 2021'...","metadata":null}	229
+14:46:28.599
+{"type":"logs","content":"agent_generated","output":"🖥️ Tech Research Agent","metadata":null}	93
+14:46:28.600
+{"type":"logs","content":"planning_research","output":"🌐 Browsing the web to learn more about the task: Multimodale KI Cloud-basierte Rendering-Dienste Open-Source Video-KI Kurzvideos Qualitäts- und Kostenanalyse seit 2021...","metadata":null}	243
+14:46:28.613
+{"type":"logs","content":"planning_research","output":"🤔 Planning the research strategy and subtasks...","metadata":null}	121
+14:46:29.669
+{"type":"logs","content":"subqueries","output":"🗂️ I will conduct my research based on the following queries: ['Bestenliste multimodaler KI-Hosting-Dienste Cloud-basiert Open-Source Video-KI Kosteneffizienz Performance seit 2021', 'Qualitätsanalyse Cloud-Rendering Open-Source Video-KI Kurzvideos Vergleich 2021–2026 Mistral Gemini', 'Kosten-Nutzen-Vergleich multimodale KI Rendering-Dienste AWS Azure Google Cloud Open-Source Video-KI seit 2021', 'Multimodale KI Cloud-basierte Rendering-Dienste Open-Source Video-KI Kurzvideos Qualitäts- und Kostenanalyse seit 2021']...","metadata":["Bestenliste multimodaler KI-Hosting-Dienste Cloud-basiert Open-Source Video-KI Kosteneffizienz Performance seit 2021","Qualitätsanalyse Cloud-Rendering Open-Source Video-KI Kurzvideos Vergleich 2021–2026 Mistral Gemini","Kosten-Nutzen-Vergleich multimodale KI Rendering-Dienste AWS Azure Google Cloud Open-Source Video-KI seit 2021","Multimodale KI Cloud-basierte Rendering-Dienste Open-Source Video-KI Kurzvideos Qualitäts- und Kostenanalyse seit 2021"]}	1042
+14:46:38.953
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Bestenliste multimodaler KI-Hosting-Dienste Cloud-basiert Open-Source Video-KI Kosteneffizienz Performance seit 2021'...","metadata":null}	227
+14:46:38.955
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Qualitätsanalyse Cloud-Rendering Open-Source Video-KI Kurzvideos Vergleich 2021–2026 Mistral Gemini'...","metadata":null}	210
+14:46:38.958
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Kosten-Nutzen-Vergleich multimodale KI Rendering-Dienste AWS Azure Google Cloud Open-Source Video-KI seit 2021'...","metadata":null}	221
+14:46:38.959
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Multimodale KI Cloud-basierte Rendering-Dienste Open-Source Video-KI Kurzvideos Qualitäts- und Kostenanalyse seit 2021'...","metadata":null}	229
+14:46:38.961
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.umweltbundesamt.de/sites/default/files/medien/479/publikationen/texte_85-2022_digitalisierung_als_transformationsmotor_fuer_eine_green_economy.pdf\n","metadata":"https://www.umweltbundesamt.de/sites/default/files/medien/479/publikationen/texte_85-2022_digitalisierung_als_transformationsmotor_fuer_eine_green_economy.pdf"}	420
+14:46:40.005
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.siliconflow.com/articles/de/best-open-source-AI-for-multimodal-tasks\n","metadata":"https://www.siliconflow.com/articles/de/best-open-source-AI-for-multimodal-tasks"}	264
+14:46:40.008
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.computerweekly.com/de/definition/Generative-KI\n","metadata":"https://www.computerweekly.com/de/definition/Generative-KI"}	220
+14:46:40.011
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.ibm.com/de-de/think/topics/multimodal-ai\n","metadata":"https://www.ibm.com/de-de/think/topics/multimodal-ai"}	208
+14:46:40.013
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://dserver.bundestag.de/btd/20/150/2015069.pdf\n","metadata":"https://dserver.bundestag.de/btd/20/150/2015069.pdf"}	206
+14:46:40.014
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:46:40.016
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:46:40.018
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://cloud.ionos.de/\n","metadata":"https://cloud.ionos.de/"}	150
+14:46:40.085
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.siliconflow.com/articles/de/the-best-multimodal-ai-model-hosting-service\n","metadata":"https://www.siliconflow.com/articles/de/the-best-multimodal-ai-model-hosting-service"}	272
+14:46:40.087
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.alibabacloud.com/de/about?_p_lc=1\n","metadata":"https://www.alibabacloud.com/de/about?_p_lc=1"}	194
+14:46:40.089
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://howtohosting.guide/de/server-hosting-ai-app/\n","metadata":"https://howtohosting.guide/de/server-hosting-ai-app/"}	208
+14:46:40.091
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.moin.ai/chatbot-lexikon/grosse-sprachmodelle-llms\n","metadata":"https://www.moin.ai/chatbot-lexikon/grosse-sprachmodelle-llms"}	226
+14:46:40.092
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:46:40.093
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:46:40.093
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.gminsights.com/de/industry-analysis/generative-ai-solution-market\n","metadata":"https://www.gminsights.com/de/industry-analysis/generative-ai-solution-market"}	258
+14:46:40.117
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://web-assets.bcg.com/1f/a9/0d43419a48bdad302d71149b61f7/bcg-bdi-deeptech.pdf\n","metadata":"https://web-assets.bcg.com/1f/a9/0d43419a48bdad302d71149b61f7/bcg-bdi-deeptech.pdf"}	268
+14:46:40.119
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.varonis.com/de/blog/aws-vs-azure-vs-google\n","metadata":"https://www.varonis.com/de/blog/aws-vs-azure-vs-google"}	212
+14:46:40.121
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025\n","metadata":"https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025"}	242
+14:46:40.124
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:46:40.125
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 4 URLs...","metadata":null}	102
+14:46:40.126
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.eesel.ai/de/blog/mistral-vs-gemini\n","metadata":"https://www.eesel.ai/de/blog/mistral-vs-gemini"}	196
+14:46:42.157
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.siliconflow.com/articles/de/best-open-source-video-generation-models-2025\n","metadata":"https://www.siliconflow.com/articles/de/best-open-source-video-generation-models-2025"}	274
+14:46:42.194
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.microtool.de/allgemein/diese-ki-modelle-sollten-sie-2025-kennen/\n","metadata":"https://www.microtool.de/allgemein/diese-ki-modelle-sollten-sie-2025-kennen/"}	256
+14:46:42.252
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.vergleich.org/ki-video-generator/\n","metadata":"https://www.vergleich.org/ki-video-generator/"}	194
+14:46:42.312
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.eesel.ai/de/blog/gemini-vs-mistral\n","metadata":"https://www.eesel.ai/de/blog/gemini-vs-mistral"}	196
+14:46:42.357
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:46:42.360
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:46:42.361
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+14:46:51.283
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 13 total images","metadata":["https://assets.ibm.com/is/image/ibm/trailv2_1200x1200:1x1?dpr=on%2C1&wid=320&hei=320","https://sf-maas.s3.us-east-1.amazonaws.com/Model_LOGO/zhipu.svg","https://sf-maas-uat-prod.oss-cn-shanghai.aliyuncs.com/Model_LOGO/Zhipu.svg","https://sf-maas.s3.us-east-1.amazonaws.com/Model_LOGO/Tongyi.png"]}	410
+14:46:51.285
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:46:51.290
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Multimodale KI Cloud-basierte Rendering-Dienste Open-Source Video-KI Kurzvideos Qualitäts- und Kostenanalyse seit 2021...","metadata":null}	242
+14:46:51.293
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 4 pages of content","metadata":null}	100
+14:46:51.462
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 21 total images","metadata":["https://www.webconsulting.at/_next/image?url=%2Fblog%2Fki-kompendium%2F79-werden-kis-uns-alle-arbeitslos-machen%2Ffal-79-werden-kis-uns-alle-arbeitslos-machen-1766855047616.avif&w=3840&q=75&dpl=dpl_EuhGQ5um4ni3rpGUJ9RrszG3JBmD","https://www.varonis.com/hubfs/Author_Dubie.png","https://www.varonis.com/hubfs/Blog_CloudSecurityRisks_202409_Var1_FNL-1.png","https://www.varonis.com/hubfs/Blog_MicrosoftPurview_202511_V2.png"]}	537
+14:46:51.464
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:46:51.467
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Kosten-Nutzen-Vergleich multimodale KI Rendering-Dienste AWS Azure Google Cloud Open-Source Video-KI seit 2021...","metadata":null}	234
+14:46:51.467
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:46:52.544
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+14:46:54.911
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 32 total images","metadata":["https://www.eesel.ai/_next/image?url=https%3A%2F%2Fwebsite-cms.eesel.ai%2Fwp-content%2Fuploads%2F2025%2F05%2F36d4d8a4be22739d8472bfe1d2d6d90b671fcf6b-min.png&w=1680&q=100","https://www.eesel.ai/_next/image?url=https%3A%2F%2Fwebsite-cms.eesel.ai%2Fwp-content%2Fuploads%2F2025%2F06%2FMain-Bottom-CTA-2.png&w=1680&q=100","https://www.microtool.de/wp-content/uploads/2025/03/ki-modell-eigenschaften-vergleich-b.jpg","https://www.microtool.de/wp-content/uploads/2025/03/ki-modelle-vergleich.png"]}	605
+14:46:54.912
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:46:54.914
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Qualitätsanalyse Cloud-Rendering Open-Source Video-KI Kurzvideos Vergleich 2021–2026 Mistral Gemini...","metadata":null}	223
+14:46:54.914
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:46:55.355
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:46:56.285
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+14:47:10.273
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 40 total images","metadata":["https://cs.uicdn.net/avif/user_upload/website-cloud-home-stage-nlement-logos.png.avif","https://cs.uicdn.net/avif/user_upload/logo-Sparkasse-Kreditpartner.png.avif","https://cs.uicdn.net/avif/user_upload/G-Data_1000x226.png.avif","https://cs.uicdn.net/avif/user_upload/ox-logo_1000x226.png.avif"]}	410
+14:47:10.275
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:47:10.276
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Bestenliste multimodaler KI-Hosting-Dienste Cloud-basiert Open-Source Video-KI Kosteneffizienz Performance seit 2021...","metadata":null}	240
+14:47:10.278
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:47:11.498
+{"type":"logs","content":"research_step_finalized","output":"Finalized research step.\n💸 Total Research Costs: $0.01343496","metadata":null}	140
+14:47:11.501
+{"type":"logs","content":"image_planning","output":"🎨 Analyzing research context for visualization opportunities...","metadata":null}	133
+14:47:11.503
+{"type":"logs","content":"image_concepts_identified","output":"🖼️ Identified 1 visualization concepts, generating images...","metadata":null}	141
+14:47:20.698
+{"type":"logs","content":"image_generating","output":"🖼️ Generating image 1/1: Multimodal AI Model Hosting Workflow...","metadata":null}	136
+14:47:20.700
+{"type":"logs","content":"images_ready","output":"✅ 1 images ready for report embedding","metadata":null}	105
+14:47:27.750
+{"type":"logs","content":"starting_research","output":"🔍 Starting the research task for 'Zukünftige Video-KI Innovationen Modellarchitektur Hardware-Beschleunigung Datenkompression für lange Videos 2028 2030'...","metadata":null}	229
+14:48:08.502
+{"type":"logs","content":"agent_generated","output":"🤖 AI Research Agent","metadata":null}	90
+14:48:08.505
+{"type":"logs","content":"planning_research","output":"🌐 Browsing the web to learn more about the task: Zukünftige Video-KI Innovationen Modellarchitektur Hardware-Beschleunigung Datenkompression für lange Videos 2028 2030...","metadata":null}	243
+14:48:08.506
+{"type":"logs","content":"planning_research","output":"🤔 Planning the research strategy and subtasks...","metadata":null}	121
+14:48:11.577
+{"type":"logs","content":"subqueries","output":"🗂️ I will conduct my research based on the following queries: ['Expertenmeinung zukünftige Video-KI Modellarchitektur, Hardware-Beschleunigung und Datenkompression für lange Videos 2028–2030', 'Studie Video-KI Innovationen 2028–2030: neuromorphe Chips, spezialisierte Beschleuniger und Kompressionsverfahren für Langzeitvideos', 'Ausblick Video-KI Hardware-Trends 2028–2030: GPUs vs. neuromorphe Ansätze, CXL, HBM und effiziente Datenkompression', 'Zukünftige Video-KI Innovationen Modellarchitektur Hardware-Beschleunigung Datenkompression für lange Videos 2028 2030']...","metadata":["Expertenmeinung zukünftige Video-KI Modellarchitektur, Hardware-Beschleunigung und Datenkompression für lange Videos 2028–2030","Studie Video-KI Innovationen 2028–2030: neuromorphe Chips, spezialisierte Beschleuniger und Kompressionsverfahren für Langzeitvideos","Ausblick Video-KI Hardware-Trends 2028–2030: GPUs vs. neuromorphe Ansätze, CXL, HBM und effiziente Datenkompression","Zukünftige Video-KI Innovationen Modellarchitektur Hardware-Beschleunigung Datenkompression für lange Videos 2028 2030"]}	1138
+14:48:21.817
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Expertenmeinung zukünftige Video-KI Modellarchitektur, Hardware-Beschleunigung und Datenkompression für lange Videos 2028–2030'...","metadata":null}	237
+14:48:21.818
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Studie Video-KI Innovationen 2028–2030: neuromorphe Chips, spezialisierte Beschleuniger und Kompressionsverfahren für Langzeitvideos'...","metadata":null}	243
+14:48:21.832
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Ausblick Video-KI Hardware-Trends 2028–2030: GPUs vs. neuromorphe Ansätze, CXL, HBM und effiziente Datenkompression'...","metadata":null}	226
+14:48:21.834
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Zukünftige Video-KI Innovationen Modellarchitektur Hardware-Beschleunigung Datenkompression für lange Videos 2028 2030'...","metadata":null}	229
+14:48:21.835
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://digitoren.de/von-gpus-bis-neuromorphic-chips-die-spannendsten-trends-in-der-ki-hardware-2025/\n","metadata":"https://digitoren.de/von-gpus-bis-neuromorphic-chips-die-spannendsten-trends-in-der-ki-hardware-2025/"}	306
+14:48:22.966
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.youtube.com/watch?v=9p99oBRqNTE\n","metadata":"https://www.youtube.com/watch?v=9p99oBRqNTE"}	190
+14:48:22.968
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.topcpu.net/de/news/nvidia-unveils-roadmap-extending-to-2030\n","metadata":"https://www.topcpu.net/de/news/nvidia-unveils-roadmap-extending-to-2030"}	246
+14:48:22.972
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://bigdatasupply.com/de/ai-hardware-trends/\n","metadata":"https://bigdatasupply.com/de/ai-hardware-trends/"}	200
+14:48:22.973
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.techzeitgeist.de/neuromorphe-hardware-durchbruch-fuer-effiziente-ki-systeme/\n","metadata":"https://www.techzeitgeist.de/neuromorphe-hardware-durchbruch-fuer-effiziente-ki-systeme/"}	280
+14:48:22.976
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:48:22.977
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:48:22.979
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.slashcam.de/artikel/Ratgeber/Die-beste-Hardware-fuer-KI-Video---oder-was-man-wirklich--nicht--braucht-----alles-.html\n","metadata":"https://www.slashcam.de/artikel/Ratgeber/Die-beste-Hardware-fuer-KI-Video---oder-was-man-wirklich--nicht--braucht-----alles-.html"}	362
+14:48:23.024
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://help.bestware.com/hc/de-de/articles/18235602405021-Welche-Hardware-brauche-ich-um-f%C3%BCr-KI-Anwendungen-ger%C3%BCstet-zu-sein\n","metadata":"https://help.bestware.com/hc/de-de/articles/18235602405021-Welche-Hardware-brauche-ich-um-f%C3%BCr-KI-Anwendungen-ger%C3%BCstet-zu-sein"}	374
+14:48:23.026
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.computerweekly.com/de/ratgeber/Was-muss-Hardware-fuer-KI-Machine-und-Deep-Learning-koennen\n","metadata":"https://www.computerweekly.com/de/ratgeber/Was-muss-Hardware-fuer-KI-Machine-und-Deep-Learning-koennen"}	308
+14:48:23.029
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.digital.iao.fraunhofer.de/content/dam/iao/ikt/de/documents/1_Szenario-Report.pdf\n","metadata":"https://www.digital.iao.fraunhofer.de/content/dam/iao/ikt/de/documents/1_Szenario-Report.pdf"}	288
+14:48:23.032
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.deloitte.com/de/de/services/consulting/perspectives/tech-trends.html\n","metadata":"https://www.deloitte.com/de/de/services/consulting/perspectives/tech-trends.html"}	264
+14:48:23.034
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:48:23.037
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:48:23.038
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://soraainow.com/de/blog/future-ai-video-2025\n","metadata":"https://soraainow.com/de/blog/future-ai-video-2025"}	204
+14:48:23.041
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.slashcam.de/artikel/Ratgeber/Die-beste-Hardware-fuer-KI-Video---oder-was-man-wirklich--nicht--braucht---.html\n","metadata":"https://www.slashcam.de/artikel/Ratgeber/Die-beste-Hardware-fuer-KI-Video---oder-was-man-wirklich--nicht--braucht---.html"}	346
+14:48:23.043
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://reelmind.ai/blog/diskret-vs-integriert-video-hardware-trends-und-deren-einfluss-auf-ihre-ki-produ\n","metadata":"https://reelmind.ai/blog/diskret-vs-integriert-video-hardware-trends-und-deren-einfluss-auf-ihre-ki-produ"}	314
+14:48:23.046
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:48:23.049
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 3 URLs...","metadata":null}	102
+14:48:23.051
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.iis.fraunhofer.de/de/magazin/serien/chipdesign_in_europa/neuromorphe-hardware-chipdesign.html\n","metadata":"https://www.iis.fraunhofer.de/de/magazin/serien/chipdesign_in_europa/neuromorphe-hardware-chipdesign.html"}	314
+14:48:23.062
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.vertiv.com/de-emea/about/news-and-insights/articles/educational-articles/the-edge-of-intelligence--how-neuromorphic-computing-is-changing-ai/\n","metadata":"https://www.vertiv.com/de-emea/about/news-and-insights/articles/educational-articles/the-edge-of-intelligence--how-neuromorphic-computing-is-changing-ai/"}	410
+14:48:23.068
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.linkedin.com/pulse/neuromorphic-ai-hardware-brain-inspired-chips-powering-bhalsod-usyge?tl=de\n","metadata":"https://www.linkedin.com/pulse/neuromorphic-ai-hardware-brain-inspired-chips-powering-bhalsod-usyge?tl=de"}	314
+14:48:23.070
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:48:23.072
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 3 URLs...","metadata":null}	102
+14:48:23.072
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 3 pages of content","metadata":null}	100
+14:48:34.679
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 10 total images","metadata":["https://www.slashcam.de/images/basic/slcm_platzhalter.jpg","https://www.slashcam.de/images/banner/bbce2c90ed7f1a704b671301550a885c.jpg","https://www.slashcam.de/images/rescaled/500/80862-500.webp","https://banner.slashcam.de/www/delivery/lg.php?bannerid=1556&campaignid=335&zoneid=32&source={obfs:}&loc=https%3A%2F%2Fwww.slashcam.de%2Fartikel%2FRatgeber%2FDie-beste-Hardware-fuer-KI-Video---oder-was-man-wirklich--nicht--braucht---.html&cb=6f55d862ac"]}	566
+14:48:34.682
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:48:34.684
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Zukünftige Video-KI Innovationen Modellarchitektur Hardware-Beschleunigung Datenkompression für lange Videos 2028 2030...","metadata":null}	242
+14:48:34.685
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+14:48:35.867
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 24 total images","metadata":["https://www.slashcam.de/images/banner/bc8a44a3a81e5a6e92ca91807239bc8a.jpg","https://media.deloitte.com/is/image/deloitte/4-1-tech-trends:Mobile?$Responsive$&fmt=webp&fit=stretch,1&dpr=on,1","https://banner.slashcam.de/www/delivery/lg.php?bannerid=1556&campaignid=335&zoneid=32&source={obfs:}&loc=https%3A%2F%2Fwww.slashcam.de%2Fartikel%2FRatgeber%2FDie-beste-Hardware-fuer-KI-Video---oder-was-man-wirklich--nicht--braucht-----alles-.html&cb=f857bd7a7a","https://www.slashcam.de/images/rescaled/500/80863-500.webp"]}	629
+14:48:35.875
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:48:35.877
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Expertenmeinung zukünftige Video-KI Modellarchitektur, Hardware-Beschleunigung und Datenkompression für lange Videos 2028–2030...","metadata":null}	250
+14:48:35.888
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:48:36.255
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:48:37.845
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 3 pages of content","metadata":null}	100
+14:48:39.350
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 21 total images","metadata":["https://www.vertiv.com/4a2678/contentassets/6545c14640584c208636ddc910224b18/figure-2.jpg","https://media.licdn.com/dms/image/v2/D4E12AQG6Vb9ut7zzAQ/article-cover_image-shrink_600_2000/B4EZhb57IJHEAQ-/0/1753888569159?e=2147483647&v=beta&t=QTbFGVKnqXrqguvfTCA4l8G-SV6g6_CvoOBbDAoOqz4","https://static.licdn.com/aero-v1/sc/h/9c8pery4andzj6ohjkjp54ma2","https://media.licdn.com/dms/image/v2/D5612AQGiaZKzyQ888g/article-cover_image-shrink_720_1280/B56Zh9o3nHHkAI-/0/1754454530014?e=2147483647&v=beta&t=weB61Atq8jRHtZg5xkID_ka9v359CxTyeAfoOT7BBkk"]}	657
+14:48:39.352
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:48:39.354
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Studie Video-KI Innovationen 2028–2030: neuromorphe Chips, spezialisierte Beschleuniger und Kompressionsverfahren für Langzeitvideos...","metadata":null}	256
+14:48:39.356
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:48:40.936
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+14:48:58.226
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 25 total images","metadata":["https://www.techzeitgeist.de/wp-content/uploads/2025/07/media_article_8345.jpg","https://digitoren.de/wp-content/uploads/2025/08/GPU-Neuromorphic-Chips-1080x675.png","https://lh3.googleusercontent.com/kMloKI3Tv9RNHqqF5uJvXJ8-b9z-rbGG2F9ed4OGUFdSi3A-L1Ya_3fq7eCOR3jvK7e1HnHM-uYYF_gkzZC5bRADtMKQb5p3BRjBB9CjlC_6LjubRv_9=h60","https://www.youtube.com/watch?v=9p99oBRqNTE"]}	483
+14:48:58.228
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:48:58.230
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Ausblick Video-KI Hardware-Trends 2028–2030: GPUs vs. neuromorphe Ansätze, CXL, HBM und effiziente Datenkompression...","metadata":null}	239
+14:48:58.232
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:48:59.974
+{"type":"logs","content":"research_step_finalized","output":"Finalized research step.\n💸 Total Research Costs: $0.013018060000000001","metadata":null}	150
+14:48:59.978
+{"type":"logs","content":"image_planning","output":"🎨 Analyzing research context for visualization opportunities...","metadata":null}	133
+14:48:59.980
+{"type":"logs","content":"image_concepts_identified","output":"🖼️ Identified 1 visualization concepts, generating images...","metadata":null}	141
+14:49:08.940
+{"type":"logs","content":"image_generating","output":"🖼️ Generating image 1/1: Generative vs Transformative Video-KI...","metadata":null}	137
+14:49:08.942
+{"type":"logs","content":"images_ready","output":"✅ 1 images ready for report embedding","metadata":null}	105
+14:49:16.223
+{"type":"logs","content":"starting_research","output":"🔍 Starting the research task for 'Kostenentwicklung Video-KI-Langvideos Konsumenten Marktprognose 2020-2030'...","metadata":null}	184
+14:50:19.233
+{"type":"logs","content":"agent_generated","output":"📈 Business Analyst Agent","metadata":null}	95
+14:50:19.237
+{"type":"logs","content":"planning_research","output":"🌐 Browsing the web to learn more about the task: Kostenentwicklung Video-KI-Langvideos Konsumenten Marktprognose 2020-2030...","metadata":null}	198
+14:50:19.238
+{"type":"logs","content":"planning_research","output":"🤔 Planning the research strategy and subtasks...","metadata":null}	121
+14:50:21.212
+{"type":"logs","content":"subqueries","output":"🗂️ I will conduct my research based on the following queries: ['Kostenentwicklung Video-KI Langvideos Konsumenten Marktprognose 2020-2030 Studie PwC Deloitte Bitkom', 'Prognose Produktionskosten KI-gestützte Langvideos Verbrauchermarkt Deutschland 2020–2030 PDF', 'Studie Kosten KI Video Langform Inhalte Konsumentenmarkt 2020-2030 Statista Goldmedia', 'Kostenentwicklung Video-KI-Langvideos Konsumenten Marktprognose 2020-2030']...","metadata":["Kostenentwicklung Video-KI Langvideos Konsumenten Marktprognose 2020-2030 Studie PwC Deloitte Bitkom","Prognose Produktionskosten KI-gestützte Langvideos Verbrauchermarkt Deutschland 2020–2030 PDF","Studie Kosten KI Video Langform Inhalte Konsumentenmarkt 2020-2030 Statista Goldmedia","Kostenentwicklung Video-KI-Langvideos Konsumenten Marktprognose 2020-2030"]}	858
+14:50:27.803
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Kostenentwicklung Video-KI Langvideos Konsumenten Marktprognose 2020-2030 Studie PwC Deloitte Bitkom'...","metadata":null}	211
+14:50:27.807
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Prognose Produktionskosten KI-gestützte Langvideos Verbrauchermarkt Deutschland 2020–2030 PDF'...","metadata":null}	204
+14:50:27.809
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Studie Kosten KI Video Langform Inhalte Konsumentenmarkt 2020-2030 Statista Goldmedia'...","metadata":null}	196
+14:50:27.813
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Kostenentwicklung Video-KI-Langvideos Konsumenten Marktprognose 2020-2030'...","metadata":null}	184
+14:50:27.820
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.pwc.de/de/technologie-medien-und-telekommunikation/pwc-studie-gemo-2023.pdf\n","metadata":"https://www.pwc.de/de/technologie-medien-und-telekommunikation/pwc-studie-gemo-2023.pdf"}	278
+14:50:28.961
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.deloitte.com/de/de/Industries/tmt/perspectives/zukunftsszenarien-tv-video-branche.html\n","metadata":"https://www.deloitte.com/de/de/Industries/tmt/perspectives/zukunftsszenarien-tv-video-branche.html"}	300
+14:50:28.966
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.bitkom.org/zukunft-consumer-technology\n","metadata":"https://www.bitkom.org/zukunft-consumer-technology"}	204
+14:50:28.969
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.die-medienanstalten.de/forschung/video-trends-2025/\n","metadata":"https://www.die-medienanstalten.de/forschung/video-trends-2025/"}	230
+14:50:28.972
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.goldmedia.com/online-video-markt-2025-lokal-kurz-ki-gestuetzt-aber-sichtbar/\n","metadata":"https://www.goldmedia.com/online-video-markt-2025-lokal-kurz-ki-gestuetzt-aber-sichtbar/"}	280
+14:50:28.974
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:50:28.977
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:50:28.979
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://de.statista.com/outlook/tmo/kuenstliche-intelligenz/deutschland\n","metadata":"https://de.statista.com/outlook/tmo/kuenstliche-intelligenz/deutschland"}	246
+14:50:28.986
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://de.statista.com/statistik/kategorien/kategorie/15/themen/2604/branche/kuenstliche-intelligenz/\n","metadata":"https://de.statista.com/statistik/kategorien/kategorie/15/themen/2604/branche/kuenstliche-intelligenz/"}	308
+14:50:28.988
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://de.statista.com/statistik/daten/studie/1057944/umfrage/vorteile-durch-den-einsatz-von-ki-im-marketing/\n","metadata":"https://de.statista.com/statistik/daten/studie/1057944/umfrage/vorteile-durch-den-einsatz-von-ki-im-marketing/"}	324
+14:50:28.992
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.goldmedia.com/fileadmin/goldmedia/Studie/2020/Streaming_Market_Germany/200320_Pressemeldung_Streaming_Market_Germany.pdf\n","metadata":"https://www.goldmedia.com/fileadmin/goldmedia/Studie/2020/Streaming_Market_Germany/200320_Pressemeldung_Streaming_Market_Germany.pdf"}	368
+14:50:28.995
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.bitkom.org/Presse/Presseinformation/Wie-Kuenstliche-Intelligenz-Unterhaltungselektronik-veraendert\n","metadata":"https://www.bitkom.org/Presse/Presseinformation/Wie-Kuenstliche-Intelligenz-Unterhaltungselektronik-veraendert"}	324
+14:50:28.998
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:50:29.002
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:50:29.003
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.pwc.de/de/handel-und-konsumguter/pwc-studie-future-of-retail-teil-1.pdf\n","metadata":"https://www.pwc.de/de/handel-und-konsumguter/pwc-studie-future-of-retail-teil-1.pdf"}	270
+14:50:29.005
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.bitkom.org/Bitkom/Publikationen/Die-Zukunft-der-Consumer-Technology-2025\n","metadata":"https://www.bitkom.org/Bitkom/Publikationen/Die-Zukunft-der-Consumer-Technology-2025"}	272
+14:50:29.009
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: http://bitkom-akademie.de/news/die-wirtschaftlichen-auswirkungen-von-kuenstlicher-intelligenz-eine-studie-von-pwc\n","metadata":"http://bitkom-akademie.de/news/die-wirtschaftlichen-auswirkungen-von-kuenstlicher-intelligenz-eine-studie-von-pwc"}	330
+14:50:29.011
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.bitkom.org/sites/default/files/2020-08/200826_ct_studie_2020_online.pdf\n","metadata":"https://www.bitkom.org/sites/default/files/2020-08/200826_ct_studie_2020_online.pdf"}	270
+14:50:29.013
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:50:29.020
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 4 URLs...","metadata":null}	102
+14:50:29.022
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://tagesfaden.de/wie-ki-videos-die-produktionskosten-fur-unternehmen-senken/\n","metadata":"https://tagesfaden.de/wie-ki-videos-die-produktionskosten-fur-unternehmen-senken/"}	266
+14:50:30.056
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://de.statista.com/themen/3103/kuenstliche-intelligenz/\n","metadata":"https://de.statista.com/themen/3103/kuenstliche-intelligenz/"}	224
+14:50:30.593
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.verifiedmarketreports.com/de/product/ai-powered-video-analytics-market/\n","metadata":"https://www.verifiedmarketreports.com/de/product/ai-powered-video-analytics-market/"}	270
+14:50:31.151
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://refa.de/ki-am-arbeitsplatz/ki-studien\n","metadata":"https://refa.de/ki-am-arbeitsplatz/ki-studien"}	194
+14:50:31.182
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://skimai.com/de/10-generative-ai-video-marketing-statistiken-und-fakten-die-sie-kennen-sollten/\n","metadata":"https://skimai.com/de/10-generative-ai-video-marketing-statistiken-und-fakten-die-sie-kennen-sollten/"}	306
+14:50:31.185
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:50:31.187
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:50:31.189
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 4 pages of content","metadata":null}	100
+14:50:36.703
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 7 total images","metadata":["http://bitkom-akademie.de/sites/default/files/styles/pictured_header_326x326/public/Pictured-Header/pexels-claiton-5762804.jpg?itok=8wPY7P6k","http://bitkom-akademie.de/themes/akademie/img/Bitkom-akademie_Logo_weiss.svg","http://bitkom-akademie.de/sites/default/files/bitkom-akademie_siegel_tuev-iso-9001.jpg","http://bitkom-akademie.de/sites/default/files/Bitkom-akademie_Logo_RGB.svg"]}	500
+14:50:36.706
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:50:36.709
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Kostenentwicklung Video-KI Langvideos Konsumenten Marktprognose 2020-2030 Studie PwC Deloitte Bitkom...","metadata":null}	224
+14:50:36.711
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:50:37.576
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+14:50:39.923
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 30 total images","metadata":["https://www.goldmedia.com/wp-content/uploads/2025/07/Grafik_OVM2025_PM-scaled.jpg","https://www.die-medienanstalten.de/fileadmin/_processed_/e/2/csm_Video_Trends_2023_361f9c1bc2.png","https://www.die-medienanstalten.de/fileadmin/_processed_/a/c/csm_Video_Trends_2022_561502abcb.png","https://www.bitkom.org/sites/main/files/styles/1920_x_full/public/2022-07/pexels-darlene-alderson-4389795.jpg?h=34ce7173&itok=0k4H2ocy"]}	534
+14:50:39.926
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:50:39.929
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Kostenentwicklung Video-KI-Langvideos Konsumenten Marktprognose 2020-2030...","metadata":null}	197
+14:50:39.931
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+14:50:40.102
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 30 total images","metadata":["https://www.bitkom.org/sites/main/files/styles/1920_x_full/public/2025-09/Consumer-Technology-CT-Gaming-KI-AR-VR-AdobeStock-752772947.jpeg?h=fde4f489&itok=j43tUS8m","https://cdn.statcdn.com/Statistic/1055000/1057944-blank-754.png","https://www.bitkom.org/themes/tokyo/src/assets/logos/bitkom.svg","https://www.bitkom.org/themes/tokyo/src/assets/logos/bitkom-white.svg"]}	483
+14:50:40.105
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:50:40.107
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Studie Kosten KI Video Langform Inhalte Konsumentenmarkt 2020-2030 Statista Goldmedia...","metadata":null}	209
+14:50:40.109
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:50:41.188
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:50:41.375
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+14:50:42.719
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 29 total images","metadata":["https://skimai.com/wp-content/uploads/2024/08/image-5-1.png.webp","https://tagesfaden.de/wp-content/uploads/2025/07/TAGES-FADEN-b.png","https://tagesfaden.de/wp-content/uploads/2025/07/TAGES-FADEN-w.png","https://skimai.com/wp-content/uploads/2024/05/fb.png.webp"]}	378
+14:50:42.722
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:50:42.723
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Prognose Produktionskosten KI-gestützte Langvideos Verbrauchermarkt Deutschland 2020–2030 PDF...","metadata":null}	217
+14:50:42.726
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:50:43.991
+{"type":"logs","content":"research_step_finalized","output":"Finalized research step.\n💸 Total Research Costs: $0.011436640000000001","metadata":null}	150
+14:50:43.994
+{"type":"logs","content":"image_planning","output":"🎨 Analyzing research context for visualization opportunities...","metadata":null}	133
+14:50:44.000
+{"type":"logs","content":"image_concepts_identified","output":"🖼️ Identified 1 visualization concepts, generating images...","metadata":null}	141
+14:50:52.909
+{"type":"logs","content":"image_generating","output":"🖼️ Generating image 1/1: Economic Impact of AI on Global GDP...","metadata":null}	135
+14:50:52.916
+{"type":"logs","content":"images_ready","output":"✅ 1 images ready for report embedding","metadata":null}	105
+14:51:00.140
+{"type":"logs","content":"starting_research","output":"🔍 Starting the research task for 'frühe Video-KI-Anwendungen GAN vs. Diffusionsmodelle Vor- und Nachteile 2015–2020'...","metadata":null}	192
+14:51:53.684
+{"type":"logs","content":"agent_generated","output":"🧠 AI Research Agent","metadata":null}	90
+14:51:53.688
+{"type":"logs","content":"planning_research","output":"🌐 Browsing the web to learn more about the task: frühe Video-KI-Anwendungen GAN vs. Diffusionsmodelle Vor- und Nachteile 2015–2020...","metadata":null}	206
+14:51:53.691
+{"type":"logs","content":"planning_research","output":"🤔 Planning the research strategy and subtasks...","metadata":null}	121
+14:51:54.602
+{"type":"logs","content":"subqueries","output":"🗂️ I will conduct my research based on the following queries: ['frühe Video-KI-Anwendungen GAN vs Diffusionsmodelle 2015–2020 Vor- und Nachteile', 'Vergleich GAN Diffusionsmodelle Videogenerierung 2015–2020 Qualität Geschwindigkeit Datenbedarf', 'Anfänge Video-KI-Anwendungen 2015–2020 GAN Diffusionsmodelle Herausforderungen Ethik Kontrollierbarkeit', 'frühe Video-KI-Anwendungen GAN vs. Diffusionsmodelle Vor- und Nachteile 2015–2020']...","metadata":["frühe Video-KI-Anwendungen GAN vs Diffusionsmodelle 2015–2020 Vor- und Nachteile","Vergleich GAN Diffusionsmodelle Videogenerierung 2015–2020 Qualität Geschwindigkeit Datenbedarf","Anfänge Video-KI-Anwendungen 2015–2020 GAN Diffusionsmodelle Herausforderungen Ethik Kontrollierbarkeit","frühe Video-KI-Anwendungen GAN vs. Diffusionsmodelle Vor- und Nachteile 2015–2020"]}	874
+14:52:02.361
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'frühe Video-KI-Anwendungen GAN vs Diffusionsmodelle 2015–2020 Vor- und Nachteile'...","metadata":null}	191
+14:52:02.367
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Vergleich GAN Diffusionsmodelle Videogenerierung 2015–2020 Qualität Geschwindigkeit Datenbedarf'...","metadata":null}	206
+14:52:02.370
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Anfänge Video-KI-Anwendungen 2015–2020 GAN Diffusionsmodelle Herausforderungen Ethik Kontrollierbarkeit'...","metadata":null}	214
+14:52:02.375
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'frühe Video-KI-Anwendungen GAN vs. Diffusionsmodelle Vor- und Nachteile 2015–2020'...","metadata":null}	192
+14:52:02.381
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/KI/Generative_KI-Modelle.pdf?__blob=publicationFile&v=7\n","metadata":"https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/KI/Generative_KI-Modelle.pdf?__blob=publicationFile&v=7"}	318
+14:52:03.336
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://sider.ai/de/blog/ai-tools/gan-vs_diffusion-models-which-generative-ai-wins-for-your-product\n","metadata":"https://sider.ai/de/blog/ai-tools/gan-vs_diffusion-models-which-generative-ai-wins-for-your-product"}	302
+14:52:03.340
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://opus.hs-offenburg.de/files/11196/Masterthesis_Julia_Mann.pdf\n","metadata":"https://opus.hs-offenburg.de/files/11196/Masterthesis_Julia_Mann.pdf"}	240
+14:52:03.343
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://link.springer.com/article/10.1007/s10462-025-11331-6\n","metadata":"https://link.springer.com/article/10.1007/s10462-025-11331-6"}	224
+14:52:03.350
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.pedocs.de/volltexte/2023/26427/pdf/Schmohl_Watanabe_Schelling_2023_Kuenstliche_Intelligenz.pdf\n","metadata":"https://www.pedocs.de/volltexte/2023/26427/pdf/Schmohl_Watanabe_Schelling_2023_Kuenstliche_Intelligenz.pdf"}	316
+14:52:03.350
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:52:03.353
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:52:03.353
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.ethikrat.org/fileadmin/Publikationen/Stellungnahmen/deutsch/stellungnahme-mensch-und-maschine.pdf\n","metadata":"https://www.ethikrat.org/fileadmin/Publikationen/Stellungnahmen/deutsch/stellungnahme-mensch-und-maschine.pdf"}	322
+14:52:03.355
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://mediatum.ub.tum.de/doc/1753389/1753389.pdf\n","metadata":"https://mediatum.ub.tum.de/doc/1753389/1753389.pdf"}	204
+14:52:03.360
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://de.linkedin.com/pulse/gans-vs-diffusion-models-battle-generative-techniques-amit-kharche-gh8mf?tl=de\n","metadata":"https://de.linkedin.com/pulse/gans-vs-diffusion-models-battle-generative-techniques-amit-kharche-gh8mf?tl=de"}	320
+14:52:03.374
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.inlibra.com/10.5771/9783748949558.pdf?download_full_pdf=1\n","metadata":"https://www.inlibra.com/10.5771/9783748949558.pdf?download_full_pdf=1"}	242
+14:52:03.376
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:52:03.379
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 4 URLs...","metadata":null}	102
+14:52:03.382
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://erwachsenenbildung.at/magazin/25-55/_meb55.pdf\n","metadata":"https://erwachsenenbildung.at/magazin/25-55/_meb55.pdf"}	212
+14:52:03.414
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://wan2.video/de/ai-video-timeline\n","metadata":"https://wan2.video/de/ai-video-timeline"}	182
+14:52:03.419
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.bmftr.bund.de/SharedDocs/Downloads/DE/s/wechselseitige-entgrenzung-lang.pdf?__blob=publicationFile&v=3\n","metadata":"https://www.bmftr.bund.de/SharedDocs/Downloads/DE/s/wechselseitige-entgrenzung-lang.pdf?__blob=publicationFile&v=3"}	332
+14:52:03.422
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.mind-verse.de/news/fortschritte-ki-videogenerierung-technologien-anwendungen\n","metadata":"https://www.mind-verse.de/news/fortschritte-ki-videogenerierung-technologien-anwendungen"}	280
+14:52:03.425
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.inlibra.com/10.5771/9783748904861.pdf\n","metadata":"https://www.inlibra.com/10.5771/9783748904861.pdf"}	202
+14:52:03.431
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:52:03.433
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:52:03.436
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:52:03.443
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 0 URLs...","metadata":null}	102
+14:52:03.449
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 0 pages of content","metadata":null}	100
+14:52:03.453
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 0 new images from 0 total images","metadata":[]}	113
+14:52:03.455
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:52:03.458
+{"type":"logs","content":"subquery_context_not_found","output":"🤷 No content found for 'frühe Video-KI-Anwendungen GAN vs Diffusionsmodelle 2015–2020 Vor- und Nachteile'...","metadata":null}	190
+14:52:03.460
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 4 pages of content","metadata":null}	100
+14:52:15.493
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 10 total images","metadata":["https://cdn.prod.website-files.com/659e704a7328427ddffed02d/66b4bb4d583ad060ac9c4cc6_master-logo-black.svg","https://cdn.prod.website-files.com/659e704a7328427ddffed06f/6907f85055246263dea88d2b_pexels-photo-6224636.jpeg","https://cdn.prod.website-files.com/659e704a7328427ddffed02d/685a745e3c1c64f04fbd13e8_logo_telefonica_o2_blue%20(1).svg","https://cdn.prod.website-files.com/659e704a7328427ddffed02d/685a745e03bc3c04bfcc61f1_Telekom_Logo_2013.svg.png"]}	569
+14:52:15.496
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:52:15.499
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Anfänge Video-KI-Anwendungen 2015–2020 GAN Diffusionsmodelle Herausforderungen Ethik Kontrollierbarkeit...","metadata":null}	227
+14:52:15.501
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:52:17.033
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 4 pages of content","metadata":null}	100
+14:52:17.071
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 6 total images","metadata":["https://fonts.gstatic.com/s/i/productlogos/googleg/v6/24px.svg","https://media.licdn.com/dms/image/v2/D4D12AQFNsthpPTwSFQ/article-cover_image-shrink_720_1280/B4DZg1BSF0GgAI-/0/1753236193212?e=2147483647&v=beta&t=bd41zFaqWMQ5Viur8ZW5Ix26S16axVaoo8soyoYSUos","https://media.licdn.com/dms/image/v2/D4D12AQEw_6RHt44pQA/series-logo_image-shrink_100_100/B4DZbzIrhbGkAU-/0/1747835864207?e=2147483647&v=beta&t=s_4hbKAFzEoX0Wzu97k8hl79kp_TgD699B2xIpaUVgo","https://media.licdn.com/dms/image/v2/D4D03AQG-8PO2x-H5mQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1691513724865?e=2147483647&v=beta&t=zG80fazNYA3r3JFs-IRUZln2thQebhoadPxiWltI1L0"]}	773
+14:52:17.074
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:52:17.077
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: frühe Video-KI-Anwendungen GAN vs. Diffusionsmodelle Vor- und Nachteile 2015–2020...","metadata":null}	205
+14:52:17.079
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:52:17.880
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 4 pages of content","metadata":null}	100
+14:52:18.231
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 16 total images","metadata":["https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs10462-025-11331-6/MediaObjects/10462_2025_11331_Fig7_HTML.png","https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs10462-025-11331-6/MediaObjects/10462_2025_11331_Fig8_HTML.png","https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs10462-025-11331-6/MediaObjects/10462_2025_11331_Fig6_HTML.png","https://blog-be.sider.ai/api/img/84R7ZH3RDIOg0Eyjc5SAX.png"]}	600
+14:52:18.234
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:52:18.240
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Vergleich GAN Diffusionsmodelle Videogenerierung 2015–2020 Qualität Geschwindigkeit Datenbedarf...","metadata":null}	219
+14:52:18.242
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:52:21.321
+{"type":"logs","content":"research_step_finalized","output":"Finalized research step.\n💸 Total Research Costs: $0.011469460000000003","metadata":null}	150
+14:52:21.327
+{"type":"logs","content":"image_planning","output":"🎨 Analyzing research context for visualization opportunities...","metadata":null}	133
+14:52:21.331
+{"type":"logs","content":"image_concepts_identified","output":"🖼️ Identified 1 visualization concepts, generating images...","metadata":null}	141
+14:52:30.146
+{"type":"logs","content":"image_generating","output":"🖼️ Generating image 1/1: Comparison Chart of GAN vs. Diffusion Models...","metadata":null}	144
+14:52:30.151
+{"type":"logs","content":"images_ready","output":"✅ 1 images ready for report embedding","metadata":null}	105
+14:52:38.173
+{"type":"logs","content":"starting_research","output":"🔍 Starting the research task for 'Video-KI Hardwarebeschränkungen Rechenkosten Architektur Datenkuration Preprocessing Trainingsstabilität bis 2020'...","metadata":null}	224
+14:53:15.414
+{"type":"logs","content":"agent_generated","output":"🖥️ AI Research Agent","metadata":null}	91
+14:53:15.420
+{"type":"logs","content":"planning_research","output":"🌐 Browsing the web to learn more about the task: Video-KI Hardwarebeschränkungen Rechenkosten Architektur Datenkuration Preprocessing Trainingsstabilität bis 2020...","metadata":null}	238
+14:53:15.425
+{"type":"logs","content":"planning_research","output":"🤔 Planning the research strategy and subtasks...","metadata":null}	121
+14:53:16.293
+{"type":"logs","content":"subqueries","output":"🗂️ I will conduct my research based on the following queries: ['Überblick Video-KI Hardwarebeschränkungen und Rechenkosten: Architektur, Datenkuration, Preprocessing und Trainingsstabilität bis 2020', 'State-of-the-Art Video-KI bis 2020: Hardware-Limits, Rechnerbedarf, Speicherarchitektur, Datenvorverarbeitung und stabile Trainingsverfahren', 'Umfassende Studie Video-KI 2020: Hardwareanforderungen, Kosten, Datenkuration, Preprocessing und Trainingsstabilität', 'Video-KI Hardwarebeschränkungen Rechenkosten Architektur Datenkuration Preprocessing Trainingsstabilität bis 2020']...","metadata":["Überblick Video-KI Hardwarebeschränkungen und Rechenkosten: Architektur, Datenkuration, Preprocessing und Trainingsstabilität bis 2020","State-of-the-Art Video-KI bis 2020: Hardware-Limits, Rechnerbedarf, Speicherarchitektur, Datenvorverarbeitung und stabile Trainingsverfahren","Umfassende Studie Video-KI 2020: Hardwareanforderungen, Kosten, Datenkuration, Preprocessing und Trainingsstabilität","Video-KI Hardwarebeschränkungen Rechenkosten Architektur Datenkuration Preprocessing Trainingsstabilität bis 2020"]}	1162
+14:53:24.503
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Überblick Video-KI Hardwarebeschränkungen und Rechenkosten: Architektur, Datenkuration, Preprocessing und Trainingsstabilität bis 2020'...","metadata":null}	245
+14:53:24.507
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'State-of-the-Art Video-KI bis 2020: Hardware-Limits, Rechnerbedarf, Speicherarchitektur, Datenvorverarbeitung und stabile Trainingsverfahren'...","metadata":null}	251
+14:53:24.518
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Umfassende Studie Video-KI 2020: Hardwareanforderungen, Kosten, Datenkuration, Preprocessing und Trainingsstabilität'...","metadata":null}	227
+14:53:24.522
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Video-KI Hardwarebeschränkungen Rechenkosten Architektur Datenkuration Preprocessing Trainingsstabilität bis 2020'...","metadata":null}	224
+14:53:24.529
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:53:25.378
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 0 URLs...","metadata":null}	102
+14:53:25.384
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 0 pages of content","metadata":null}	100
+14:53:25.388
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 0 new images from 0 total images","metadata":[]}	113
+14:53:25.391
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:53:25.393
+{"type":"logs","content":"subquery_context_not_found","output":"🤷 No content found for 'State-of-the-Art Video-KI bis 2020: Hardware-Limits, Rechnerbedarf, Speicherarchitektur, Datenvorverarbeitung und stabile Trainingsverfahren'...","metadata":null}	250
+14:53:25.395
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.redorbit.ai/ki-wissen/lokale-ki-2025-der-ultimative-guide-zu-hardware-modellen-und-premise-loesungen\n","metadata":"https://www.redorbit.ai/ki-wissen/lokale-ki-2025-der-ultimative-guide-zu-hardware-modellen-und-premise-loesungen"}	328
+14:53:25.480
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.michael-bickel.de/2025/06/lokale-ki-nutzen-welche-hardware-dein-pc-oder-notebook-braucht/\n","metadata":"https://www.michael-bickel.de/2025/06/lokale-ki-nutzen-welche-hardware-dein-pc-oder-notebook-braucht/"}	306
+14:53:25.484
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.slashcam.de/artikel/Ratgeber/Die-beste-Hardware-fuer-KI-Video---oder-was-man-wirklich--nicht--braucht-----alles-.html\n","metadata":"https://www.slashcam.de/artikel/Ratgeber/Die-beste-Hardware-fuer-KI-Video---oder-was-man-wirklich--nicht--braucht-----alles-.html"}	362
+14:53:25.485
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.computerweekly.com/de/ratgeber/Was-muss-Hardware-fuer-KI-Machine-und-Deep-Learning-koennen\n","metadata":"https://www.computerweekly.com/de/ratgeber/Was-muss-Hardware-fuer-KI-Machine-und-Deep-Learning-koennen"}	308
+14:53:25.487
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://it-kenner.heise.de/zusammen-das-data-center-weiterentwickeln/ki/ki-architekturen-richtig-einsetzen/\n","metadata":"https://it-kenner.heise.de/zusammen-das-data-center-weiterentwickeln/ki/ki-architekturen-richtig-einsetzen/"}	318
+14:53:25.489
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:53:25.492
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:53:25.495
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://kilexikon.com/\n","metadata":"https://kilexikon.com/"}	148
+14:53:25.601
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.iwkoeln.de/fileadmin/user_upload/Studien/Gutachten/PDF/2020/IW-Gutachten_KI_Monitor_Bericht_2020.pdf\n","metadata":"https://www.iwkoeln.de/fileadmin/user_upload/Studien/Gutachten/PDF/2020/IW-Gutachten_KI_Monitor_Bericht_2020.pdf"}	328
+14:53:25.605
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://link.springer.com/content/pdf/10.1007/978-3-662-61794-6_11.pdf\n","metadata":"https://link.springer.com/content/pdf/10.1007/978-3-662-61794-6_11.pdf"}	244
+14:53:25.609
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://de.statista.com/themen/3103/kuenstliche-intelligenz/\n","metadata":"https://de.statista.com/themen/3103/kuenstliche-intelligenz/"}	224
+14:53:25.612
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.bidt.digital/themenmonitor-kuenstliche-intelligenz/\n","metadata":"https://www.bidt.digital/themenmonitor-kuenstliche-intelligenz/"}	230
+14:53:25.615
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:53:25.618
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:53:25.621
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.markus-schall.de/2025/11/ki-studio-2025-welche-hardware-wirklich-lohnt-vom-mac-studio-bis-zur-rtx-3090/\n","metadata":"https://www.markus-schall.de/2025/11/ki-studio-2025-welche-hardware-wirklich-lohnt-vom-mac-studio-bis-zur-rtx-3090/"}	334
+14:53:25.688
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/KI/Herausforderungen_und_Massnahmen_KI.pdf?__blob=publicationFile&v=5\n","metadata":"https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/KI/Herausforderungen_und_Massnahmen_KI.pdf?__blob=publicationFile&v=5"}	346
+14:53:25.694
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.trmd.de/erklaervideo-ki-erstellen-preise-kosten-faktoren/\n","metadata":"https://www.trmd.de/erklaervideo-ki-erstellen-preise-kosten-faktoren/"}	242
+14:53:25.698
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://digitoren.de/von-gpus-bis-neuromorphic-chips-die-spannendsten-trends-in-der-ki-hardware-2025/\n","metadata":"https://digitoren.de/von-gpus-bis-neuromorphic-chips-die-spannendsten-trends-in-der-ki-hardware-2025/"}	306
+14:53:25.703
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:53:25.708
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 4 URLs...","metadata":null}	102
+14:53:25.712
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 3 pages of content","metadata":null}	100
+14:53:33.704
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 12 total images","metadata":["https://www.trmd.de/wp-content/uploads/2025/05/yassine-khalfalli-c51-mFArCAE-unsplash-scaled.jpg","https://www.markus-schall.de/wp-content/uploads/KI-Studio-Hardware-2025.jpg","https://www.markus-schall.de/wp-content/uploads/dauerkrise-narrative.jpg","https://www.markus-schall.de/wp-content/uploads/Propaganda-titel.jpg"]}	436
+14:53:33.709
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:53:33.710
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Überblick Video-KI Hardwarebeschränkungen und Rechenkosten: Architektur, Datenkuration, Preprocessing und Trainingsstabilität bis 2020...","metadata":null}	258
+14:53:33.714
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+14:53:35.252
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 25 total images","metadata":["https://www.redorbit.ai/sites/default/files/blog/lokale_ki.jpg","https://www.redorbit.ai/sites/default/files/inline-images/lokale-ki-architektur_0.png","https://www.slashcam.de/images/banner/bbce2c90ed7f1a704b671301550a885c.jpg","https://www.redorbit.ai/sites/default/files/inline-images/ryzen.jpg"]}	413
+14:53:35.256
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:53:35.258
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Video-KI Hardwarebeschränkungen Rechenkosten Architektur Datenkuration Preprocessing Trainingsstabilität bis 2020...","metadata":null}	237
+14:53:35.261
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:53:35.690
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 4 pages of content","metadata":null}	100
+14:53:36.276
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 14 total images","metadata":["https://www.bidt.digital/wp-content/uploads/sites/2/2022/09/Headergrafik-2.1-Teaser@2x-960x540.png","https://cdn.statcdn.com/Study/35000/38585-retina.png","https://cdn.cookielaw.org/logos/bc5540ca-3348-47c8-924c-0162f07ad4bc/0194fa17-a970-7510-a2e0-83c1ce4bb20b/6a1b6c7a-eb36-4fd5-b31b-13607b120280/statista-onetrust.png","https://cdn.cookielaw.org/logos/static/powered_by_logo.svg"]}	497
+14:53:36.280
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:53:36.282
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Umfassende Studie Video-KI 2020: Hardwareanforderungen, Kosten, Datenkuration, Preprocessing und Trainingsstabilität...","metadata":null}	240
+14:53:36.286
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:53:36.538
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:53:40.866
+{"type":"logs","content":"research_step_finalized","output":"Finalized research step.\n💸 Total Research Costs: $0.016353440000000004","metadata":null}	150
+14:53:40.871
+{"type":"logs","content":"image_planning","output":"🎨 Analyzing research context for visualization opportunities...","metadata":null}	133
+14:53:40.883
+{"type":"logs","content":"image_concepts_identified","output":"🖼️ Identified 1 visualization concepts, generating images...","metadata":null}	141
+14:53:48.079
+{"type":"logs","content":"image_generating","output":"🖼️ Generating image 1/1: AI Hardware Comparison Chart...","metadata":null}	128
+14:53:48.082
+{"type":"logs","content":"images_ready","output":"✅ 1 images ready for report embedding","metadata":null}	105
+14:53:55.711
+{"type":"logs","content":"starting_research","output":"🔍 Starting the research task for 'Entwicklung der Kostenstruktur und Inferenz-Latenzen von Open-Source-Video­generierungsmodellen im Vergleich zu verwalteten Cloud-Rendering-Diensten (2021–2024) unter Einbezug verschiedener GPU-Instanztypen (dediziert vs. gemeinsam, serverless vs. reserviert)'...","metadata":null}	370
+14:54:46.770
+{"type":"logs","content":"agent_generated","output":"💻 Tech Research Agent","metadata":null}	92
+14:54:46.774
+{"type":"logs","content":"planning_research","output":"🌐 Browsing the web to learn more about the task: Entwicklung der Kostenstruktur und Inferenz-Latenzen von Open-Source-Video­generierungsmodellen im Vergleich zu verwalteten Cloud-Rendering-Diensten (2021–2024) unter Einbezug verschiedener GPU-Instanztypen (dediziert vs. gemeinsam, serverless vs. reserviert)...","metadata":null}	384
+14:54:46.777
+{"type":"logs","content":"planning_research","output":"🤔 Planning the research strategy and subtasks...","metadata":null}	121
+14:54:47.802
+{"type":"logs","content":"subqueries","output":"🗂️ I will conduct my research based on the following queries: ['Entwicklung Kostenstruktur und Inferenz-Latenzen Open-Source-Videogenerierungsmodelle 2021–2024 GPU-Instanztypen dediziert vs gemeinsam Benchmark', 'Kosten- und Latenzvergleich Open-Source-Video-Rendering vs verwaltete Cloud-Rendering-Dienste 2021–2024 GPU serverless vs reserviert Studie', 'Analyse GPU-Instanzkosten und Inferenzlatenzen Open-Source-Videogenerierung 2021–2024 dediziert gemeinsam serverless reserviert', 'Entwicklung der Kostenstruktur und Inferenz-Latenzen von Open-Source-Video\\xadgenerierungsmodellen im Vergleich zu verwalteten Cloud-Rendering-Diensten (2021–2024) unter Einbezug verschiedener GPU-Instanztypen (dediziert vs. gemeinsam, serverless vs. reserviert)']...","metadata":["Entwicklung Kostenstruktur und Inferenz-Latenzen Open-Source-Videogenerierungsmodelle 2021–2024 GPU-Instanztypen dediziert vs gemeinsam Benchmark","Kosten- und Latenzvergleich Open-Source-Video-Rendering vs verwaltete Cloud-Rendering-Dienste 2021–2024 GPU serverless vs reserviert Studie","Analyse GPU-Instanzkosten und Inferenzlatenzen Open-Source-Videogenerierung 2021–2024 dediziert gemeinsam serverless reserviert","Entwicklung der Kostenstruktur und Inferenz-Latenzen von Open-Source-Video­generierungsmodellen im Vergleich zu verwalteten Cloud-Rendering-Diensten (2021–2024) unter Einbezug verschiedener GPU-Instanztypen (dediziert vs. gemeinsam, serverless vs. reserviert)"]}	1500
+14:54:55.417
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Entwicklung Kostenstruktur und Inferenz-Latenzen Open-Source-Videogenerierungsmodelle 2021–2024 GPU-Instanztypen dediziert vs gemeinsam Benchmark'...","metadata":null}	256
+14:54:55.421
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Kosten- und Latenzvergleich Open-Source-Video-Rendering vs verwaltete Cloud-Rendering-Dienste 2021–2024 GPU serverless vs reserviert Studie'...","metadata":null}	250
+14:54:55.423
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Analyse GPU-Instanzkosten und Inferenzlatenzen Open-Source-Videogenerierung 2021–2024 dediziert gemeinsam serverless reserviert'...","metadata":null}	238
+14:54:55.436
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Entwicklung der Kostenstruktur und Inferenz-Latenzen von Open-Source-Video­generierungsmodellen im Vergleich zu verwalteten Cloud-Rendering-Diensten (2021–2024) unter Einbezug verschiedener GPU-Instanztypen (dediziert vs. gemeinsam, serverless vs. reserviert)'...","metadata":null}	370
+14:54:55.439
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://introl.com/de/blog/cost-per-token-llm-inference-optimization\n","metadata":"https://introl.com/de/blog/cost-per-token-llm-inference-optimization"}	240
+14:54:56.652
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://de.linkedin.com/pulse/understanding-costs-open-source-ai-models-vs-one-time-sravanthi-zj6sc?tl=de\n","metadata":"https://de.linkedin.com/pulse/understanding-costs-open-source-ai-models-vs-one-time-sravanthi-zj6sc?tl=de"}	314
+14:54:56.657
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://inferencemax.semianalysis.com/\n","metadata":"https://inferencemax.semianalysis.com/"}	180
+14:54:56.663
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.delltechnologies.com/asset/de-de/solutions/business-solutions/industry-market/esg-inferencing-on-premises-with-dell-technologies-analyst-paper.pdf?hve=%C3%9Cbersicht+zur+wirtschaftlichkeit+ansehen\n","metadata":"https://www.delltechnologies.com/asset/de-de/solutions/business-solutions/industry-market/esg-inferencing-on-premises-with-dell-technologies-analyst-paper.pdf?hve=%C3%9Cbersicht+zur+wirtschaftlichkeit+ansehen"}	520
+14:54:56.665
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://home.mlops.community/public/blogs/unraveling-gpu-inference-costs-for-fine-tuned-open-source-models-v-s-closed-platforms\n","metadata":"https://home.mlops.community/public/blogs/unraveling-gpu-inference-costs-for-fine-tuned-open-source-models-v-s-closed-platforms"}	358
+14:54:56.668
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:54:56.671
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:54:56.674
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://de.linkedin.com/pulse/choosing-right-cloud-inference-backend-open-source-llms-vineeth-nair-d9rbc?tl=de\n","metadata":"https://de.linkedin.com/pulse/choosing-right-cloud-inference-backend-open-source-llms-vineeth-nair-d9rbc?tl=de"}	324
+14:54:56.680
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.redhat.com/de/blog/overcoming-cost-and-complexity-ai-inference-scale\n","metadata":"https://www.redhat.com/de/blog/overcoming-cost-and-complexity-ai-inference-scale"}	264
+14:54:56.682
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.it-schulungen.com/wir-ueber-uns/wissensblog/effiziente-llm-inferenz-mit-vllm-architektur-einsatzszenarien-und-strategische-implikationen-fuer-die-praxis.html\n","metadata":"https://www.it-schulungen.com/wir-ueber-uns/wissensblog/effiziente-llm-inferenz-mit-vllm-architektur-einsatzszenarien-und-strategische-implikationen-fuer-die-praxis.html"}	442
+14:54:56.688
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.siliconflow.com/articles/de/the-most-trusted-open-source-inference-library\n","metadata":"https://www.siliconflow.com/articles/de/the-most-trusted-open-source-inference-library"}	276
+14:54:56.690
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://gi.de/fileadmin/AK/OSS/2023/2023-09-OSS-Erfahrungsbericht_praktischer_Umsetzung_von_Open_Source_LLMs_fuer.pdf\n","metadata":"https://gi.de/fileadmin/AK/OSS/2023/2023-09-OSS-Erfahrungsbericht_praktischer_Umsetzung_von_Open_Source_LLMs_fuer.pdf"}	338
+14:54:56.692
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:54:56.695
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:54:56.699
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.iml.fraunhofer.de/de/abteilungen/b2/supply-chain-development-strategy/strategieentwicklung-geschaeftsmodellentwicklung/open-source-strategie.html\n","metadata":"https://www.iml.fraunhofer.de/de/abteilungen/b2/supply-chain-development-strategy/strategieentwicklung-geschaeftsmodellentwicklung/open-source-strategie.html"}	418
+14:54:56.703
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.pwc.de/de/risk-regulatory/risk/open-source-software-management-und-compliance/open-source-software-aktuelle-trends-und-entwicklungen-2025.html\n","metadata":"https://www.pwc.de/de/risk-regulatory/risk/open-source-software-management-und-compliance/open-source-software-aktuelle-trends-und-entwicklungen-2025.html"}	412
+14:54:56.704
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://creati.ai/de/ai-news/2026-01-26/16-open-source-projects-shaping-ai-ml/\n","metadata":"https://creati.ai/de/ai-news/2026-01-26/16-open-source-projects-shaping-ai-ml/"}	260
+14:54:56.708
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://blog.mi.hdm-stuttgart.de/index.php/2025/02/24/open-source-ki-modelle-chancen-und-herausforderungen-fur-unternehmen/\n","metadata":"https://blog.mi.hdm-stuttgart.de/index.php/2025/02/24/open-source-ki-modelle-chancen-und-herausforderungen-fur-unternehmen/"}	350
+14:54:56.711
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:54:56.716
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 4 URLs...","metadata":null}	102
+14:54:56.718
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.goodfirms.co/3d-rendering-software/blog/best-free-open-source-3d-rendering-software\n","metadata":"https://www.goodfirms.co/3d-rendering-software/blog/best-free-open-source-3d-rendering-software"}	294
+14:54:56.721
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.foxrenderfarm.com/share/free-and-best-cloud-rendering-services-de/\n","metadata":"https://www.foxrenderfarm.com/share/free-and-best-cloud-rendering-services-de/"}	260
+14:54:56.725
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.autodesk.com/products/rendering/overview\n","metadata":"https://www.autodesk.com/products/rendering/overview"}	208
+14:54:56.732
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.reddit.com/r/vfx/comments/vhpq71/rendering_vs_realtime_rendering/\n","metadata":"https://www.reddit.com/r/vfx/comments/vhpq71/rendering_vs_realtime_rendering/"}	258
+14:54:56.735
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.studio2038.com/3d-rendering-kosten-preis/\n","metadata":"https://www.studio2038.com/3d-rendering-kosten-preis/"}	210
+14:54:56.737
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:54:56.740
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:54:56.743
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+14:55:07.608
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 23 total images","metadata":["https://www.redhat.com/rhdc/managed-files/styles/media_thumbnail/private/brian-stevens-square.jpg?itok=8-A3ZEmI","https://www.redhat.com/cms/managed-files/automation.svg","https://www.redhat.com/cms/managed-files/AI.svg","https://www.redhat.com/cms/managed-files/open-hybrid-cloud.svg"]}	400
+14:55:07.615
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:55:07.618
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Entwicklung Kostenstruktur und Inferenz-Latenzen Open-Source-Videogenerierungsmodelle 2021–2024 GPU-Instanztypen dediziert vs gemeinsam Benchmark...","metadata":null}	269
+14:55:07.621
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 4 pages of content","metadata":null}	100
+14:55:08.008
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 16 total images","metadata":["https://introl.com/static/images/blog/dc-session4-06.webp","https://media.licdn.com/dms/image/v2/D5612AQF0N0W6TifXRg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1718836283374?e=2147483647&v=beta&t=VQ0nPhEy_3XXuLi4FN6ECUsqFQDKORXsyF6hzf_yrgA","https://static.licdn.com/aero-v1/sc/h/5k9cgtx8rhoyqkcxfoncu1svl","https://introl.com/static/images/blog/dc-session4-33.webp"]}	512
+14:55:08.012
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:55:08.016
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Analyse GPU-Instanzkosten und Inferenzlatenzen Open-Source-Videogenerierung 2021–2024 dediziert gemeinsam serverless reserviert...","metadata":null}	251
+14:55:08.019
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:55:09.145
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 4 pages of content","metadata":null}	100
+14:55:09.173
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 25 total images","metadata":["https://cdn-image.creati.ai/image/creatiai-logo-black.png","https://platform-cdn.sharethis.com/img/linkedin.svg","https://platform-cdn.sharethis.com/img/facebook.svg","https://platform-cdn.sharethis.com/img/twitter.svg"]}	334
+14:55:09.177
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:55:09.181
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Entwicklung der Kostenstruktur und Inferenz-Latenzen von Open-Source-Video­generierungsmodellen im Vergleich zu verwalteten Cloud-Rendering-Diensten (2021–2024) unter Einbezug verschiedener GPU-Instanztypen (dediziert vs. gemeinsam, serverless vs. reserviert)...","metadata":null}	383
+14:55:09.184
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:55:09.697
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:55:10.263
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+14:55:12.078
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 31 total images","metadata":["https://www.goodfirms.co/3d-rendering-software/blog/best-free-open-source-3d-rendering-software","https://assets.goodfirms.co/blog/general/1576232781-3d-1.jpg","https://www.studio2038.com/wp-content/uploads/2020/02/Kosten-3D-Rendering-650x433.jpg","https://www.foxrenderfarm.com/share/static/center-en-784e0c71b014f98e390bb86a094ea484.webp"]}	455
+14:55:12.082
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:55:12.086
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Kosten- und Latenzvergleich Open-Source-Video-Rendering vs verwaltete Cloud-Rendering-Dienste 2021–2024 GPU serverless vs reserviert Studie...","metadata":null}	263
+14:55:12.090
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:55:12.967
+{"type":"logs","content":"research_step_finalized","output":"Finalized research step.\n💸 Total Research Costs: $0.0124134","metadata":null}	139
+14:55:12.973
+{"type":"logs","content":"image_planning","output":"🎨 Analyzing research context for visualization opportunities...","metadata":null}	133
+14:55:12.979
+{"type":"logs","content":"image_concepts_identified","output":"🖼️ Identified 1 visualization concepts, generating images...","metadata":null}	141
+14:55:19.351
+{"type":"logs","content":"image_generating","output":"🖼️ Generating image 1/1: Cost Structure Comparison...","metadata":null}	125
+14:55:19.355
+{"type":"logs","content":"images_ready","output":"✅ 1 images ready for report embedding","metadata":null}	105
+14:55:26.895
+{"type":"logs","content":"starting_research","output":"🔍 Starting the research task for 'Aktuelle Qualitätsmetriken für automatisch generierte Kurzvideos (visuelle Konsistenz, semantische Korrektheit, Bild- und Tonqualität) und deren Anwendung bei Open-Source- vs. kommerziellen Generierungs­tools seit 2021'...","metadata":null}	329
+14:56:28.825
+{"type":"logs","content":"agent_generated","output":"🧠 AI Research Agent","metadata":null}	90
+14:56:28.832
+{"type":"logs","content":"planning_research","output":"🌐 Browsing the web to learn more about the task: Aktuelle Qualitätsmetriken für automatisch generierte Kurzvideos (visuelle Konsistenz, semantische Korrektheit, Bild- und Tonqualität) und deren Anwendung bei Open-Source- vs. kommerziellen Generierungs­tools seit 2021...","metadata":null}	343
+14:56:28.837
+{"type":"logs","content":"planning_research","output":"🤔 Planning the research strategy and subtasks...","metadata":null}	121
+14:56:31.937
+{"type":"logs","content":"subqueries","output":"🗂️ I will conduct my research based on the following queries: ['Aktuelle Qualitätsmetriken automatisch generierte Kurzvideos visuelle Konsistenz semantische Korrektheit Bildqualität Tonqualität Open-Source kommerzielle Tools seit 2021', 'Open-Source vs. kommerzielle KI-Video-Generatoren Kurzvideos Qualitätsmetriken Vergleich 2021–2025', 'Evaluation metrics for automatically generated short videos visual consistency semantic correctness image and audio quality open source vs commercial tools since 2021', 'Aktuelle Qualitätsmetriken für automatisch generierte Kurzvideos (visuelle Konsistenz, semantische Korrektheit, Bild- und Tonqualität) und deren Anwendung bei Open-Source- vs. kommerziellen Generierungs\\xadtools seit 2021']...","metadata":["Aktuelle Qualitätsmetriken automatisch generierte Kurzvideos visuelle Konsistenz semantische Korrektheit Bildqualität Tonqualität Open-Source kommerzielle Tools seit 2021","Open-Source vs. kommerzielle KI-Video-Generatoren Kurzvideos Qualitätsmetriken Vergleich 2021–2025","Evaluation metrics for automatically generated short videos visual consistency semantic correctness image and audio quality open source vs commercial tools since 2021","Aktuelle Qualitätsmetriken für automatisch generierte Kurzvideos (visuelle Konsistenz, semantische Korrektheit, Bild- und Tonqualität) und deren Anwendung bei Open-Source- vs. kommerziellen Generierungs­tools seit 2021"]}	1464
+14:56:40.861
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Aktuelle Qualitätsmetriken automatisch generierte Kurzvideos visuelle Konsistenz semantische Korrektheit Bildqualität Tonqualität Open-Source kommerzielle Tools seit 2021'...","metadata":null}	281
+14:56:40.866
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Open-Source vs. kommerzielle KI-Video-Generatoren Kurzvideos Qualitätsmetriken Vergleich 2021–2025'...","metadata":null}	209
+14:56:40.868
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Evaluation metrics for automatically generated short videos visual consistency semantic correctness image and audio quality open source vs commercial tools since 2021'...","metadata":null}	277
+14:56:40.872
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Aktuelle Qualitätsmetriken für automatisch generierte Kurzvideos (visuelle Konsistenz, semantische Korrektheit, Bild- und Tonqualität) und deren Anwendung bei Open-Source- vs. kommerziellen Generierungs­tools seit 2021'...","metadata":null}	329
+14:56:40.877
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.heise.de/download/specials/Videos-erstellen-mit-KI-Video-Generatoren-im-Vergleich-10371397\n","metadata":"https://www.heise.de/download/specials/Videos-erstellen-mit-KI-Video-Generatoren-im-Vergleich-10371397"}	308
+14:56:41.891
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.welt.de/vergleich/ki-video-generator/\n","metadata":"https://www.welt.de/vergleich/ki-video-generator/"}	202
+14:56:41.896
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://reelmind.ai/blog/open-source-vs-kommerziell-die-besten-ki-video-editoren-im-vergleich-2025\n","metadata":"https://reelmind.ai/blog/open-source-vs-kommerziell-die-besten-ki-video-editoren-im-vergleich-2025"}	300
+14:56:41.900
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.synthesia.io/de/post/beste-ki-video-generatoren\n","metadata":"https://www.synthesia.io/de/post/beste-ki-video-generatoren"}	222
+14:56:41.904
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.gradually.ai/ki-videogeneratoren/\n","metadata":"https://www.gradually.ai/ki-videogeneratoren/"}	194
+14:56:41.906
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:56:41.912
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:56:41.914
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.pedocs.de/volltexte/2024/29235/pdf/Oellers_Roertgen_2024_Kompendium_Didaktische_Metadaten.pdf\n","metadata":"https://www.pedocs.de/volltexte/2024/29235/pdf/Oellers_Roertgen_2024_Kompendium_Didaktische_Metadaten.pdf"}	314
+14:56:41.923
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://reelmind.ai/blog/ai-video-synthese-wie-sie-konsistenz-in-ihren-kurzfilmen-sichern\n","metadata":"https://reelmind.ai/blog/ai-video-synthese-wie-sie-konsistenz-in-ihren-kurzfilmen-sichern"}	282
+14:56:41.929
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://htwr-aachen.de/content-assets/swt/folien-merged.pdf\n","metadata":"https://htwr-aachen.de/content-assets/swt/folien-merged.pdf"}	222
+14:56:41.933
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://predis.ai/de/RESSOURCEN/Messung-von-KI-Video-Leistungskennzahlen/\n","metadata":"https://predis.ai/de/RESSOURCEN/Messung-von-KI-Video-Leistungskennzahlen/"}	250
+14:56:41.936
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://monami.hs-mittweida.de/files/15768/MA_Yannick_Bauer.pdf\n","metadata":"https://monami.hs-mittweida.de/files/15768/MA_Yannick_Bauer.pdf"}	230
+14:56:41.939
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:56:41.945
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:56:41.947
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://github.com/ziqihuangg/Awesome-Evaluation-of-Visual-Generation\n","metadata":"https://github.com/ziqihuangg/Awesome-Evaluation-of-Visual-Generation"}	242
+14:56:41.981
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.mdpi.com/1424-8220/25/15/4668\n","metadata":"https://www.mdpi.com/1424-8220/25/15/4668"}	186
+14:56:41.986
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://arxiv.org/html/2410.19884v1\n","metadata":"https://arxiv.org/html/2410.19884v1"}	174
+14:56:41.991
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://qiyan98.github.io/blog/2024/fvmd-1/\n","metadata":"https://qiyan98.github.io/blog/2024/fvmd-1/"}	190
+14:56:41.997
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://dl.acm.org/doi/full/10.1145/3771724\n","metadata":"https://dl.acm.org/doi/full/10.1145/3771724"}	190
+14:56:42.003
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:56:42.005
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:56:42.010
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://kilexikon.com/\n","metadata":"https://kilexikon.com/"}	148
+14:56:42.166
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://metricool.com/de/social-media-kurzvideos-bericht-2025/\n","metadata":"https://metricool.com/de/social-media-kurzvideos-bericht-2025/"}	228
+14:56:42.171
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://reelmind.ai/blog/video-marketing-trends-2025-kurzformate-und-ki-produktion\n","metadata":"https://reelmind.ai/blog/video-marketing-trends-2025-kurzformate-und-ki-produktion"}	268
+14:56:42.177
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.die-medienanstalten.de/fileadmin/user_upload/die_medienanstalten/Forschung/Videotrends/2025/Video_Trends_2025_Publikation.pdf\n","metadata":"https://www.die-medienanstalten.de/fileadmin/user_upload/die_medienanstalten/Forschung/Videotrends/2025/Video_Trends_2025_Publikation.pdf"}	378
+14:56:42.181
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:56:42.186
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 4 URLs...","metadata":null}	102
+14:56:42.189
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+14:56:52.063
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 36 total images","metadata":["https://cdn-vergleich.welt.de/v2/sites/11/ki-video-generator-test.jpeg?d=812x349&q=70","https://cdn-vergleich.welt.de/v2/sites/11/ki-video-generator-text-to-video.jpeg?d=812x349&q=70","https://cdn-vergleich.welt.de/v2/sites/11/ki-video-generator-software.jpeg?d=812x349&q=70","https://cdn-vergleich.welt.de/v2/sites/11/ki-video-generator-videobearbeitung.jpeg?d=812x349&q=70"]}	490
+14:56:52.068
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:56:52.072
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Open-Source vs. kommerzielle KI-Video-Generatoren Kurzvideos Qualitätsmetriken Vergleich 2021–2025...","metadata":null}	222
+14:56:52.077
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:56:54.186
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 3 pages of content","metadata":null}	100
+14:56:56.964
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 6 total images","metadata":["https://metricool.com/wp-content/themes/metricool/recursos/img/btn-arriba.svg","https://wptest.metricool.com/wp-content/uploads/metricool-verde.webp","https://srv.motu-teamblue.services/messages/he-man_messages?tke=JTdCJTIyaGFzaCUyMiUzQSUyMjE3NzAwNDA2MDg5MDNfcDI3eWRkMGtqN19hN3N2ZHVqJTIyJTJDJTIyZG9tYWluJTIyJTNBJTIybWV0cmljb29sLmNvbSUyMiUyQyUyMmZpZWxkJTIyJTNBJTIybWF0aCUyMiUyQyUyMm1vZGUlMjIlM0ElMjJzZXQlMjIlMkMlMjJtZXNzYWdlJTIyJTNBJTdCJTIydHJhY2tlcl92ZXJzaW9uJTIyJTNBJTIyMi4xLjY1JTIyJTJDJTIycXMlMjIlM0ElN0IlN0QlMkMlMjJwYWdlJTIyJTNBJTIybWV0cmljb29sLmNvbS9kZS9zb2NpYWwtbWVkaWEta3VyenZpZGVvcy1iZXJpY2h0LTIwMjUvJTIyJTJDJTIydXNlcl9hZ2VudCUyMiUzQSUyMk1vemlsbGEvNS4wJTIwJTI4TWFjaW50b3NoJTNCJTIwSW50ZWwlMjBNYWMlMjBPUyUyMFglMjAxMF8xNV83JTI5JTIwQXBwbGVXZWJLaXQvNTM3LjM2JTIwJTI4S0hUTUwlMkMlMjBsaWtlJTIwR2Vja28lMjklMjBDaHJvbWUvMTI4LjAuMC4wJTIwU2FmYXJpLzUzNy4zNiUyMiUyQyUyMnRya19pbnRlcm5hbCUyMiUzQWZhbHNlJTJDJTIycmVzb2x1dGlvbiUyMiUzQSU3QiUyMmhlaWdodCUyMiUzQTYwMCUyQyUyMndpZHRoJTIyJTNBODAwJTdEJTJDJTIyZnAlMjIlM0ElMjJiZWE1YzZjN2MwNzkxNGU5NmE3MDg2YTliMjk3NjZlMyUyMiU3RCU3RA==","https://video-cover-img.reelmind.ai/100e39f4-48ac-40ff-863a-a204bac2d0a4-cover.webp"]}	1260
+14:56:56.969
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:56:56.973
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Aktuelle Qualitätsmetriken für automatisch generierte Kurzvideos (visuelle Konsistenz, semantische Korrektheit, Bild- und Tonqualität) und deren Anwendung bei Open-Source- vs. kommerziellen Generierungs­tools seit 2021...","metadata":null}	342
+14:56:56.978
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+14:56:58.231
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 4 total images","metadata":["https://predis.ai/assets/img/popup.webp","https://predis.ai/resources/wp-content/uploads/2025/11/753adb8b-1638-432c-9f07-e091f08525bd-16.jpeg","https://video-cover-img.reelmind.ai/1a78aabe-75b8-4519-adf1-15091b724aad-cover.webp","https://video-cover-img.reelmind.ai/e42e35af-367d-4a44-bbed-5fa5fa7e9fe9-cover.webp"]}	428
+14:56:58.235
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:56:58.240
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Aktuelle Qualitätsmetriken automatisch generierte Kurzvideos visuelle Konsistenz semantische Korrektheit Bildqualität Tonqualität Open-Source kommerzielle Tools seit 2021...","metadata":null}	294
+14:56:58.245
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:57:00.988
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+14:57:01.114
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 33 total images","metadata":["https://github.com/ziqihuangg/Awesome-Evaluation-of-Visual-Generation/raw/master/figures/fig_teaser_combined.jpg","https://camo.githubusercontent.com/ccb79c235b85b9d87d585ad47d633f91aeb4684a600770683958cd897c4b5f99/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f62696f696e662d6a6b752f545455522e7376673f7374796c653d736f6369616c266c6162656c3d4f6666696369616c","https://camo.githubusercontent.com/f609741b515aa1a991a90858e57ebbc68c56b3e3efa044c7663d73067bd0d487/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f6d736569747a65722f7079746f7263682d6669642e7376673f7374796c653d736f6369616c266c6162656c3d5079546f726368","https://camo.githubusercontent.com/ab515696c3fc65ba6694d68dde2cf13326652c1e1fc91ff31597a2397362ccc2/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f746f736861732f746f7263682d666964656c6974792e7376673f7374796c653d736f6369616c266c6162656c3d556e6f6666696369616c"]}	1059
+14:57:01.118
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:57:01.122
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Evaluation metrics for automatically generated short videos visual consistency semantic correctness image and audio quality open source vs commercial tools since 2021...","metadata":null}	290
+14:57:01.129
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:57:02.034
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:57:03.272
+{"type":"logs","content":"research_step_finalized","output":"Finalized research step.\n💸 Total Research Costs: $0.01468252","metadata":null}	140
+14:57:03.277
+{"type":"logs","content":"image_planning","output":"🎨 Analyzing research context for visualization opportunities...","metadata":null}	133
+14:57:03.282
+{"type":"logs","content":"image_concepts_identified","output":"🖼️ Identified 1 visualization concepts, generating images...","metadata":null}	141
+14:57:11.110
+{"type":"logs","content":"image_generating","output":"🖼️ Generating image 1/1: Quality Metrics Comparison Chart...","metadata":null}	132
+14:57:11.114
+{"type":"logs","content":"images_ready","output":"✅ 1 images ready for report embedding","metadata":null}	105
+14:57:17.518
+{"type":"logs","content":"starting_research","output":"🔍 Starting the research task for 'CXL-basierte Memory-Pooling-Standards in Video-KI-Frameworks zur gemeinsamen Nutzung von GPU-, NPU- und neuromorphen Beschleunigern für lange Kontextfenster'...","metadata":null}	267
+14:58:05.796
+{"type":"logs","content":"agent_generated","output":"🖥️ Computer Architecture & AI Systems Agent","metadata":null}	114
+14:58:05.802
+{"type":"logs","content":"planning_research","output":"🌐 Browsing the web to learn more about the task: CXL-basierte Memory-Pooling-Standards in Video-KI-Frameworks zur gemeinsamen Nutzung von GPU-, NPU- und neuromorphen Beschleunigern für lange Kontextfenster...","metadata":null}	281
+14:58:05.807
+{"type":"logs","content":"planning_research","output":"🤔 Planning the research strategy and subtasks...","metadata":null}	121
+14:58:06.725
+{"type":"logs","content":"subqueries","output":"🗂️ I will conduct my research based on the following queries: ['Objektive Bewertung CXL-basierter Memory-Pooling-Standards in Video-KI-Frameworks zur gemeinsamen Nutzung von GPU-, NPU- und neuromorphen Beschleunigern für lange Kontextfenster', 'Vergleich CXL 4.0 Memory-Pooling-Implementierungen in Video-KI-Stacks für GPU, NPU und neuromorphe Beschleuniger', 'CXL Memory-Pooling Standardisierung in Video-AI-Frameworks mit langen Kontextfenstern – GPU, NPU, Neuromorphic (Objective Opinion)', 'CXL-basierte Memory-Pooling-Standards in Video-KI-Frameworks zur gemeinsamen Nutzung von GPU-, NPU- und neuromorphen Beschleunigern für lange Kontextfenster']...","metadata":["Objektive Bewertung CXL-basierter Memory-Pooling-Standards in Video-KI-Frameworks zur gemeinsamen Nutzung von GPU-, NPU- und neuromorphen Beschleunigern für lange Kontextfenster","Vergleich CXL 4.0 Memory-Pooling-Implementierungen in Video-KI-Stacks für GPU, NPU und neuromorphe Beschleuniger","CXL Memory-Pooling Standardisierung in Video-AI-Frameworks mit langen Kontextfenstern – GPU, NPU, Neuromorphic (Objective Opinion)","CXL-basierte Memory-Pooling-Standards in Video-KI-Frameworks zur gemeinsamen Nutzung von GPU-, NPU- und neuromorphen Beschleunigern für lange Kontextfenster"]}	1306
+14:58:15.384
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Objektive Bewertung CXL-basierter Memory-Pooling-Standards in Video-KI-Frameworks zur gemeinsamen Nutzung von GPU-, NPU- und neuromorphen Beschleunigern für lange Kontextfenster'...","metadata":null}	288
+14:58:15.390
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Vergleich CXL 4.0 Memory-Pooling-Implementierungen in Video-KI-Stacks für GPU, NPU und neuromorphe Beschleuniger'...","metadata":null}	223
+14:58:15.405
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'CXL Memory-Pooling Standardisierung in Video-AI-Frameworks mit langen Kontextfenstern – GPU, NPU, Neuromorphic (Objective Opinion)'...","metadata":null}	241
+14:58:15.410
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'CXL-basierte Memory-Pooling-Standards in Video-KI-Frameworks zur gemeinsamen Nutzung von GPU-, NPU- und neuromorphen Beschleunigern für lange Kontextfenster'...","metadata":null}	267
+14:58:15.415
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.austriainfocenter.com/hightech.html\n","metadata":"https://www.austriainfocenter.com/hightech.html"}	198
+14:58:16.392
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://arxiv.org/abs/2506.15601\n","metadata":"https://arxiv.org/abs/2506.15601"}	168
+14:58:16.397
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://memverge.com/wp-content/uploads/2022/08/CXL-Forum_NVIDIA.pdf\n","metadata":"https://memverge.com/wp-content/uploads/2022/08/CXL-Forum_NVIDIA.pdf"}	240
+14:58:16.401
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://introl.com/de/blog/cxl-4-0-infrastructure-planning-guide-memory-pooling-2025\n","metadata":"https://introl.com/de/blog/cxl-4-0-infrastructure-planning-guide-memory-pooling-2025"}	272
+14:58:16.403
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.computerweekly.com/de/feature/Welche-Rolle-spielt-CXL-fuer-kuenstliche-Intelligenz\n","metadata":"https://www.computerweekly.com/de/feature/Welche-Rolle-spielt-CXL-fuer-kuenstliche-Intelligenz"}	292
+14:58:16.408
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:58:16.413
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:58:16.415
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://computeexpresslink.org/blog/overcoming-the-ai-memory-wall-how-cxl-memory-pooling-powers-the-next-leap-in-scalable-ai-computing-4267/\n","metadata":"https://computeexpresslink.org/blog/overcoming-the-ai-memory-wall-how-cxl-memory-pooling-powers-the-next-leap-in-scalable-ai-computing-4267/"}	384
+14:58:16.483
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.eetimes.com/from-gpus-to-memory-pools-why-ai-needs-compute-express-link-cxl/\n","metadata":"https://www.eetimes.com/from-gpus-to-memory-pools-why-ai-needs-compute-express-link-cxl/"}	280
+14:58:16.488
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://arxiv.org/pdf/2506.15601v1\n","metadata":"https://arxiv.org/pdf/2506.15601v1"}	172
+14:58:16.492
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.gigabyte.com/Article/revolutionizing-the-ai-factory-the-rise-of-cxl-memory-pooling\n","metadata":"https://www.gigabyte.com/Article/revolutionizing-the-ai-factory-the-rise-of-cxl-memory-pooling"}	292
+14:58:16.497
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:58:16.501
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 4 URLs...","metadata":null}	102
+14:58:16.503
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://blocksandfiles.com/2025/11/24/cxl-4/\n","metadata":"https://blocksandfiles.com/2025/11/24/cxl-4/"}	192
+14:58:16.555
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.synopsys.com/blogs/chip-design/cxl-4-bandwidth-first-what-designers-are-solving-next.html\n","metadata":"https://www.synopsys.com/blogs/chip-design/cxl-4-bandwidth-first-what-designers-are-solving-next.html"}	306
+14:58:16.563
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://files.futurememorystorage.com/proceedings/2025/20250806_CXLT-203-1_Kim.pdf\n","metadata":"https://files.futurememorystorage.com/proceedings/2025/20250806_CXLT-203-1_Kim.pdf"}	268
+14:58:16.567
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://computeexpresslink.org/wp-content/uploads/2025/12/CXL_4.0-Webinar_December-2025_FINAL.pdf\n","metadata":"https://computeexpresslink.org/wp-content/uploads/2025/12/CXL_4.0-Webinar_December-2025_FINAL.pdf"}	298
+14:58:16.572
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:58:16.579
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 4 URLs...","metadata":null}	102
+14:58:16.583
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://dl.acm.org/doi/10.1145/3626111.3628195\n","metadata":"https://dl.acm.org/doi/10.1145/3626111.3628195"}	196
+14:58:16.590
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://ieeexplore.ieee.org/document/10018233\n","metadata":"https://ieeexplore.ieee.org/document/10018233"}	194
+14:58:16.597
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://arxiv.org/html/2405.14209v1\n","metadata":"https://arxiv.org/html/2405.14209v1"}	174
+14:58:16.602
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.microsoft.com/en-us/research/wp-content/uploads/2023/06/2023-CXL-DesignTradeoffs-IEEE-Micro.pdf\n","metadata":"https://www.microsoft.com/en-us/research/wp-content/uploads/2023/06/2023-CXL-DesignTradeoffs-IEEE-Micro.pdf"}	318
+14:58:16.607
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:58:16.615
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 4 URLs...","metadata":null}	102
+14:58:16.620
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 4 pages of content","metadata":null}	100
+14:58:26.671
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 6 total images","metadata":["https://dl.acm.org/sda/108255/acm-pres-on-oa-trans-and-dl-changes.png","https://dl.acm.org/sda/108214/taccess-dl-sky-ad.png","https://dl.acm.org/sda/108240/ACM Books_Talia_Ad.jpg","https://imgsct.cookiebot.com/1.gif?dgi=d5e9e377-b0f2-49fd-b006-d86d5073d17e"]}	371
+14:58:26.677
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:58:26.681
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Objektive Bewertung CXL-basierter Memory-Pooling-Standards in Video-KI-Frameworks zur gemeinsamen Nutzung von GPU-, NPU- und neuromorphen Beschleunigern für lange Kontextfenster...","metadata":null}	301
+14:58:26.684
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:58:28.160
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 4 pages of content","metadata":null}	100
+14:58:28.896
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 12 total images","metadata":["https://introl.com/static/images/blog/dc-session4-89.webp","https://www.computerweekly.com/visuals/German/article/networking-speed-adobe_searchsitetablet_520X173.jpg","https://cdn.ttgtmedia.com/rms/onlineimages/armstrong_adam.jpg","https://www.computerweekly.com/rms/onlineImages/robinson_simon.jpg"]}	414
+14:58:28.901
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:58:28.905
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: CXL-basierte Memory-Pooling-Standards in Video-KI-Frameworks zur gemeinsamen Nutzung von GPU-, NPU- und neuromorphen Beschleunigern für lange Kontextfenster...","metadata":null}	280
+14:58:28.910
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 2 pages of content","metadata":null}	100
+14:58:29.849
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 14 total images","metadata":["https://images.synopsys.com/is/image/synopsys/worlds-first-cxl-3-1-multi-vendor-interoperability-demo?qlt=82&ts=1763487854423&$responsive$&fit=constrain&dpr=off","https://blocksandfiles.com/wp-content/uploads/2025/11/Derek-Rohde.jpg","https://images.synopsys.com/is/image/synopsys/mastering-ai-chip-complexity?qlt=82&ts=1762526083822&$responsive$&fit=constrain&dpr=off","https://images.synopsys.com/is/image/synopsys/cxl-use-cases-compute-ai-expansion-1?qlt=82&ts=1763565473165&$responsive$&fit=constrain&dpr=off"]}	628
+14:58:29.853
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:58:29.857
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Vergleich CXL 4.0 Memory-Pooling-Implementierungen in Video-KI-Stacks für GPU, NPU und neuromorphe Beschleuniger...","metadata":null}	236
+14:58:29.861
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 4 pages of content","metadata":null}	100
+14:58:30.492
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 17 total images","metadata":["https://cdn-cookieyes.com/assets/images/revisit.svg","https://cdn-cookieyes.com/assets/images/close.svg","https://www.gigabyte.com/Images/Discover/Discover_Main.jpg","https://www.gigabyte.com/FileUpload/global/Insight/Article/234/o202508051542061807.jpg"]}	369
+14:58:30.497
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:58:30.500
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: CXL Memory-Pooling Standardisierung in Video-AI-Frameworks mit langen Kontextfenstern – GPU, NPU, Neuromorphic (Objective Opinion)...","metadata":null}	254
+14:58:30.504
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:58:31.211
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:58:32.734
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:58:34.678
+{"type":"logs","content":"research_step_finalized","output":"Finalized research step.\n💸 Total Research Costs: $0.01625616","metadata":null}	140
+14:58:34.683
+{"type":"logs","content":"image_planning","output":"🎨 Analyzing research context for visualization opportunities...","metadata":null}	133
+14:58:34.687
+{"type":"logs","content":"image_concepts_identified","output":"🖼️ Identified 1 visualization concepts, generating images...","metadata":null}	141
+14:58:41.106
+{"type":"logs","content":"image_generating","output":"🖼️ Generating image 1/1: CXL Memory Pooling Architecture...","metadata":null}	131
+14:58:41.111
+{"type":"logs","content":"images_ready","output":"✅ 1 images ready for report embedding","metadata":null}	105
+14:58:48.428
+{"type":"logs","content":"starting_research","output":"🔍 Starting the research task for 'Architekturprinzipien für neuronale Video-Codecs mit >90 % Bitratereduktion bei Multi-Stunden-Videos ohne sichtbaren Qualitätsverlust'...","metadata":null}	244
+14:59:24.619
+{"type":"logs","content":"agent_generated","output":"🧠 AI Research Agent","metadata":null}	90
+14:59:24.627
+{"type":"logs","content":"planning_research","output":"🌐 Browsing the web to learn more about the task: Architekturprinzipien für neuronale Video-Codecs mit >90 % Bitratereduktion bei Multi-Stunden-Videos ohne sichtbaren Qualitätsverlust...","metadata":null}	258
+14:59:24.631
+{"type":"logs","content":"planning_research","output":"🤔 Planning the research strategy and subtasks...","metadata":null}	121
+14:59:25.588
+{"type":"logs","content":"subqueries","output":"🗂️ I will conduct my research based on the following queries: ['Architekturprinzipien neuronaler Video-Codecs mit >90 % Bitratereduktion für Multi-Stunden-Videos ohne sichtbaren Qualitätsverlust', 'neural video codec architecture >90% bitrate reduction long-duration videos no visible quality loss', 'Fraunhofer NNR-Standard neuronale Video-Codecs 90–95 % Bitratereduktion Multi-Stunden ohne Qualitätsverlust', 'Architekturprinzipien für neuronale Video-Codecs mit >90 % Bitratereduktion bei Multi-Stunden-Videos ohne sichtbaren Qualitätsverlust']...","metadata":["Architekturprinzipien neuronaler Video-Codecs mit >90 % Bitratereduktion für Multi-Stunden-Videos ohne sichtbaren Qualitätsverlust","neural video codec architecture >90% bitrate reduction long-duration videos no visible quality loss","Fraunhofer NNR-Standard neuronale Video-Codecs 90–95 % Bitratereduktion Multi-Stunden ohne Qualitätsverlust","Architekturprinzipien für neuronale Video-Codecs mit >90 % Bitratereduktion bei Multi-Stunden-Videos ohne sichtbaren Qualitätsverlust"]}	1094
+14:59:32.673
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Architekturprinzipien neuronaler Video-Codecs mit >90 % Bitratereduktion für Multi-Stunden-Videos ohne sichtbaren Qualitätsverlust'...","metadata":null}	241
+14:59:32.680
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'neural video codec architecture >90% bitrate reduction long-duration videos no visible quality loss'...","metadata":null}	210
+14:59:32.684
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Fraunhofer NNR-Standard neuronale Video-Codecs 90–95 % Bitratereduktion Multi-Stunden ohne Qualitätsverlust'...","metadata":null}	218
+14:59:32.690
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Architekturprinzipien für neuronale Video-Codecs mit >90 % Bitratereduktion bei Multi-Stunden-Videos ohne sichtbaren Qualitätsverlust'...","metadata":null}	244
+14:59:32.694
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://arxiv.org/html/2402.10257v1\n","metadata":"https://arxiv.org/html/2402.10257v1"}	174
+14:59:33.618
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://openaccess.thecvf.com/content/WACV2023/papers/Fathima_A_Neural_Video_Codec_With_Spatial_Rate-Distortion_Control_WACV_2023_paper.pdf\n","metadata":"https://openaccess.thecvf.com/content/WACV2023/papers/Fathima_A_Neural_Video_Codec_With_Spatial_Rate-Distortion_Control_WACV_2023_paper.pdf"}	382
+14:59:33.623
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://arxiv.org/html/2511.00969v1\n","metadata":"https://arxiv.org/html/2511.00969v1"}	174
+14:59:33.634
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.macgadget.de/News/2021/05/28/Fraunhofer-Heinrich-Hertz-Institut-Erste-standardisierte-Kompressionsmethode-fuer\n","metadata":"https://www.macgadget.de/News/2021/05/28/Fraunhofer-Heinrich-Hertz-Institut-Erste-standardisierte-Kompressionsmethode-fuer"}	348
+14:59:33.639
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.sciencedirect.com/science/article/pii/S0925231224012967\n","metadata":"https://www.sciencedirect.com/science/article/pii/S0925231224012967"}	238
+14:59:33.639
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:59:33.643
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:59:33.647
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.hhi.fraunhofer.de/en/departments/vca/technologies-and-solutions/mpeg-nnc/fraunhofer-nncodec.html\n","metadata":"https://www.hhi.fraunhofer.de/en/departments/vca/technologies-and-solutions/mpeg-nnc/fraunhofer-nncodec.html"}	320
+14:59:33.686
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://github.com/fraunhoferhhi/nncodec\n","metadata":"https://github.com/fraunhoferhhi/nncodec"}	184
+14:59:33.693
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://github-wiki-see.page/m/fraunhoferhhi/nncodec/wiki\n","metadata":"https://github-wiki-see.page/m/fraunhoferhhi/nncodec/wiki"}	218
+14:59:33.698
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.pressebox.de/pressemitteilung/fraunhofer-institut-fuer-nachrichtentechnik-heinrich-hertz-institut/Neuer-MPEG-Standard-basiert-auf-Fraunhofer-HHI-Technologie-Erste-standardisierte-Kompressionsmethode-fr-neuronale-Netze-in-Multimedia-Anwendungen/boxid/1077504\n","metadata":"https://www.pressebox.de/pressemitteilung/fraunhofer-institut-fuer-nachrichtentechnik-heinrich-hertz-institut/Neuer-MPEG-Standard-basiert-auf-Fraunhofer-HHI-Technologie-Erste-standardisierte-Kompressionsmethode-fr-neuronale-Netze-in-Multimedia-Anwendungen/boxid/1077504"}	642
+14:59:33.701
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://iphome.hhi.de/samek/pdf/KirTCSVT22.pdf\n","metadata":"https://iphome.hhi.de/samek/pdf/KirTCSVT22.pdf"}	196
+14:59:33.707
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:59:33.714
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+14:59:33.717
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://ieeexplore.ieee.org/document/10962175\n","metadata":"https://ieeexplore.ieee.org/document/10962175"}	194
+14:59:33.728
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://dl.acm.org/doi/10.1145/3715675.3715796\n","metadata":"https://dl.acm.org/doi/10.1145/3715675.3715796"}	196
+14:59:33.736
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:59:33.743
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 2 URLs...","metadata":null}	102
+14:59:33.747
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.usenix.org/system/files/nsdi24-cheng.pdf\n","metadata":"https://www.usenix.org/system/files/nsdi24-cheng.pdf"}	208
+14:59:33.836
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://openaccess.thecvf.com/content/CVPR2023/papers/Li_Neural_Video_Compression_With_Diverse_Contexts_CVPR_2023_paper.pdf\n","metadata":"https://openaccess.thecvf.com/content/CVPR2023/papers/Li_Neural_Video_Compression_With_Diverse_Contexts_CVPR_2023_paper.pdf"}	350
+14:59:33.844
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://arxiv.org/html/2305.12333v4\n","metadata":"https://arxiv.org/html/2305.12333v4"}	174
+14:59:33.849
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://arxiv.org/html/2511.01590v1\n","metadata":"https://arxiv.org/html/2511.01590v1"}	174
+14:59:33.855
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+14:59:33.862
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 4 URLs...","metadata":null}	102
+14:59:33.866
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 2 pages of content","metadata":null}	100
+14:59:45.504
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 14 total images","metadata":["https://ieeexplore.ieee.org/assets/img/document/toc-icon.png","https://ieeexplore.ieee.org/mediastore/IEEE/content/media/8784029/10830546/10962175/ramos1-3559774-small.gif","https://ieeexplore.ieee.org/mediastore/IEEE/content/media/8784029/10830546/10962175/ramos.t1-3559774-small.gif","https://ieeexplore.ieee.org/mediastore/IEEE/content/media/8784029/10830546/10962175/ramos2abc-3559774-small.gif"]}	514
+14:59:45.509
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:59:45.514
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Architekturprinzipien neuronaler Video-Codecs mit >90 % Bitratereduktion für Multi-Stunden-Videos ohne sichtbaren Qualitätsverlust...","metadata":null}	254
+14:59:45.517
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 4 pages of content","metadata":null}	100
+14:59:45.530
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 0 new images from 0 total images","metadata":[]}	113
+14:59:45.535
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:59:45.539
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: neural video codec architecture >90% bitrate reduction long-duration videos no visible quality loss...","metadata":null}	223
+14:59:45.544
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:59:46.347
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:59:47.199
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+14:59:49.637
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 0 new images from 0 total images","metadata":[]}	113
+14:59:49.643
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:59:49.647
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Architekturprinzipien für neuronale Video-Codecs mit >90 % Bitratereduktion bei Multi-Stunden-Videos ohne sichtbaren Qualitätsverlust...","metadata":null}	257
+14:59:49.653
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:59:50.789
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+14:59:54.219
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 21 total images","metadata":["https://cdn.pressebox.de/f/65fb13d054b3a822/websitelinkthumb/92/89/928989.jpg","https://cdn.pressebox.de/r/40da091203e5a8e1/c-art-rec/www.bigdata-insider.de/imagerss/GzL6PeNNix8OzgWPWE5xnJmkzR4%3D/500x500/smart/filters%3Aformat%28jpg%29%3Aquality%2880%29/p7i.vogel.de/wcms/67/d3/67d3d1ca5dd62a9024fea89be2e5c1ec/0128432382v1.jpeg.500px.jpg","https://cdn.consentmanager.net/delivery/img/logo1610707651x2214.gif","https://cdn.pressebox.de/r/70bdb438c6b70e23/attachments/12/53/91/thumbnail_1253910_746x466.jpg"]}	622
+14:59:54.228
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+14:59:54.231
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Fraunhofer NNR-Standard neuronale Video-Codecs 90–95 % Bitratereduktion Multi-Stunden ohne Qualitätsverlust...","metadata":null}	231
+14:59:54.236
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+14:59:55.234
+{"type":"logs","content":"research_step_finalized","output":"Finalized research step.\n💸 Total Research Costs: $0.01118062","metadata":null}	140
+14:59:55.239
+{"type":"logs","content":"image_planning","output":"🎨 Analyzing research context for visualization opportunities...","metadata":null}	133
+14:59:55.245
+{"type":"logs","content":"image_concepts_identified","output":"🖼️ Identified 1 visualization concepts, generating images...","metadata":null}	141
+15:00:02.375
+{"type":"logs","content":"image_generating","output":"🖼️ Generating image 1/1: Hierarchical Redundancy in Video Compression...","metadata":null}	144
+15:00:02.380
+{"type":"logs","content":"images_ready","output":"✅ 1 images ready for report embedding","metadata":null}	105
+15:00:10.355
+{"type":"logs","content":"starting_research","output":"🔍 Starting the research task for '“Stückkostenrate KI-generierte Langvideos Kosten pro Videominute 2020–2030 Entwicklung Haupttreiber sinkende Produktionskosten”'...","metadata":null}	238
+15:01:02.929
+{"type":"logs","content":"agent_generated","output":"📊 Market Research Agent","metadata":null}	94
+15:01:02.933
+{"type":"logs","content":"planning_research","output":"🌐 Browsing the web to learn more about the task: “Stückkostenrate KI-generierte Langvideos Kosten pro Videominute 2020–2030 Entwicklung Haupttreiber sinkende Produktionskosten”...","metadata":null}	252
+15:01:02.938
+{"type":"logs","content":"planning_research","output":"🤔 Planning the research strategy and subtasks...","metadata":null}	121
+15:01:05.007
+{"type":"logs","content":"subqueries","output":"🗂️ I will conduct my research based on the following queries: ['Trendanalyse Stückkostenrate KI-generierte Langvideos Kosten pro Videominute 2020–2030', 'Studie Haupttreiber sinkender Produktionskosten bei KI-generierten Langvideos (2020–2030)', 'Statistiken Kosten pro Videominute KI-generierte Langvideos Entwicklung und Prognose bis 2030', '“Stückkostenrate KI-generierte Langvideos Kosten pro Videominute 2020–2030 Entwicklung Haupttreiber sinkende Produktionskosten”']...","metadata":["Trendanalyse Stückkostenrate KI-generierte Langvideos Kosten pro Videominute 2020–2030","Studie Haupttreiber sinkender Produktionskosten bei KI-generierten Langvideos (2020–2030)","Statistiken Kosten pro Videominute KI-generierte Langvideos Entwicklung und Prognose bis 2030","“Stückkostenrate KI-generierte Langvideos Kosten pro Videominute 2020–2030 Entwicklung Haupttreiber sinkende Produktionskosten”"]}	946
+15:01:12.818
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Trendanalyse Stückkostenrate KI-generierte Langvideos Kosten pro Videominute 2020–2030'...","metadata":null}	197
+15:01:12.824
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Studie Haupttreiber sinkender Produktionskosten bei KI-generierten Langvideos (2020–2030)'...","metadata":null}	200
+15:01:12.828
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Statistiken Kosten pro Videominute KI-generierte Langvideos Entwicklung und Prognose bis 2030'...","metadata":null}	204
+15:01:12.834
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for '“Stückkostenrate KI-generierte Langvideos Kosten pro Videominute 2020–2030 Entwicklung Haupttreiber sinkende Produktionskosten”'...","metadata":null}	238
+15:01:12.839
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+15:01:13.768
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 0 URLs...","metadata":null}	102
+15:01:13.776
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 0 pages of content","metadata":null}	100
+15:01:13.783
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 0 new images from 0 total images","metadata":[]}	113
+15:01:13.788
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+15:01:13.794
+{"type":"logs","content":"subquery_context_not_found","output":"🤷 No content found for '“Stückkostenrate KI-generierte Langvideos Kosten pro Videominute 2020–2030 Entwicklung Haupttreiber sinkende Produktionskosten”'...","metadata":null}	237
+15:01:13.796
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://link.springer.com/chapter/10.1007/978-3-658-49275-5_3\n","metadata":"https://link.springer.com/chapter/10.1007/978-3-658-49275-5_3"}	226
+15:01:13.861
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.iwkoeln.de/studien/ziele-nutzen-kosten-verhaeltnis-und-hemmnisse-kuenstlicher-intelligenz-in-der-deutschen-wirtschaft.html\n","metadata":"https://www.iwkoeln.de/studien/ziele-nutzen-kosten-verhaeltnis-und-hemmnisse-kuenstlicher-intelligenz-in-der-deutschen-wirtschaft.html"}	372
+15:01:13.868
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.isi.fraunhofer.de/de/presse/2024/presseinfo-28-ki-produktion.html\n","metadata":"https://www.isi.fraunhofer.de/de/presse/2024/presseinfo-28-ki-produktion.html"}	258
+15:01:13.872
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://kpmg.com/de/de/home/themen/2025/04/studie-generative-ki-in-der-deutschen-wirtschaft-2025.html\n","metadata":"https://kpmg.com/de/de/home/themen/2025/04/studie-generative-ki-in-der-deutschen-wirtschaft-2025.html"}	306
+15:01:13.879
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.deloitte.com/de/de/issues/innovation-ai/studie-ki-und-ressourceneffizienz.html\n","metadata":"https://www.deloitte.com/de/de/issues/innovation-ai/studie-ki-und-ressourceneffizienz.html"}	284
+15:01:13.885
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+15:01:13.889
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+15:01:13.895
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://de.statista.com/themen/3103/kuenstliche-intelligenz/\n","metadata":"https://de.statista.com/themen/3103/kuenstliche-intelligenz/"}	224
+15:01:13.902
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://prst.media/de/wie-viel-kostet-ein-ki-video/\n","metadata":"https://prst.media/de/wie-viel-kostet-ein-ki-video/"}	206
+15:01:13.908
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.trmd.de/erklaervideo-ki-erstellen-preise-kosten-faktoren/\n","metadata":"https://www.trmd.de/erklaervideo-ki-erstellen-preise-kosten-faktoren/"}	242
+15:01:13.913
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://ventionteams.com/de/expertise/ki/statistiken-und-trends\n","metadata":"https://ventionteams.com/de/expertise/ki/statistiken-und-trends"}	230
+15:01:13.918
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.ihk.de/nordwestfalen/wirtschaftsspiegel-online/unternehmen-und-maerkte/ki-in-zahlen-5990364\n","metadata":"https://www.ihk.de/nordwestfalen/wirtschaftsspiegel-online/unternehmen-und-maerkte/ki-in-zahlen-5990364"}	310
+15:01:13.923
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+15:01:13.930
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+15:01:13.933
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.explainr.de/blog/kosten-erklaervideo-2025-qualitaet\n","metadata":"https://www.explainr.de/blog/kosten-erklaervideo-2025-qualitaet"}	230
+15:01:13.938
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.techzeitgeist.de/von-prompt-zu-clip-ki-formt-die-zukunft-des-videomarketings/\n","metadata":"https://www.techzeitgeist.de/von-prompt-zu-clip-ki-formt-die-zukunft-des-videomarketings/"}	282
+15:01:13.944
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://thinkmedia.de/erklaervideo_kosten_preis_budget_erklaerfilm/\n","metadata":"https://thinkmedia.de/erklaervideo_kosten_preis_budget_erklaerfilm/"}	238
+15:01:13.954
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.roccfilm.de/kostenrechner-fuer-videoproduktionen/\n","metadata":"https://www.roccfilm.de/kostenrechner-fuer-videoproduktionen/"}	226
+15:01:13.962
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+15:01:13.967
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 4 URLs...","metadata":null}	102
+15:01:13.970
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+15:01:24.556
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 17 total images","metadata":["https://www.trmd.de/wp-content/uploads/2025/05/yassine-khalfalli-c51-mFArCAE-unsplash-scaled.jpg","https://ventionteams.com/_next/image?url=https%3A%2F%2Fventionteams.com%2Fmedia%2Foriginal_images%2Fde-ai-report_01_simple_image-2.jpg&w=3840&q=75","https://ventionteams.com/_next/image?url=https%3A%2F%2Fventionteams.com%2Fmedia%2Foriginal_images%2Fde-ai-report_05_simple_image-2.jpg&w=3840&q=75","https://ventionteams.com/_next/image?url=https%3A%2F%2Fventionteams.com%2Fmedia%2Foriginal_images%2Fde-ai-report_06_text_with_image.jpg&w=3840&q=75"]}	660
+15:01:24.562
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+15:01:24.568
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Statistiken Kosten pro Videominute KI-generierte Langvideos Entwicklung und Prognose bis 2030...","metadata":null}	217
+15:01:24.572
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+15:01:26.082
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 26 total images","metadata":["https://www.iwkoeln.de/fileadmin/_processed_/1/0/csm_IW-Trends_2025-02-04_Scheufen_et_al_5e1557c331.png","https://www.iwkoeln.de/fileadmin/_processed_/2/e/csm_Scheufen_Marc__Roth_IWM-RET_7f2727791f.jpg","https://www.iwkoeln.de/fileadmin/_processed_/9/b/csm_Barbara-Engels-IW_21740d36c4.jpg","https://media.deloitte.com/is/image/deloitte/4_1_KI-Ressourceneffizienz:480-x-720?$Responsive$&fmt=webp&fit=stretch,1&dpr=on,1"]}	534
+15:01:26.092
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+15:01:26.120
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Studie Haupttreiber sinkender Produktionskosten bei KI-generierten Langvideos (2020–2030)...","metadata":null}	213
+15:01:26.129
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 4 pages of content","metadata":null}	100
+15:01:26.145
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 20 total images","metadata":["https://www.techzeitgeist.de/wp-content/uploads/2025/09/media_article_10331.jpg","https://i.ytimg.com/vi/ID/hqdefault.jpg","https://i0.wp.com/thinkmedia.de/wp-content/uploads/2023/11/sebastian-1.webp?fit=175%2C175&ssl=1","https://lh3.googleusercontent.com/kMloKI3Tv9RNHqqF5uJvXJ8-b9z-rbGG2F9ed4OGUFdSi3A-L1Ya_3fq7eCOR3jvK7e1HnHM-uYYF_gkzZC5bRADtMKQb5p3BRjBB9CjlC_6LjubRv_9=h60"]}	492
+15:01:26.153
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+15:01:26.158
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Trendanalyse Stückkostenrate KI-generierte Langvideos Kosten pro Videominute 2020–2030...","metadata":null}	210
+15:01:26.161
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+15:01:26.481
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+15:01:27.383
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+15:01:27.541
+{"type":"logs","content":"research_step_finalized","output":"Finalized research step.\n💸 Total Research Costs: $0.00788084","metadata":null}	140
+15:01:27.548
+{"type":"logs","content":"image_planning","output":"🎨 Analyzing research context for visualization opportunities...","metadata":null}	133
+15:01:27.554
+{"type":"logs","content":"image_concepts_identified","output":"🖼️ Identified 1 visualization concepts, generating images...","metadata":null}	141
+15:01:39.294
+{"type":"logs","content":"image_generating","output":"🖼️ Generating image 1/1: Cost Breakdown of Video Production...","metadata":null}	134
+15:01:39.301
+{"type":"logs","content":"images_ready","output":"✅ 1 images ready for report embedding","metadata":null}	105
+15:01:46.820
+{"type":"logs","content":"starting_research","output":"🔍 Starting the research task for '“Zahlungsbereitschaft Endkunden KI-Langvideos Abo Pay-per-View Werbefinanzierung Marktprognose 2020–2030”'...","metadata":null}	216
+15:02:28.413
+{"type":"logs","content":"agent_generated","output":"📈 Business Analyst Agent","metadata":null}	95
+15:02:28.422
+{"type":"logs","content":"planning_research","output":"🌐 Browsing the web to learn more about the task: “Zahlungsbereitschaft Endkunden KI-Langvideos Abo Pay-per-View Werbefinanzierung Marktprognose 2020–2030”...","metadata":null}	230
+15:02:28.432
+{"type":"logs","content":"planning_research","output":"🤔 Planning the research strategy and subtasks...","metadata":null}	121
+15:02:29.614
+{"type":"logs","content":"subqueries","output":"🗂️ I will conduct my research based on the following queries: ['Zahlungsbereitschaft Endkunden KI-Langvideos Abo Pay-per-View Werbefinanzierung objektive Marktanalyse 2020–2030', 'Statistik und Studien zur Zahlungsbereitschaft für KI-Langvideos (Abo vs. Pay-per-View vs. Werbung) Marktprognose 2020–2030', 'Aktuelle Marktberichte KI-Langvideos 2026: Endkunden Zahlungsbereitschaft Abo, Pay-per-View und Werbefinanzierung', '“Zahlungsbereitschaft Endkunden KI-Langvideos Abo Pay-per-View Werbefinanzierung Marktprognose 2020–2030”']...","metadata":["Zahlungsbereitschaft Endkunden KI-Langvideos Abo Pay-per-View Werbefinanzierung objektive Marktanalyse 2020–2030","Statistik und Studien zur Zahlungsbereitschaft für KI-Langvideos (Abo vs. Pay-per-View vs. Werbung) Marktprognose 2020–2030","Aktuelle Marktberichte KI-Langvideos 2026: Endkunden Zahlungsbereitschaft Abo, Pay-per-View und Werbefinanzierung","“Zahlungsbereitschaft Endkunden KI-Langvideos Abo Pay-per-View Werbefinanzierung Marktprognose 2020–2030”"]}	1062
+15:02:40.547
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Zahlungsbereitschaft Endkunden KI-Langvideos Abo Pay-per-View Werbefinanzierung objektive Marktanalyse 2020–2030'...","metadata":null}	223
+15:02:40.553
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Statistik und Studien zur Zahlungsbereitschaft für KI-Langvideos (Abo vs. Pay-per-View vs. Werbung) Marktprognose 2020–2030'...","metadata":null}	234
+15:02:40.560
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'Aktuelle Marktberichte KI-Langvideos 2026: Endkunden Zahlungsbereitschaft Abo, Pay-per-View und Werbefinanzierung'...","metadata":null}	224
+15:02:40.565
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for '“Zahlungsbereitschaft Endkunden KI-Langvideos Abo Pay-per-View Werbefinanzierung Marktprognose 2020–2030”'...","metadata":null}	216
+15:02:40.571
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.medienanstalt-nrw.de/fileadmin/user_upload/lfm-nrw/Foerderung/Forschung/Zahlunsbereitschaft/LFMNRW_Whitepaper_Zahlungsbereitschaft.pdf\n","metadata":"https://www.medienanstalt-nrw.de/fileadmin/user_upload/lfm-nrw/Foerderung/Forschung/Zahlunsbereitschaft/LFMNRW_Whitepaper_Zahlungsbereitschaft.pdf"}	396
+15:02:41.425
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://bsi.ag/cases/145-case-studie-auswirkungen-des-einsatzes-kuenstlicher-intelligenz-auf-die-zahlungsbereitschaft-von-online-medien.html\n","metadata":"https://bsi.ag/cases/145-case-studie-auswirkungen-des-einsatzes-kuenstlicher-intelligenz-auf-die-zahlungsbereitschaft-von-online-medien.html"}	384
+15:02:41.434
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://vau.net/presse/publikationen/studien/vaunet-studie-pay-tv-paid-video-on-demand-in-deutschland/\n","metadata":"https://vau.net/presse/publikationen/studien/vaunet-studie-pay-tv-paid-video-on-demand-in-deutschland/"}	308
+15:02:41.442
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://de.statista.com/temas/110/paid-content/\n","metadata":"https://de.statista.com/temas/110/paid-content/"}	198
+15:02:41.449
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://score-media.de/pressemitteilung/paid-content/\n","metadata":"https://score-media.de/pressemitteilung/paid-content/"}	210
+15:02:41.454
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+15:02:41.461
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+15:02:41.465
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+15:02:41.477
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 0 URLs...","metadata":null}	102
+15:02:41.482
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 0 pages of content","metadata":null}	100
+15:02:41.488
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 0 new images from 0 total images","metadata":[]}	113
+15:02:41.495
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+15:02:41.500
+{"type":"logs","content":"subquery_context_not_found","output":"🤷 No content found for '“Zahlungsbereitschaft Endkunden KI-Langvideos Abo Pay-per-View Werbefinanzierung Marktprognose 2020–2030”'...","metadata":null}	215
+15:02:41.503
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://metricool.com/de/ki-trends-2026/\n","metadata":"https://metricool.com/de/ki-trends-2026/"}	184
+15:02:41.509
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.webnetz.de/know-how/blog/paid-media-2026-wie-sich-die-werbewelt-mit-ki-video-und-daten-veraendert\n","metadata":"https://www.webnetz.de/know-how/blog/paid-media-2026-wie-sich-die-werbewelt-mit-ki-video-und-daten-veraendert"}	322
+15:02:41.515
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://de.statista.com/themen/3103/kuenstliche-intelligenz/\n","metadata":"https://de.statista.com/themen/3103/kuenstliche-intelligenz/"}	224
+15:02:41.521
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.kiberatung.de/blog/ki-entwicklungen-2026-jahresausblick-und-expertenmeinungen\n","metadata":"https://www.kiberatung.de/blog/ki-entwicklungen-2026-jahresausblick-und-expertenmeinungen"}	282
+15:02:41.528
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+15:02:41.533
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 4 URLs...","metadata":null}	102
+15:02:41.537
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://bitkom-research.de/studien/kuenstliche-intelligenz-2025\n","metadata":"https://bitkom-research.de/studien/kuenstliche-intelligenz-2025"}	230
+15:02:41.704
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.media-perspektiven.de/fileadmin/user_upload/media-perspektiven/Dossiers/Global_Streaming_Study_2023_und_2022_final.pdf\n","metadata":"https://www.media-perspektiven.de/fileadmin/user_upload/media-perspektiven/Dossiers/Global_Streaming_Study_2023_und_2022_final.pdf"}	364
+15:02:41.724
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+15:02:41.729
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 2 URLs...","metadata":null}	102
+15:02:41.734
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 2 pages of content","metadata":null}	100
+15:02:47.565
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 2 new images from 2 total images","metadata":["https://bitkom-research.de/sites/default/files/Bitkom-research_Logo-weiss_RGB.png","https://bitkom-research.de/sites/default/files/Bitkom-research_Logo_RGB.png"]}	274
+15:02:47.572
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+15:02:47.579
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Statistik und Studien zur Zahlungsbereitschaft für KI-Langvideos (Abo vs. Pay-per-View vs. Werbung) Marktprognose 2020–2030...","metadata":null}	247
+15:02:47.586
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+15:02:48.608
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 4 pages of content","metadata":null}	100
+15:02:51.071
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 28 total images","metadata":["https://www.webnetz.de/img/asset/aW1hZ2VzL2Jsb2dncmFmaWtlbi9oZWFkZXItaGVhZGxlc3MtZWNvbW1lcmNlLWJpbGRuYWNod2Vpcy13ZWJuZXR6LmpwZw/header-headless-ecommerce-bildnachweis-webnetz.jpg?p=placeholder&s=2ef0844e80c536a9b899a12920fa170e","https://www.webnetz.de/img/asset/aW1hZ2VzL2Jsb2dncmFmaWtlbi9kc2MwNDQwNi1taW4ucG5n/dsc04406-min.png?p=placeholder&s=83cc53309ee341d5386f4afe07723fe3","https://www.webnetz.de/img/asset/aW1hZ2VzL2F1dG9yZW4va2F0aGFyaW5hX2tub2xsZV9idWJibC5wbmc/katharina_knolle_bubbl.png?p=placeholder&s=c7115bfd34b51c91afdf1971d0691670","https://www.webnetz.de/img/asset/aW1hZ2VzL2Jsb2dncmFmaWtlbi9sYXV0c3ByZWNoZXItdGVsZWZvbi1wbGF5LWJ1dHRvbi15b3V0dWJlLXNvY2lhbC1tZWRpYS5qcGcuanBn/lautsprecher-telefon-play-button-youtube-social-media.jpg.jpg?p=placeholder&s=548d2680cf7308b0f13474be8582cb90"]}	915
+15:02:51.078
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+15:02:51.083
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Aktuelle Marktberichte KI-Langvideos 2026: Endkunden Zahlungsbereitschaft Abo, Pay-per-View und Werbefinanzierung...","metadata":null}	237
+15:02:51.088
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+15:02:53.813
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+15:03:00.287
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 27 total images","metadata":["https://vau.net/wp-content/uploads/2022/08/Portrait_VAUNET_Leibiger_Johannes_Markus-Altmann_2020-scaled-aspect-ratio-1024-1024.jpg","https://vau.net/wp-content/uploads/2022/09/Unsplash_Chauhan-Moniz-scaled-aspect-ratio-3-2-11-scaled.jpg","https://bsi.ag/images/brand-science-institute-hamburg-logo.png","https://bsi.ag/images/brand-science-institute-hamburg-logo-2026-invers.png"]}	494
+15:03:00.293
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+15:03:00.299
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: Zahlungsbereitschaft Endkunden KI-Langvideos Abo Pay-per-View Werbefinanzierung objektive Marktanalyse 2020–2030...","metadata":null}	236
+15:03:00.305
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+15:03:01.708
+{"type":"logs","content":"research_step_finalized","output":"Finalized research step.\n💸 Total Research Costs: $0.00702358","metadata":null}	140
+15:03:01.714
+{"type":"logs","content":"image_planning","output":"🎨 Analyzing research context for visualization opportunities...","metadata":null}	133
+15:03:01.719
+{"type":"logs","content":"image_concepts_identified","output":"🖼️ Identified 1 visualization concepts, generating images...","metadata":null}	141
+15:03:15.675
+{"type":"logs","content":"image_generating","output":"🖼️ Generating image 1/1: Market Segmentation of Video-on-Demand Revenue...","metadata":null}	146
+15:03:15.681
+{"type":"logs","content":"images_ready","output":"✅ 1 images ready for report embedding","metadata":null}	105
+15:03:22.446
+{"type":"logs","content":"writing_report","output":"✍️ Writing report for 'Analysiere die Entwicklung von Video-KI im Bezug auf Endverbraucher. Welche Entwicklunsgsprünge gab es und wann wird Video-KI auch lange Videos kostengünstig generieren können.'...","metadata":null}	273
+15:04:07.413
+{"type":"report","output":"# Analyse der Entwicklung von Video-KI im Bezug auf Endverbraucher: Entwicklungssprünge, Status Quo und Perspektiven für kostengünstige Langvideo-Generierung\n\n"}	190
+15:04:11.302
+{"type":"report","output":"---\n\n"}	36
+15:04:11.389
+{"type":"report","output":"## Inhaltsverzeichnis\n\n"}	54
+15:04:11.453
+{"type":"report","output":"1. **Einleitung**\n"}	48
+15:04:11.484
+{"type":"report","output":"2. **Technologische Entwicklungssprünge der Video-KI**\n"}	85
+15:04:12.276
+{"type":"report","output":"    - 2.1. Frühphase: RNNs, VAEs und GANs\n"}	72
+15:04:13.483
+{"type":"report","output":"    - 2.2. Durchbruch: Diffusionsmodelle und Transformer-basierte Ansätze\n"}	104
+15:04:14.327
+{"type":"report","output":"    - 2.3. Neural Video Codecs (NVC) und Standardisierung\n"}	88
+15:04:14.904
+{"type":"report","output":"3. **Marktentwicklung und Adaption bei Endverbrauchern**\n"}	87
+15:04:15.264
+{"type":"report","output":"    - 3.1. Nutzungsmuster und Konsumtrends\n"}	73
+15:04:15.589
+{"type":"report","output":"    - 3.2. Kostenstrukturen und Preismodelle\n"}	75
+15:04:15.976
+{"type":"report","output":"    - 3.3. Qualitäts- und Effizienzgewinne durch KI\n"}	82
+15:04:16.383
+{"type":"report","output":"4. **Technische und ökonomische Hürden für Langvideo-Generierung**\n"}	97
+15:04:16.765
+{"type":"report","output":"    - 4.1. Speicher- und Hardware-Limitierungen\n"}	78
+15:04:17.294
+{"type":"report","output":"    - 4.2. Fortschritte in Speicherarchitekturen: CXL und Memory Pooling\n"}	103
+15:04:17.729
+{"type":"report","output":"    - 4.3. Komplexität und Skalierbarkeit von KI-Modellen\n"}	88
+15:04:18.151
+{"type":"report","output":"5. **Wann werden lange KI-Videos für Endverbraucher kostengünstig?**\n"}	99
+15:04:18.629
+{"type":"report","output":"    - 5.1. Prognose auf Basis aktueller Trends\n"}	77
+15:04:18.967
+{"type":"report","output":"    - 5.2. Konkrete Zeithorizonte und Meilensteine\n"}	81
+15:04:19.521
+{"type":"report","output":"6. **Fazit und eigene Bewertung**\n"}	64
+15:04:20.001
+{"type":"report","output":"7. **Referenzen**\n\n"}	50
+15:04:20.319
+{"type":"report","output":"---\n\n"}	36
+15:04:20.329
+{"type":"report","output":"## 1. Einleitung\n\n"}	49
+15:04:20.587
+{"type":"report","output":"Die Entwicklung von Video-KI hat in den letzten zehn Jahren einen enormen Wandel durchlaufen. Während KI-generierte Bilder bereits seit 2022 massentauglich wurden, galt die Videogenerierung lange als technisch und ökonomisch herausfordernd. Mit dem Aufkommen leistungsfähiger Modelle, neuer Hardware-Architekturen und skalierbarer Cloud-Infrastrukturen hat sich das Innovations- und Adoptions-Tempo jedoch rasant beschleunigt. Für Endverbraucher stellt sich die Frage: Wann wird Video-KI in der Lage sein, nicht nur kurze Clips, sondern auch lange, hochwertige Videos zu geringen Kosten zu generieren?\n\n"}	634
+15:04:24.499
+{"type":"report","output":"Dieser Bericht analysiert die Entwicklungssprünge, die Marktdynamik und die technischen wie ökonomischen Voraussetzungen für die breite Verfügbarkeit von Langvideo-KI für Endverbraucher. Dabei werden Erkenntnisse aus wissenschaftlichen Publikationen, Marktstudien und Branchenanalysen integriert und kritisch bewertet.\n\n"}	351
+15:04:26.393
+{"type":"report","output":"---\n\n"}	36
+15:04:26.400
+{"type":"report","output":"## 2. Technologische Entwicklungssprünge der Video-KI\n\n"}	86
+15:04:26.610
+{"type":"report","output":"### 2.1. Frühphase: RNNs, VAEs und GANs\n\n"}	72
+15:04:26.751
+{"type":"report","output":"Die ersten Ansätze zur KI-basierten Videogenerierung zwischen 2014 und 2018 setzten auf rekurrente neuronale Netze (RNNs) zur Pixelvorhersage. Diese Modelle litten jedoch unter starker Fehlerakkumulation und raschem Qualitätsverlust über mehrere Frames hinweg ([wan2.video](https://wan2.video/de/ai-video-timeline)). Parallel wurden Variational Autoencoders (VAEs) eingeführt, die stabile latente Repräsentationen schufen, jedoch meist unscharfe Ergebnisse lieferten ([computerweekly.com](https://www.computerweekly.com/de/tipp/Die-Geschichte-der-kuenstlichen-Intelligenz-eine-Zeitleiste)).\n\n"}	623
+15:04:30.307
+{"type":"report","output":"Mit der Einführung von Generative Adversarial Networks (GANs) durch Ian Goodfellow 2014 begann die Ära der adversarialen Netzwerke. GANs konnten erstmals realistische Bilder und später auch kurze Videoclips erzeugen, litten aber unter Trainingsinstabilität und mangelnder zeitlicher Konsistenz in Videos ([computerweekly.com](https://www.computerweekly.com/de/tipp/Die-Geschichte-der-kuenstlichen-Intelligenz-eine-Zeitleiste)). In engen Domänen und mit kuratierten Datensätzen lieferten GANs ultrascharfe Details bei niedriger Latenz, was sie für Echtzeit-Anwendungen auf Edge-Geräten prädestinierte ([sider.ai](https://sider.ai/de/blog/ai-tools/gan-vs_diffusion-models-which-generative-ai-wins-for-your-product:)).\n\n"}	748
+15:04:36.065
+{"type":"report","output":"**Tabelle 1: Eigenschaften früher Video-KI-Modelle**\n\n"}	85
+15:04:36.474
+{"type":"report","output":"| Modelltyp | Vorteile | Schwächen |\n"}	67
+15:04:36.623
+{"type":"report","output":"|-----------|----------|-----------|\n"}	67
+15:04:36.771
+{"type":"report","output":"| RNN       | Zeitliche Modellierung | Fehlerakkumulation, Qualitätsverlust |\n"}	108
+15:04:37.403
+{"type":"report","output":"| VAE       | Stabile Repräsentation | Unscharfe Ergebnisse |\n"}	92
+15:04:37.861
+{"type":"report","output":"| GAN       | Realistische Bilder | Instabilität, inkonsistente Videos |\n\n"}	105
+15:04:38.371
+{"type":"report","output":"### 2.2. Durchbruch: Diffusionsmodelle und Transformer-basierte Ansätze\n\n"}	104
+15:04:38.495
+{"type":"report","output":"Ab 2021/22 wurden Diffusionsmodelle und Transformer-basierte Architekturen zum Gamechanger für die Videogenerierung. Diffusionsmodelle, ursprünglich für Bilder entwickelt, wurden für Video adaptiert und ermöglichen die Generierung von Zwischenframes aus wenigen Schlüsselbildern, wodurch explizite Bewegungsschätzung entfällt und ultra-niedrige Bitraten bei hoher visueller Qualität erreicht werden ([ieeexplore.ieee.org](https://ieeexplore.ieee.org/document/10962175)). Transformer-basierte Video-Codecs wie VCT quantisieren Frames per CNN und modellieren deren Abhängigkeiten mit Self-Attention, was die Notwendigkeit handgefertigter Bewegungsmodelle eliminiert und die Qualität bei komplexen Bewegungen steigert ([ieeexplore.ieee.org](https://ieeexplore.ieee.org/document/10962175)).\n\n"}	819
+15:04:43.893
+{"type":"report","output":"Gleichzeitig wurden Methoden zur hierarchischen Redundanzmodellierung eingeführt, die sowohl Pixel- als auch Bewegungs-Redundanzen ausnutzen und so die Bitrate weiter senken, ohne Kompatibilität zu Standardformaten wie YUV 4:2:0 zu verlieren ([ieeexplore.ieee.org](https://ieeexplore.ieee.org/document/10962175)).\n\n"}	346
+15:04:45.938
+{"type":"report","output":"### 2.3. Neural Video Codecs (NVC) und Standardisierung\n\n"}	88
+15:04:46.141
+{"type":"report","output":"Neural Video Codecs (NVC) markieren einen Paradigmenwechsel: Sie ersetzen handgefertigte Kodiermodi durch automatisch gelernte Kontexte, was zu einer signifikanten Steigerung der Kodierungseffizienz führt ([CVPR2023](https://openaccess.thecvf.com/content/CVPR2023/papers/Li_Neural_Video_Compression_With_Diverse_Contexts_CVPR_2023_paper.pdf)). Moderne NVCs bieten flexible Steuerung von Bitrate und Qualitätszonen (Region-of-Interest), was neue Anwendungsfälle wie adaptive Streaming-Qualität und selektive Hochwertkodierung ermöglicht ([WACV2023](https://openaccess.thecvf.com/content/WACV2023/papers/Fathima_A_Neural_Video_Codec_With_Spatial_Rate-Distortion_Control_WACV_2023_paper.pdf)).\n\n"}	723
+15:04:50.001
+{"type":"report","output":"Mit dem MPEG-NNR-Standard wurde 2021 erstmals eine international standardisierte Kompressionsmethode für neuronale Netze in Multimedia-Anwendungen verabschiedet, die eine Reduktion der Netzwerkgröße um bis zu 95% ohne Leistungsverlust erlaubt ([Fraunhofer HHI](https://www.pressebox.de/pressemitteilung/fraunhofer-institut-fuer-nachrichtentechnik-heinrich-hertz-institut/Neuer-MPEG-Standard-basiert-auf-Fraunhofer-HHI-Technologie-Erste-standardisierte-Kompressionsmethode-fr-neuronale-Netze-in-Multimedia-Anwendungen/boxid/1077504)).\n\n"}	566
+15:04:52.877
+{"type":"report","output":"---\n\n"}	36
+15:04:52.890
+{"type":"report","output":"## 3. Marktentwicklung und Adaption bei Endverbrauchern\n\n"}	88
+15:04:53.064
+{"type":"report","output":"### 3.1. Nutzungsmuster und Konsumtrends\n\n"}	73
+15:04:53.690
+{"type":"report","output":"Der Konsum von Videoinhalten ist fest im Alltag der Bevölkerung verankert: 94% der Deutschen ab 14 Jahren konsumieren täglich Videos oder Sendungen, wobei sich die Plattformpräferenzen nach Altersgruppen unterscheiden ([die-medienanstalten.de](https://www.die-medienanstalten.de/forschung/video-trends-2025/)). Besonders gefragt sind kurze, mobil optimierte Videos bis drei Minuten Länge, die zunehmend durch KI unterstützt werden ([Goldmedia](https://www.goldmedia.com/online-video-markt-2025-lokal-kurz-ki-gestuetzt-aber-sichtbar/)). \n\n"}	569
+15:04:57.431
+{"type":"report","output":"Der Markt für Online-Video-Angebote wächst weiterhin rasant. Für 2025 wird ein Netto-Werbevolumen von 2,45 Milliarden Euro erwartet, mit einem prognostizierten Anstieg auf 3,18 Milliarden Euro bis 2029 ([Goldmedia](https://www.goldmedia.com/online-video-markt-2025-lokal-kurz-ki-gestuetzt-aber-sichtbar/)). Die Umsätze aus Pay-TV und Paid-VoD stiegen 2024 um 6% auf 5,5 Milliarden Euro ([VAUNET](https://vau.net/presse/publikationen/studien/vaunet-studie-pay-tv-paid-video-on-demand-in-deutschland/)). \n\n"}	535
+15:05:00.425
+{"type":"report","output":"**Tabelle 2: Marktdaten Video- und Streamingmarkt Deutschland**\n\n"}	96
+15:05:00.869
+{"type":"report","output":"| Jahr | Pay-TV & Paid-VoD Umsatz (Mrd. €) | Werbevolumen Online-Video (Mrd. €) |\n"}	112
+15:05:01.835
+{"type":"report","output":"|------|-----------------------------------|------------------------------------|\n"}	112
+15:05:01.924
+{"type":"report","output":"| 2023 | 5,4                               | 2,15                               |\n"}	112
+15:05:02.318
+{"type":"report","output":"| 2024 | 5,5                               | 2,45                               |\n"}	112
+15:05:02.424
+{"type":"report","output":"| 2029 | -                                 | 3,18 (Prognose)                    |\n\n"}	114
+15:05:03.293
+{"type":"report","output":"### 3.2. Kostenstrukturen und Preismodelle\n\n"}	75
+15:05:04.130
+{"type":"report","output":"Die Kosten für KI-Videoproduktion variieren stark nach Produktionsweg und Qualitätsanspruch. DIY-Lösungen mit Tools wie Pictory oder Fliki starten bei 1–3 US-Dollar pro Minute, Freelancer verlangen 50–100+ US-Dollar, spezialisierte Agenturen mehrere hundert bis tausend US-Dollar pro Minute ([prst.media](https://prst.media/de/wie-viel-kostet-ein-ki-video/)). Abomodelle (z. B. 200 €/Monat für 20–30 Videos) senken die Stückkosten pro Videominute erheblich, da fixe Plattform- und Infrastrukturkosten auf ein hohes Volumen verteilt werden ([prst.media](https://prst.media/de/wie-viel-kostet-ein-ki-video/)). \n\n"}	641
+15:05:07.167
+{"type":"report","output":"**Tabelle 3: Kostenvergleich KI-Video vs. klassische Produktion**\n\n"}	98
+15:05:07.589
+{"type":"report","output":"| Produktionsart         | Kosten pro Minute | Vorteile                | Nachteile                   |\n"}	133
+15:05:08.282
+{"type":"report","output":"|-----------------------|-------------------|-------------------------|-----------------------------|\n"}	132
+15:05:08.470
+{"type":"report","output":"| DIY-KI-Tool           | 1–3 US$           | Schnell, skalierbar     | Eingeschränkte Qualität     |\n"}	132
+15:05:09.224
+{"type":"report","output":"| Freelancer            | 50–100+ US$       | Anpassbar, flexibel     | Höhere Kosten               |\n"}	132
+15:05:10.527
+{"type":"report","output":"| Agentur               | 500–2000+ US$     | Höchste Qualität        | Längere Dauer, teuer        |\n"}	132
+15:05:12.257
+{"type":"report","output":"| KI-Abo (20–30 Videos) | 200 €/Monat       | Geringe Stückkosten     | Volumenabhängig             |\n\n"}	134
+15:05:13.944
+{"type":"report","output":"### 3.3. Qualitäts- und Effizienzgewinne durch KI\n\n"}	82
+15:05:14.128
+{"type":"report","output":"KI-gestützte Videoerstellungstools senken den Zeit- und Budgetaufwand um bis zu 80% im Vergleich zu herkömmlichen Methoden ([skimai.com](https://skimai.com/de/10-generative-ai-video-marketing-statistiken-und-fakten-die-sie-kennen-sollten/)). Text-zu-Video-Generatoren eliminieren Kosten für Kameraausrüstung, Sprecher und Studioaufbau und reduzieren so die Einstiegshürden und Produktionskosten drastisch ([tagesfaden.de](https://tagesfaden.de/wie-ki-videos-die-produktionskosten-fur-unternehmen-senken/)). \n\n"}	540
+15:05:16.517
+{"type":"report","output":"---\n\n"}	36
+15:05:16.568
+{"type":"report","output":"## 4. Technische und ökonomische Hürden für Langvideo-Generierung\n\n"}	98
+15:05:16.825
+{"type":"report","output":"### 4.1. Speicher- und Hardware-Limitierungen\n\n"}	78
+15:05:17.174
+{"type":"report","output":"Die Generierung langer, konsistenter Videos ist massiv speicher- und bandbreitenintensiv. Selbst High-End-GPUs wie NVIDIA H100 oder Blackwell mit 80–192 GB VRAM stoßen bei langen Kontexten und großen Modellen schnell an ihre Grenzen ([slashcam.de](https://www.slashcam.de/artikel/Ratgeber/Die-beste-Hardware-fuer-KI-Video---oder-was-man-wirklich--nicht--braucht-----alles-.html)). Für stabile Trainings- und Inferenz-Workloads mit großen Video-KI-Modellen sind VRAM-Kapazitäten von mindestens 16–24 GB erforderlich, wobei für Langvideos >512 GB VRAM oder disaggregiertes Memory über CXL benötigt wird ([markus-schall.de](https://www.markus-schall.de/2025/11/ki-studio-2025-welche-hardware-wirklich-lohnt-vom-mac-studio-bis-zur-rtx-3090/)).\n\n"}	772
+15:05:21.296
+{"type":"report","output":"### 4.2. Fortschritte in Speicherarchitekturen: CXL und Memory Pooling\n\n"}	103
+15:05:21.724
+{"type":"report","output":"Compute Express Link (CXL) ist die Schlüsseltechnologie zur Überwindung der Memory-Wall bei KI-Workloads. CXL ermöglicht das Pooling von Speicherressourcen über mehrere Server hinweg und erlaubt so die flexible Zuteilung großer Speicherpools an GPU-Cluster ([eeTimes](https://www.eetimes.com/from-gpus-to-memory-pools-why-ai-needs-compute-express-link-cxl/)). Mit CXL 4.0 verdoppelt sich die Bandbreite auf 128 GT/s (1,5 TB/s pro Verbindung) und Multi-Rack-Pooling wird möglich, was insbesondere für KI-Inferenz mit langen Kontexten (z. B. LLMs mit 128K Tokens) entscheidend ist ([introl.com](https://introl.com/de/blog/cxl-4-0-infrastructure-planning-guide-memory-pooling-2025)).\n\n"}	713
+15:05:25.874
+{"type":"report","output":"CXL-Pooling ermöglicht die Auslagerung des Key-Value (KV) Caches aus dem GPU-VRAM in gemeinsamen Speicherpools, was eine 3,8–6,5-fache Beschleunigung gegenüber RDMA-basierten Lösungen bringt ([introl.com](https://introl.com/de/blog/cxl-4-0-infrastructure-planning-guide-memory-pooling-2025)). Dies ist ein zentraler Baustein für die Skalierung von Langvideo-KI.\n\n"}	394
+15:05:27.714
+{"type":"report","output":"**Tabelle 4: Vergleich Speicherarchitekturen für KI-Video**\n\n"}	92
+15:05:28.257
+{"type":"report","output":"| Architektur    | Bandbreite | Latenz     | Skalierbarkeit | Eignung für Langvideo-KI |\n"}	119
+15:05:28.807
+{"type":"report","output":"|----------------|------------|------------|----------------|--------------------------|\n"}	119
+15:05:29.018
+{"type":"report","output":"| GPU-VRAM      | 800 GB/s    | <1 µs      | Begrenzte Kapazität | Eingeschränkt           |\n"}	123
+15:05:29.965
+{"type":"report","output":"| NVMe          | 7 GB/s      | ~100 µs    | Hoch           | Zu langsam               |\n"}	119
+15:05:30.479
+{"type":"report","output":"| RDMA          | 200 GB/s    | 10–20 µs   | Hoch           | Limitiert                |\n"}	119
+15:05:30.882
+{"type":"report","output":"| CXL 4.0       | 1,5 TB/s    | <2 µs      | Multi-Rack     | Optimal                  |\n\n"}	121
+15:05:31.642
+{"type":"report","output":"### 4.3. Komplexität und Skalierbarkeit von KI-Modellen\n\n"}	88
+15:05:32.281
+{"type":"report","output":"Die Komplexität moderner Video-KI-Modelle (z. B. Sora, Veo, Runway) erfordert nicht nur enorme Rechenleistung, sondern auch ausgeklügelte Trainings- und Inferenzstrategien. Fortschritte wie kontinuierliches Batching, PagedAttention (vLLM) und spezialisierte Inferenz-Backends (z. B. SiliconFlow) senken die Latenz und erhöhen den Durchsatz, sind aber auf große, verteilte Hardware-Cluster angewiesen ([siliconflow.com](https://www.siliconflow.com/articles/de/the-most-trusted-open-source-inference-library:)).\n\n"}	542
+15:05:35.023
+{"type":"report","output":"Cloud-basierte generative Video-KI läuft auf großen Clustern und liefert aktuell bis zu 100× schnellere Verarbeitung und bessere Qualität als lokal verfügbare Consumer-Hardware – ein Trend, der sich bis 2028–2030 fortsetzen wird ([slashcam.de](https://www.slashcam.de/artikel/Ratgeber/Die-beste-Hardware-fuer-KI-Video---oder-was-man-wirklich--nicht--braucht-----alles-.html)).\n\n"}	409
+15:05:37.148
+{"type":"report","output":"---\n\n"}	36
+15:05:37.167
+{"type":"report","output":"## 5. Wann werden lange KI-Videos für Endverbraucher kostengünstig?\n\n"}	100
+15:05:37.372
+{"type":"report","output":"### 5.1. Prognose auf Basis aktueller Trends\n\n"}	77
+15:05:37.497
+{"type":"report","output":"Die Marktdynamik und technologische Entwicklung deuten darauf hin, dass die KI-basierte Langvideo-Generierung in den nächsten 2–4 Jahren einen Wendepunkt erreichen wird. Bereits heute können kurze bis mittellange Videos (bis 3 Minuten) mit akzeptabler Qualität und geringen Kosten erzeugt werden. Die Stückkosten pro Videominute sinken mit wachsendem Volumen und durch Abomodelle signifikant ([prst.media](https://prst.media/de/wie-viel-kostet-ein-ki-video/)). \n\n"}	494
+15:05:41.660
+{"type":"report","output":"Die größten Hürden für Langvideos (>10 Minuten) liegen aktuell in der Speicherbandbreite, VRAM-Kapazität und Modellkonsistenz. Mit der Einführung von CXL 4.0 (2027+) und der weiteren Verbreitung von Cloud-basierten Inferenzclustern wird die technische Grundlage geschaffen, um auch längere Videos effizient zu generieren ([introl.com](https://introl.com/de/blog/cxl-4-0-infrastructure-planning-guide-memory-pooling-2025)).\n\n"}	455
+15:05:49.204
+{"type":"report","output":"**Prognose:** Ab 2027/28 werden Endverbraucher in der Lage sein, auch längere, hochwertige KI-Videos (10–30 Minuten) zu Kosten von unter 10–20 US-Dollar pro Minute zu generieren – vorausgesetzt, sie nutzen volumenbasierte Abo-Modelle oder Cloud-Dienste mit CXL-Pooling und optimierten Inferenzpipelines.\n\n"}	336
+15:05:55.851
+{"type":"report","output":"### 5.2. Konkrete Zeithorizonte und Meilensteine\n\n"}	81
+15:05:57.840
+{"type":"report","output":"- **2025–2026:** Kurze bis mittellange Videos (<3 Min.) kostengünstig, Langvideos (>10 Min.) noch teuer/technisch limitiert.\n"}	155
+15:06:01.468
+{"type":"report","output":"- **2027:** Kommerzielle Einführung von CXL 3.1/4.0 mit Multi-Rack-Pooling, erste KI-Videoagenturen bieten Langvideo-Generierung als Service an.\n"}	175
+15:06:05.487
+{"type":"report","output":"- **2028–2029:** Skalierbare Cloud-Infrastruktur, optimierte NVCs und flexible Preismodelle ermöglichen Langvideos für Endverbraucher zu Preisen <10 US$/Min.\n"}	188
+15:06:08.653
+{"type":"report","output":"- **2030:** KI-Video wird Standard in"}	66
+15:06:09.515
+{"type":"logs","content":"report_written","output":"📝 Report written for 'Analysiere die Entwicklung von Video-KI im Bezug auf Endverbraucher. Welche Entwicklunsgsprünge gab es und wann wird Video-KI auch lange Videos kostengünstig generieren können.'","metadata":null}	269
+15:06:09.550
+{"type":"path","output":{"pdf":"outputs/task_1770039875_03ca3ce057.pdf","docx":"outputs/task_1770039875_03ca3ce057.docx","md":"outputs/task_1770039875_03ca3ce057.md","json":"outputs/task_1770039875_03ca3ce057.json"}}	216
+15:06:09.832
