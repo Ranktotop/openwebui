@@ -28,8 +28,9 @@ COPY --from=deps /app/node_modules ./node_modules
 # Copy source code from CLONER
 COPY --from=cloner /temp/frontend/nextjs ./
 
-# WICHTIG: Der Platzhalter für die dynamische URL beim Start
-RUN sed -i "s|process.env.NEXT_PUBLIC_BACKEND_URL|process.env.NEXT_PUBLIC_GPTR_API_URL|g" next.config.mjs
+# Build-Argument mit Default
+ARG NEXT_PUBLIC_GPTR_API_URL=http://dummyurl.local
+ENV NEXT_PUBLIC_GPTR_API_URL=${NEXT_PUBLIC_GPTR_API_URL}
 
 # Build Next.js application
 RUN npm run build
@@ -48,8 +49,13 @@ COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 
+# Runtime-Config Script
+COPY .docker/gptresearcher/standalone/ui/entrypoint.sh /app/entrypoint.sh
+RUN chmod +x /app/entrypoint.sh
+
 # Expose port
 EXPOSE 3000
 
+ENTRYPOINT ["/app/entrypoint.sh"]
 # Start command (Exakt wie im Original)
 CMD ["npm", "run", "start"]
