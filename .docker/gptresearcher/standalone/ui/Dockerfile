@@ -29,7 +29,7 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY --from=cloner /temp/frontend/nextjs ./
 
 # WICHTIG: Der Platzhalter für die dynamische URL beim Start
-ENV NEXT_PUBLIC_BACKEND_URL=BUILD_TIME_BACKEND_URL
+ENV NEXT_PUBLIC_BACKEND_URL="http://localhost:8000"
 
 # Build Next.js application
 RUN npm run build \
