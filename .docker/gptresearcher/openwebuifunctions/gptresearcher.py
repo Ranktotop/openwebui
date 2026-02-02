@@ -21,6 +21,7 @@ from datetime import datetime
 from fastapi import Request
 from open_webui.models.users import Users
 from open_webui.utils.chat import generate_chat_completion
+import base64
 
 ###########################
 ######### STATE ###########
@@ -266,13 +267,13 @@ class MessageHandler:
         self.verbose = verbose
         self.logger = logger
 
-    async def handle_logs(self, content: str, output: str) -> None:
+    async def handle_logs(self, content: str, output: str, metadata: Any = None) -> None:
         """
         Handle log messages and update research state
         Args:
             content (str): Log content
             output (str): Additional output
-
+            metadata (Any): Additional metadata, e.g. image URLs
         Returns:
             None
         """
@@ -295,6 +296,21 @@ class MessageHandler:
         )
 
         self.logger.log(f"[WS LOG] {status_text[:80]}", "MessageHandler")
+
+        # NEW: Extract and emit images
+        if content == "scraping_images" and metadata and isinstance(metadata, list):
+            # metadata contains image URLs like:
+            # ["https://example.com/image1.jpg", "https://example.com/image2.jpg"]
+
+            for img_url in metadata[:3]:  # Limit to first 3 images
+                await self.emitter({
+                    "type": "message",
+                    "data": {
+                        "content": f"![Research Image]({img_url})"
+                    }
+                })
+
+            self.logger.log(f"Emitted {len(metadata[:3])} images", "MessageHandler")
 
     async def handle_report(self, output: str) -> None:
         """
@@ -366,7 +382,9 @@ class MessageHandler:
 
         if msg_type == "logs":
             await self.handle_logs(
-                msg_data.get("content", ""), msg_data.get("output", "")
+                msg_data.get("content", ""),
+                msg_data.get("output", ""),
+                msg_data.get("metadata")  # ← ADD THIS
             )
         elif msg_type == "report":
             await self.handle_report(msg_data.get("output", ""))
