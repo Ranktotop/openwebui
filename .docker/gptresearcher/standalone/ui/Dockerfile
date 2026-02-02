@@ -32,8 +32,8 @@ COPY --from=cloner /temp/frontend/nextjs ./
 ENV NEXT_PUBLIC_BACKEND_URL="http://localhost:8000"
 
 # Build Next.js application
-RUN npm run build \
-    && npm prune --production
+# Wir entfernen '&& npm prune --production', da dies benötigte Pakete löscht!
+RUN npm run build
 
 ###############################################
 # 3) Runner layer
