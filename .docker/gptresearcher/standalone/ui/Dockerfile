@@ -28,6 +28,9 @@ COPY --from=deps /app/node_modules ./node_modules
 # Copy source code from CLONER
 COPY --from=cloner /temp/frontend/nextjs ./
 
+# Im Builder layer nach dem COPY:
+RUN sed -i 's|NEXT_PUBLIC_BACKEND_URL|NEXT_PUBLIC_GPTR_API_URL|g' next.config.mjs
+
 # Build-Argument mit Default
 ARG NEXT_PUBLIC_GPTR_API_URL=http://dummyurl.local
 ENV NEXT_PUBLIC_GPTR_API_URL=${NEXT_PUBLIC_GPTR_API_URL}
