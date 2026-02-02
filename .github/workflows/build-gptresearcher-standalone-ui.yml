@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 env:
-  IMG_VERSION: "0.0.03" # <--- Adjust this to trigger a new build
+  IMG_VERSION: "0.0.04" # <--- Adjust this to trigger a new build
 
 jobs:
   build-gpt-researcher-standalone-ui:
