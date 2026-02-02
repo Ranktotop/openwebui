@@ -29,10 +29,9 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY --from=cloner /temp/frontend/nextjs ./
 
 # WICHTIG: Der Platzhalter für die dynamische URL beim Start
-ENV NEXT_PUBLIC_BACKEND_URL="http://localhost:8000"
+RUN sed -i "s|process.env.NEXT_PUBLIC_BACKEND_URL|process.env.NEXT_PUBLIC_GPTR_API_URL|g" next.config.mjs
 
 # Build Next.js application
-# Wir entfernen '&& npm prune --production', da dies benötigte Pakete löscht!
 RUN npm run build
 
 ###############################################
@@ -49,15 +48,8 @@ COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 
-# copy entrypoint script
-COPY .docker/gptresearcher/standalone/ui/entrypoint.sh /app/entrypoint.sh
-RUN chmod +x /app/entrypoint.sh
-
 # Expose port
 EXPOSE 3000
-
-# Entrypoint setzen
-ENTRYPOINT ["/app/entrypoint.sh"]
 
 # Start command (Exakt wie im Original)
 CMD ["npm", "run", "start"]
