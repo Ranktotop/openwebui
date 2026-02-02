@@ -10,6 +10,16 @@ RUN apt-get update && apt-get install -y \
     unzip \
     jq \
     ca-certificates \
+    libmagic1 \
+    libglib2.0-0 \
+    libcairo2 \
+    libpango-1.0-0 \
+    libpangocairo-1.0-0 \
+    libpangoft2-1.0-0 \
+    libharfbuzz-subset0 \
+    libjpeg62-turbo \
+    libopenjp2-7 \
+    libxcb1 \
     --no-install-recommends
 
 # 2. Chrome installieren
@@ -59,6 +69,8 @@ RUN pip install --upgrade pip && \
     pip install selenium && \
     pip install --no-cache-dir -r requirements.txt --upgrade --prefer-binary && \
     pip install --no-cache-dir -r multi_agents/requirements.txt --upgrade --prefer-binary
+
+RUN pip install --force-reinstall "md2pdf==1.0.1"
 
 # Stage 3: Final Stage
 FROM gpt-researcher-install AS gpt-researcher
