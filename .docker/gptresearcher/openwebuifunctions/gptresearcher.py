@@ -22,6 +22,7 @@ from fastapi import Request
 from open_webui.models.users import Users
 from open_webui.utils.chat import generate_chat_completion
 import base64
+import re
 
 ###########################
 ######### STATE ###########
@@ -253,19 +254,27 @@ class ModelCaller:
 class MessageHandler:
     """Handles different WebSocket message types"""
 
-    def __init__(self, state: ResearchState, logger: Logger, emitter: Callable[[Dict[str, Any]], Awaitable[None]], verbose: bool = False):
+    def __init__(self, state: ResearchState, logger: Logger, server_url: str, emitter: Callable[[Dict[str, Any]], Awaitable[None]], verbose: bool = False, download_reports: bool = True, download_images: bool = True, download_scraped_images: bool = False):
         """
         Constructor for MessageHandler
         Args:
             state (ResearchState): Research state instance
             logger (Logger): Logger instance
+            server_url (str): Base URL of the GPT Researcher server
             emitter (Callable[[Dict[str, Any]], Awaitable[None]]): Event emitter function
             verbose (bool): Verbose logging flag
+            download_reports (bool): Flag to enable report downloading
+            download_images (bool): Flag to enable image downloading
+            download_scraped_images (bool): Flag to enable scraped image downloading
         """
         self.state = state
         self.emitter = emitter
         self.verbose = verbose
         self.logger = logger
+        self.server_url = server_url
+        self.download_reports = download_reports
+        self.download_images = download_images
+        self.download_scraped_images = download_scraped_images
 
     async def handle_logs(self, content: str, output: str, metadata: Any = None) -> None:
         """
@@ -295,10 +304,10 @@ class MessageHandler:
             }
         )
 
-        self.logger.log(f"[WS LOG] {status_text[:80]}", "MessageHandler")
+        self.logger.log(f"{status_text[:80]}", "GPTResearcherMessage")
 
-        # NEW: Extract and emit images
-        if content == "scraping_images" and metadata and isinstance(metadata, list):
+        # Extract and emit scraped images
+        if self.download_scraped_images and content == "scraping_images" and metadata and isinstance(metadata, list):
             # metadata contains image URLs like:
             # ["https://example.com/image1.jpg", "https://example.com/image2.jpg"]
 
@@ -341,6 +350,55 @@ class MessageHandler:
             return False
 
         if any(key in output for key in ["pdf", "docx", "md", "json"]):
+            # Define file types with their MIME types and icons
+            file_types = {
+                "pdf": {"mime": "application/pdf", "icon": "📄", "label": "PDF Report"},
+                "docx": {"mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "icon": "📝", "label": "Word Document"},
+                "md": {"mime": "text/markdown", "icon": "📋", "label": "Markdown Report"},
+                "json": {"mime": "application/json", "icon": "📊", "label": "JSON Data"}
+            }
+
+            # Download and emit all available files if enabled
+            if self.download_reports:
+                files_to_emit = []
+                for file_type, config in file_types.items():
+                    file_path = output.get(file_type, "")
+                    if file_path:
+                        try:
+                            url = f"{self.server_url}/{file_path}"
+                            self.logger.log(f"Downloading {file_type.upper()} from: {url}", "MessageHandler")
+
+                            async with aiohttp.ClientSession() as session:
+                                async with session.get(url, timeout=aiohttp.ClientTimeout(total=30)) as resp:
+                                    if resp.status == 200:
+                                        file_bytes = await resp.read()
+                                        file_b64 = base64.b64encode(file_bytes).decode()
+                                        filename = file_path.split("/")[-1]
+
+                                        self.logger.log(f"{file_type.upper()} downloaded: {len(file_bytes)} bytes", "MessageHandler")
+
+                                        # ✅ Sammle File-Daten
+                                        files_to_emit.append({
+                                            "name": filename,
+                                            "type": config["mime"],
+                                            "content": file_b64
+                                        })
+                                    else:
+                                        self.logger.log(f"{file_type.upper()} download failed: HTTP {resp.status}", "MessageHandler")
+                        except Exception as e:
+                            self.logger.log(f"{file_type.upper()} download error: {e}", "MessageHandler")
+
+                # emit all reports
+                if files_to_emit:
+                    await self.emitter({
+                        "type": "files",  # oder "chat:message:files"
+                        "data": {
+                            "files": files_to_emit
+                        }
+                    })
+                    self.logger.log(f"Emitted {len(files_to_emit)} files", "MessageHandler")
+
+            # Mark research complete
             self.state.mark_complete()
             await self.emitter(
                 {
@@ -384,7 +442,7 @@ class MessageHandler:
             await self.handle_logs(
                 msg_data.get("content", ""),
                 msg_data.get("output", ""),
-                msg_data.get("metadata")  # ← ADD THIS
+                msg_data.get("metadata")
             )
         elif msg_type == "report":
             await self.handle_report(msg_data.get("output", ""))
@@ -404,10 +462,11 @@ class Pipe:
         Configuration valves for GPT Researcher Pipe Function
         """
         # Connection
-        GPT_RESEARCHER_WS_URL: str = Field(
-            default="ws://gptresearcher-server:8000/ws",
-            description="WebSocket URL of GPT Researcher container",
+        GPT_RESEARCHER_DOMAIN: str = Field(
+            default="gptresearcher-server:8000",
+            description="Domain of GPT Researcher container",
         )
+        GPT_RESEARCHER_SSL: bool = Field(default=True, description="Enable ssl for GPT Researcher container")
 
         # Model Configuration
         DEFAULT_MODEL: str = Field(
@@ -428,6 +487,11 @@ class Pipe:
 
         # Debug
         VERBOSE: bool = Field(default=True, description="Enable verbose logging")
+
+        # Files
+        DOWNLOAD_REPORTS: bool = Field(default=True, description="Enable report downloading")
+        DOWNLOAD_IMAGES: bool = Field(default=True, description="Enable image downloading")
+        DOWNLOAD_SCRAPED_IMAGES: bool = Field(default=False, description="Enable scraped image downloading")
 
     def __init__(self):
         """Constructor for GPT Researcher Pipe"""
@@ -569,6 +633,21 @@ class Pipe:
             result.append(message)
 
         return result
+
+    def get_gpt_researcher_url(self, url_type: str = "") -> str:
+        """
+        Returns the GPT Researcher URL based on type
+        Args:
+            url_type (str): Type of URL to return ('ws' for WebSocket, otherwise HTTP) 
+        Returns:
+            str: Constructed URL
+        """
+        if url_type == "ws":
+            protocol = "wss" if self.valves.GPT_RESEARCHER_SSL else "ws"
+            return f"{protocol}://{self.valves.GPT_RESEARCHER_DOMAIN}/ws"
+        else:
+            protocol = "https" if self.valves.GPT_RESEARCHER_SSL else "http"
+            return f"{protocol}://{self.valves.GPT_RESEARCHER_DOMAIN}"
 
     #########################
     ######## PROCESS ########
@@ -753,6 +832,46 @@ class Pipe:
         except json.JSONDecodeError:
             raise ValueError("Refinement model did not return valid JSON")
 
+    async def _embed_images(self, full_report: str) -> str:
+        """
+        Searches the report for image paths and embeds them as base64 data URLs
+
+        Args:
+            full_report (str): The full research report content
+
+        Returns:
+            str: The report with embedded images
+        """
+        try:
+            # Find all image paths
+            img_pattern = r'!\[([^\]]*)\]\(/outputs/([^\)]+)\)'
+            matches = re.findall(img_pattern, full_report)
+
+            async with aiohttp.ClientSession() as session:
+                for alt_text, img_path in matches:
+                    try:
+                        url = f"{self.get_gpt_researcher_url()}/outputs/{img_path}"
+                        async with session.get(url, timeout=aiohttp.ClientTimeout(total=30)) as resp:
+                            if resp.status == 200:
+                                img_bytes = await resp.read()
+                                img_b64 = base64.b64encode(img_bytes).decode()
+
+                                # Detect MIME type from extension
+                                ext = img_path.split('.')[-1].lower()
+                                mime = f"image/{ext}" if ext in ["png", "jpg", "jpeg", "gif", "webp"] else "image/png"
+
+                                # Replace with data URL
+                                old = f'![{alt_text}](/outputs/{img_path})'
+                                new = f'![{alt_text}](data:{mime};base64,{img_b64})'
+                                full_report = full_report.replace(old, new)
+
+                                self.logger.log(f"Embedded image: {img_path}", "CONDUCT_RESEARCH")
+                    except Exception as e:
+                        self.logger.log(f"Failed to embed image {img_path}: {e}", "CONDUCT_RESEARCH")
+        except Exception as e:
+            self.logger.log(f"Error during image embedding: {e}", "CONDUCT_RESEARCH")
+        return full_report
+
     async def _conduct_research(self, query: str, report_type: str) -> str:
         """
         Execute research and return report
@@ -766,7 +885,8 @@ class Pipe:
         """
         self.logger.log(f"Starting research: '{query}...', Type: {report_type}", "CONDUCT_RESEARCH", True)
         state = ResearchState()
-        handler = MessageHandler(state, self.logger, self.emitter, self.valves.VERBOSE)
+        handler = MessageHandler(state, self.logger, self.get_gpt_researcher_url(), self.emitter, self.valves.VERBOSE,
+                                 self.valves.DOWNLOAD_REPORTS, self.valves.DOWNLOAD_IMAGES, self.valves.DOWNLOAD_SCRAPED_IMAGES)
 
         try:
             await self.emitter(
@@ -780,11 +900,11 @@ class Pipe:
             timeout = aiohttp.ClientTimeout(
                 total=None, connect=60, sock_connect=60, sock_read=None
             )
-            self.logger.log(f"Connecting to WebSocket at {self.valves.GPT_RESEARCHER_WS_URL}", "CONDUCT_RESEARCH", False)
+            self.logger.log(f"Connecting to WebSocket at {self.get_gpt_researcher_url('ws')}", "CONDUCT_RESEARCH", False)
 
             async with aiohttp.ClientSession(timeout=timeout) as session:
                 async with session.ws_connect(
-                    self.valves.GPT_RESEARCHER_WS_URL, heartbeat=30
+                    self.get_gpt_researcher_url("ws"), heartbeat=30
                 ) as ws:
 
                     start_msg = f"start {json.dumps(request_config)}"
@@ -793,6 +913,8 @@ class Pipe:
                     await self._handle_websocket_stream(ws, handler)
 
             report = state.get_full_report()
+            if self.valves.DOWNLOAD_IMAGES:
+                report = await self._embed_images(report)
             self.logger.log(
                 f"[RESEARCH DONE] Report size: {len(report)} chars", "CONDUCT_RESEARCH", False
             )
@@ -808,6 +930,8 @@ class Pipe:
             traceback.print_exc()
             report = state.get_full_report()
             if report:
+                if self.valves.DOWNLOAD_IMAGES:
+                    report = await self._embed_images(report)
                 self.logger.log(f"[RESEARCH] Partial report size: {len(report)} chars", "CONDUCT_RESEARCH", False)
                 return f"{report}\n\n---\n⚠️ Verbindung unterbrochen, Partial-Report."
             return f"❌ Research error: {str(e)}"

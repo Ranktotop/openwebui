@@ -1,78 +1,306 @@
-start {"task":"What are the latest news on ai","report_type":"research_report","report_source":"web","tone":"Objective","query_domains":[],"mcp_enabled":false,"mcp_strategy":"fast","mcp_configs":[]}	198	
-14:15:37.709
-{"query":"What are the latest news on ai","sources":[],"context":[],"report":""}	80	
-14:15:37.711
-{"type":"logs","content":"starting_research","output":"🔍 Starting the research task for 'What are the latest news on ai'...","metadata":null}	142	
-14:15:39.576
-{"type":"logs","content":"agent_generated","output":"📰 News Analyst Agent","metadata":null}	92	
-14:15:39.577
-{"type":"logs","content":"planning_research","output":"🌐 Browsing the web to learn more about the task: What are the latest news on ai...","metadata":null}	156	
-14:15:39.578
-{"type":"logs","content":"planning_research","output":"🤔 Planning the research strategy and subtasks...","metadata":null}	122	
-14:15:42.678
-{"type":"logs","content":"subqueries","output":"🗂️ I will conduct my research based on the following queries: ['site:reuters.com artificial intelligence news February 2026 regulation ethics breakthroughs', 'site:news.google.com/topics/CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRlpXNHRSMElvQUFQAQ \"Artificial intelligence\" latest news February 2026', '\"latest AI research breakthroughs\" February 2026 global overview', 'What are the latest news on ai']...","metadata":["site:reuters.com artificial intelligence news February 2026 regulation ethics breakthroughs","site:news.google.com/topics/CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRlpXNHRSMElvQUFQAQ \"Artificial intelligence\" latest news February 2026","\"latest AI research breakthroughs\" February 2026 global overview","What are the latest news on ai"]}	803	
-14:15:52.380
-{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'site:reuters.com artificial intelligence news February 2026 regulation ethics breakthroughs'...","metadata":null}	203	
-14:15:52.387
-{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'site:news.google.com/topics/CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRlpXNHRSMElvQUFQAQ \"Artificial intelligence\" latest news February 2026'...","metadata":null}	248	
-14:15:52.387
-{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for '\"latest AI research breakthroughs\" February 2026 global overview'...","metadata":null}	178	
-14:15:52.388
-{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'What are the latest news on ai'...","metadata":null}	142	
-14:15:52.388
-{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.artificialintelligence-news.com/\n","metadata":"https://www.artificialintelligence-news.com/"}	192	
-14:15:53.228
-{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://techcrunch.com/category/artificial-intelligence/\n","metadata":"https://techcrunch.com/category/artificial-intelligence/"}	216	
-14:15:53.230
-{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.reuters.com/technology/artificial-intelligence/\n","metadata":"https://www.reuters.com/technology/artificial-intelligence/"}	222	
-14:15:53.233
-{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://news.mit.edu/topic/artificial-intelligence2\n","metadata":"https://news.mit.edu/topic/artificial-intelligence2"}	206	
-14:15:53.233
-{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.theguardian.com/technology/artificialintelligenceai\n","metadata":"https://www.theguardian.com/technology/artificialintelligenceai"}	230	
-14:15:53.235
-{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	135	
-14:15:53.236
-{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	103	
-14:15:53.236
-{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	135	
-14:15:53.337
-{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 0 URLs...","metadata":null}	103	
-14:15:53.338
-{"type":"logs","content":"scraping_content","output":"📄 Scraped 0 pages of content","metadata":null}	101	
-14:15:53.339
-{"type":"logs","content":"scraping_images","output":"🖼️ Selected 0 new images from 0 total images","metadata":[]}	114	
-14:15:53.340
-{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	93	
-14:15:53.341
-{"type":"logs","content":"subquery_context_not_found","output":"🤷 No content found for 'site:news.google.com/topics/CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRlpXNHRSMElvQUFQAQ \"Artificial intelligence\" latest news February 2026'...","metadata":null}	247	
-14:15:53.342
-{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.reuters.com/sustainability/boards-policy-regulation/eu-delay-high-risk-ai-rules-until-2027-after-big-tech-pushback-2025-11-19/\n","metadata":"https://www.reuters.com/sustainability/boards-policy-regulation/eu-delay-high-risk-ai-rules-until-2027-after-big-tech-pushback-2025-11-19/"}	380	
-14:15:53.420
-{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.reuters.com/technology/artificial-intelligence/eu-lays-out-guidelines-misuse-ai-by-employers-websites-police-2025-02-04/\n","metadata":"https://www.reuters.com/technology/artificial-intelligence/eu-lays-out-guidelines-misuse-ai-by-employers-websites-police-2025-02-04/"}	368	
-14:15:53.421
-{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.reuters.com/technology/artificial-intelligence/europe-looks-embrace-ai-paris-summits-2nd-day-while-global-consensus-unclear-2025-02-11/\n","metadata":"https://www.reuters.com/technology/artificial-intelligence/europe-looks-embrace-ai-paris-summits-2nd-day-while-global-consensus-unclear-2025-02-11/"}	398	
-14:15:53.424
-{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.reuters.com/sustainability/boards-policy-regulation/eu-ease-ai-privacy-rules-critics-warn-caving-big-tech-trump-2025-11-19/\n","metadata":"https://www.reuters.com/sustainability/boards-policy-regulation/eu-ease-ai-privacy-rules-critics-warn-caving-big-tech-trump-2025-11-19/"}	374	
-14:15:53.426
-{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	135	
-14:15:53.426
-{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 4 URLs...","metadata":null}	103	
-14:15:53.426
-{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	135	
-14:15:53.474
-{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 0 URLs...","metadata":null}	103	
-14:15:53.474
-{"type":"logs","content":"scraping_content","output":"📄 Scraped 0 pages of content","metadata":null}	101	
-14:15:53.475
-{"type":"logs","content":"scraping_images","output":"🖼️ Selected 0 new images from 0 total images","metadata":[]}	114	
-14:15:53.476
-{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	93	
-14:15:53.477
-{"type":"logs","content":"subquery_context_not_found","output":"🤷 No content found for '\"latest AI research breakthroughs\" February 2026 global overview'...","metadata":null}	177	
-14:15:53.478
-{"type":"logs","content":"scraping_content","output":"📄 Scraped 0 pages of content","metadata":null}	101	
-14:16:03.044
-{"type":"logs","content":"scraping_images","output":"🖼️ Selected 0 new images from 0 total images","metadata":[]}	114	
-14:16:03.045
-{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	93	
-14:16:03.045
+start {"task":"What are the latest news on ai","report_type":"research_report","report_source":"web","tone":"Objective","query_domains":[],"mcp_enabled":false,"mcp_strategy":"fast","mcp_configs":[]}	198
+10:26:50.246
+{"query":"What are the latest news on ai","sources":[],"context":[],"report":""}	80
+10:26:50.248
+{"type":"logs","content":"starting_research","output":"🔍 Starting the research task for 'What are the latest news on ai'...","metadata":null}	141
+10:26:52.302
+{"type":"logs","content":"agent_generated","output":"📰 News Analyst Agent","metadata":null}	91
+10:26:52.302
+{"type":"logs","content":"planning_research","output":"🌐 Browsing the web to learn more about the task: What are the latest news on ai...","metadata":null}	155
+10:26:52.308
+{"type":"logs","content":"planning_research","output":"🤔 Planning the research strategy and subtasks...","metadata":null}	121
+10:26:53.539
+{"type":"logs","content":"subqueries","output":"🗂️ I will conduct my research based on the following queries: ['site:news.google.com Artificial intelligence latest headlines February 2026', 'site:reuters.com/technology/artificial-intelligence latest AI news global impact regulation ethics February 2026', 'site:sciencedaily.com/news/computers_math/artificial_intelligence recent AI research breakthroughs February 2026', 'What are the latest news on ai']...","metadata":["site:news.google.com Artificial intelligence latest headlines February 2026","site:reuters.com/technology/artificial-intelligence latest AI news global impact regulation ethics February 2026","site:sciencedaily.com/news/computers_math/artificial_intelligence recent AI research breakthroughs February 2026","What are the latest news on ai"]}	814
+10:27:02.761
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'site:news.google.com Artificial intelligence latest headlines February 2026'...","metadata":null}	186
+10:27:02.763
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'site:reuters.com/technology/artificial-intelligence latest AI news global impact regulation ethics February 2026'...","metadata":null}	223
+10:27:02.774
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'site:sciencedaily.com/news/computers_math/artificial_intelligence recent AI research breakthroughs February 2026'...","metadata":null}	223
+10:27:02.776
+{"type":"logs","content":"running_subquery_research","output":"\n🔍 Running research for 'What are the latest news on ai'...","metadata":null}	141
+10:27:02.779
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://news.google.com/topics/CAAqIAgKIhpDQkFTRFFvSEwyMHZNRzFyZWhJQ1pXNG9BQVAB\n","metadata":"https://news.google.com/topics/CAAqIAgKIhpDQkFTRFFvSEwyMHZNRzFyZWhJQ1pXNG9BQVAB"}	262
+10:27:03.897
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://news.google.com/topics/CAAqIAgKIhpDQkFTRFFvSEwyMHZNRzFyZWhJQ2EyOG9BQVAB\n","metadata":"https://news.google.com/topics/CAAqIAgKIhpDQkFTRFFvSEwyMHZNRzFyZWhJQ2EyOG9BQVAB"}	262
+10:27:03.901
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://news.google.com/topics/CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRlpXNHRSMElvQUFQAQ?hl=en-CA&ceid=CA%3Aen\n","metadata":"https://news.google.com/topics/CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRlpXNHRSMElvQUFQAQ?hl=en-CA&ceid=CA%3Aen"}	318
+10:27:03.903
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://news.google.com/\n","metadata":"https://news.google.com/"}	152
+10:27:03.903
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB\n","metadata":"https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB"}	278
+10:27:03.903
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+10:27:03.905
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+10:27:03.905
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+10:27:03.958
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 0 URLs...","metadata":null}	102
+10:27:03.959
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 0 pages of content","metadata":null}	100
+10:27:03.960
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 0 new images from 0 total images","metadata":[]}	113
+10:27:03.961
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+10:27:03.962
+{"type":"logs","content":"subquery_context_not_found","output":"🤷 No content found for 'site:sciencedaily.com/news/computers_math/artificial_intelligence recent AI research breakthroughs February 2026'...","metadata":null}	222
+10:27:03.963
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.reuters.com/technology/artificial-intelligence/\n","metadata":"https://www.reuters.com/technology/artificial-intelligence/"}	222
+10:27:03.970
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.reuters.com/technology/artificial-intelligence/eu-lays-out-guidelines-misuse-ai-by-employers-websites-police-2025-02-04/\n","metadata":"https://www.reuters.com/technology/artificial-intelligence/eu-lays-out-guidelines-misuse-ai-by-employers-websites-police-2025-02-04/"}	368
+10:27:03.971
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.reuters.com/technology/artificial-intelligence/artificial-intelligencer-top-ai-themes-that-will-shape-2026-2026-01-15/\n","metadata":"https://www.reuters.com/technology/artificial-intelligence/artificial-intelligencer-top-ai-themes-that-will-shape-2026-2026-01-15/"}	364
+10:27:03.972
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.reuters.com/technology/artificial-intelligence/google-pushes-global-agenda-educate-workers-lawmakers-ai-2025-01-25/\n","metadata":"https://www.reuters.com/technology/artificial-intelligence/google-pushes-global-agenda-educate-workers-lawmakers-ai-2025-01-25/"}	358
+10:27:03.974
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.reuters.com/technology/artificial-intelligence/how-new-ai-chip-rule-us-will-work-2025-01-13/\n","metadata":"https://www.reuters.com/technology/artificial-intelligence/how-new-ai-chip-rule-us-will-work-2025-01-13/"}	312
+10:27:03.974
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+10:27:03.974
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 5 URLs...","metadata":null}	102
+10:27:03.975
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://news.google.com/topics/CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRlpXNHRSMElvQUFQAQ\n","metadata":"https://news.google.com/topics/CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRlpXNHRSMElvQUFQAQ"}	274
+10:27:03.980
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://techcrunch.com/category/artificial-intelligence/\n","metadata":"https://techcrunch.com/category/artificial-intelligence/"}	216
+10:27:03.981
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.wsj.com/tech/ai\n","metadata":"https://www.wsj.com/tech/ai"}	158
+10:27:03.983
+{"type":"logs","content":"added_source_url","output":"✅ Added source url to research: https://www.pcmag.com/news/categories/ai\n","metadata":"https://www.pcmag.com/news/categories/ai"}	184
+10:27:03.985
+{"type":"logs","content":"researching","output":"🤔 Researching for relevant information across multiple sources...\n","metadata":null}	134
+10:27:03.985
+{"type":"logs","content":"scraping_urls","output":"🌐 Scraping content from 4 URLs...","metadata":null}	102
+10:27:03.985
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 5 pages of content","metadata":null}	100
+10:27:10.818
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 0 new images from 0 total images","metadata":[]}	113
+10:27:10.820
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+10:27:10.821
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: site:news.google.com Artificial intelligence latest headlines February 2026...","metadata":null}	199
+10:27:10.822
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 0 pages of content","metadata":null}	100
+10:27:10.969
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 0 new images from 0 total images","metadata":[]}	113
+10:27:10.971
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+10:27:10.973
+{"type":"logs","content":"subquery_context_not_found","output":"🤷 No content found for 'site:reuters.com/technology/artificial-intelligence latest AI news global impact regulation ethics February 2026'...","metadata":null}	222
+10:27:10.974
+{"type":"logs","content":"subquery_context_not_found","output":"🤷 No content found for 'site:news.google.com Artificial intelligence latest headlines February 2026'...","metadata":null}	185
+10:27:12.153
+{"type":"logs","content":"scraping_content","output":"📄 Scraped 3 pages of content","metadata":null}	100
+10:27:12.456
+{"type":"logs","content":"scraping_images","output":"🖼️ Selected 4 new images from 10 total images","metadata":["https://techcrunch.com/wp-content/uploads/2025/10/OLM_Full_Pressure_Water_Deluge_Test_202307280728232180_1_8ac578ec57.jpeg?w=668","https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-2215876044.jpg?w=562","https://techcrunch.com/wp-content/uploads/2025/02/firefox.jpeg?w=563","https://techcrunch.com/wp-content/uploads/2026/02/Codex-dark.png?w=666"]}	473
+10:27:12.457
+{"type":"logs","content":"scraping_complete","output":"🌐 Scraping complete","metadata":null}	92
+10:27:12.458
+{"type":"logs","content":"fetching_query_content","output":"📚 Getting relevant content based on query: What are the latest news on ai...","metadata":null}	154
+10:27:12.460
+{"type":"logs","content":"context_combined","output":"📚 Combined research context: 0 MCP sources, web content","metadata":null}	127
+10:27:13.800
+{"type":"logs","content":"research_step_finalized","output":"Finalized research step.\n💸 Total Research Costs: $0.00786434","metadata":null}	140
+10:27:13.803
+{"type":"logs","content":"image_planning","output":"🎨 Analyzing research context for visualization opportunities...","metadata":null}	133
+10:27:13.804
+{"type":"logs","content":"image_concepts_identified","output":"🖼️ Identified 1 visualization concepts, generating images...","metadata":null}	141
+10:27:18.663
+{"type":"logs","content":"image_generating","output":"🖼️ Generating image 1/1: AI Feature Comparison Chart...","metadata":null}	127
+10:27:18.664
+{"type":"logs","content":"images_ready","output":"✅ 1 images ready for report embedding","metadata":null}	105
+10:27:26.165
+{"type":"images","content":"selected_images","output":"[\"https://techcrunch.com/wp-content/uploads/2025/10/OLM_Full_Pressure_Water_Deluge_Test_202307280728232180_1_8ac578ec57.jpeg?w=668\", \"https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-2215876044.jpg?w=562\", \"https://techcrunch.com/wp-content/uploads/2025/02/firefox.jpeg?w=563\", \"https://techcrunch.com/wp-content/uploads/2026/02/Codex-dark.png?w=666\"]","metadata":["https://techcrunch.com/wp-content/uploads/2025/10/OLM_Full_Pressure_Water_Deluge_Test_202307280728232180_1_8ac578ec57.jpeg?w=668","https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-2215876044.jpg?w=562","https://techcrunch.com/wp-content/uploads/2025/02/firefox.jpeg?w=563","https://techcrunch.com/wp-content/uploads/2026/02/Codex-dark.png?w=666"]}	802
+10:27:26.166
+{"type":"logs","content":"images_available","output":"🖼️ 1 pre-generated images available for embedding","metadata":null}	121
+10:27:26.171
+{"type":"logs","content":"writing_report","output":"✍️ Writing report for 'What are the latest news on ai'...","metadata":null}	127
+10:27:26.175
+{"type":"report","output":"# Aktuelle Nachrichten und Entwicklungen im Bereich Künstliche Intelligenz (AI) – Stand Februar 2026\n\n"}	133
+10:27:27.118
+{"type":"report","output":"## Einleitung\n\n"}	46
+10:27:27.166
+{"type":"report","output":"Künstliche Intelligenz (AI) bleibt auch im Jahr 2026 ein zentrales Thema der globalen Technologie- und Wirtschaftsentwicklung. Die jüngsten Nachrichten zeigen, dass die Dynamik in diesem Sektor ungebrochen ist: Von milliardenschweren Fusionen und Übernahmen über neue regulatorische Debatten bis hin zu technologischen Durchbrüchen und gesellschaftlichen Kontroversen. Dieser Bericht bietet eine umfassende, strukturierte Analyse der aktuellsten Entwicklungen, basierend auf den neuesten und zuverlässigsten Quellen. Die Bewertung erfolgt objektiv, faktenbasiert und mit kritischer Einordnung der Bedeutung für Wirtschaft, Gesellschaft und Technologie.\n\n"}	685
+10:27:30.171
+{"type":"report","output":"---\n\n"}	36
+10:27:30.225
+{"type":"report","output":"## 1. Mega-Fusionen und strategische Allianzen im AI-Sektor\n\n"}	92
+10:27:30.602
+{"type":"report","output":"### 1.1 SpaceX übernimmt xAI: Der Weg zum orbitalen Rechenzentrum\n\n"}	98
+10:27:30.886
+{"type":"report","output":"Eine der bedeutendsten Nachrichten der letzten Tage ist die Übernahme von Elon Musks xAI durch SpaceX. Diese Fusion soll es xAI ermöglichen, Milliardenbeträge aus dem bevorstehenden Börsengang (IPO) von SpaceX zu generieren. Ziel ist der Aufbau von orbitalen Rechenzentren, die eine neue Ära der Datenverarbeitung einläuten könnten. Die Integration von xAI in das SpaceX-Ökosystem verschafft dem Unternehmen einen strategischen Vorteil im globalen Wettbewerb um Rechenleistung und AI-Infrastruktur ([PCMag, 2026](https://www.pcmag.com/news/categories/ai); [TechCrunch, 2026](https://techcrunch.com/category/artificial-intelligence/)).\n\n"}	667
+10:27:32.889
+{"type":"report","output":"#### Bewertung\n\n"}	47
+10:27:32.916
+{"type":"report","output":"Die Fusion ist nicht nur finanziell, sondern auch technologisch und geopolitisch bedeutsam. SpaceX kann durch seine Erfahrung im Bereich Raumfahrt und Satellitenkonnektivität eine bislang unerreichte Infrastruktur für AI-Anwendungen schaffen. Die Verbindung von AI und orbitaler Datenverarbeitung könnte die Latenzzeiten globaler Dienste drastisch senken und neue Anwendungsfelder wie Echtzeit-Überwachung, globale Vernetzung und Edge-Computing ermöglichen.\n\n"}	490
+10:27:35.529
+{"type":"report","output":"---\n\n"}	36
+10:27:35.534
+{"type":"report","output":"## 2. Neue AI-Tools und Plattformen: Innovationen und Herausforderungen\n\n"}	104
+10:27:35.857
+{"type":"report","output":"### 2.1 OpenClaw: Autonome AI-Agenten auf dem Vormarsch\n\n"}	88
+10:27:36.086
+{"type":"report","output":"OpenClaw, vormals bekannt als Clawdbot bzw. Moltbot, ist ein neuer AI-Agent, der eigenständig Aktionen ausführen kann, ohne dass der Nutzer explizit eingreifen muss. Die Software kann große Teile des digitalen Lebens eines Nutzers analysieren und darauf basierend Entscheidungen treffen. OpenClaw baut sogar ein eigenes soziales Netzwerk für AI-Agenten auf, was neue Möglichkeiten, aber auch Risiken in Bezug auf Datenschutz und Kontrolle eröffnet ([PCMag, 2026](https://www.pcmag.com/news/categories/ai); [TechCrunch, 2026](https://techcrunch.com/category/artificial-intelligence/)).\n\n"}	617
+10:27:37.966
+{"type":"report","output":"#### Bewertung\n\n"}	47
+10:27:38.017
+{"type":"report","output":"Die Entwicklung autonomer AI-Agenten markiert einen Paradigmenwechsel: Sie könnten den Alltag vieler Menschen erleichtern, bergen aber erhebliche Risiken hinsichtlich Datensicherheit, Transparenz und Manipulationspotenzial. Die Frage nach der Sicherheit und ethischen Kontrolle solcher Systeme bleibt offen und wird zunehmend kontrovers diskutiert.\n\n"}	381
+10:27:39.172
+{"type":"report","output":"### 2.2 Mozilla integriert AI-Kill-Switch in Firefox\n\n"}	85
+10:27:39.522
+{"type":"report","output":"Mozilla hat angekündigt, mit Version 148 von Firefox einen sogenannten \"AI-Kill-Switch\" einzuführen. Nutzer können damit sämtliche AI-Funktionen im Browser deaktivieren oder gezielt auswählen, welche Features sie nutzen möchten. Dies ist eine direkte Reaktion auf die wachsende Skepsis vieler Nutzer gegenüber allgegenwärtigen AI-Funktionen im Alltag ([PCMag, 2026](https://www.pcmag.com/news/categories/ai); [TechCrunch, 2026](https://techcrunch.com/category/artificial-intelligence/)).\n\n"}	522
+10:27:40.692
+{"type":"report","output":"#### Bewertung\n\n"}	47
+10:27:40.726
+{"type":"report","output":"Die Möglichkeit, AI-Funktionen granular zu steuern, ist ein wichtiger Schritt für die digitale Selbstbestimmung. Mozilla setzt damit ein Zeichen für Transparenz und Nutzerkontrolle, was angesichts der zunehmenden Integration von AI in Alltagssoftware von großer Bedeutung ist.\n\n"}	309
+10:27:41.629
+{"type":"report","output":"---\n\n"}	36
+10:27:41.633
+{"type":"report","output":"## 3. AI in Betriebssystemen und Apps: Rückzug und Neuausrichtung\n\n"}	98
+10:27:42.220
+{"type":"report","output":"### 3.1 Microsoft fährt Copilot in Windows 11 zurück\n\n"}	85
+10:27:42.620
+{"type":"report","output":"Microsoft plant laut aktuellen Berichten, die AI-Funktionen und das Copilot-Branding in verschiedenen Windows 11-Apps wie Notepad und Paint zurückzufahren oder ganz zu entfernen. Dies könnte eine Reaktion auf Nutzerfeedback oder strategische Neuausrichtungen im AI-Portfolio von Microsoft sein ([PCMag, 2026](https://www.pcmag.com/news/categories/ai)).\n\n"}	385
+10:27:44.457
+{"type":"report","output":"#### Bewertung\n\n"}	47
+10:27:44.474
+{"type":"report","output":"Der Rückzug zeigt, dass die Integration von AI nicht immer reibungslos verläuft und Unternehmen flexibel auf Markt- und Nutzerbedürfnisse reagieren müssen. Es bleibt abzuwarten, ob Microsoft damit einen Trend setzt oder lediglich temporär auf Widerstände reagiert.\n\n"}	297
+10:27:45.197
+{"type":"report","output":"---\n\n"}	36
+10:27:45.204
+{"type":"report","output":"## 4. AI-Investitionen und wirtschaftliche Dynamik\n\n"}	83
+10:27:45.273
+{"type":"report","output":"### 4.1 Nvidia kündigt größte Investition in OpenAI an\n\n"}	87
+10:27:45.595
+{"type":"report","output":"Jensen Huang, CEO von Nvidia, hat angekündigt, dass das Unternehmen seine \"größte Investition aller Zeiten\" in OpenAI tätigen wird. Obwohl keine genauen Zahlen genannt wurden, soll die Investition deutlich über den bereits kolportierten 100 Milliarden US-Dollar liegen. Nvidia positioniert sich damit als zentraler Player im AI-Ökosystem ([PCMag, 2026](https://www.pcmag.com/news/categories/ai); [TechCrunch, 2026](https://techcrunch.com/category/artificial-intelligence/)).\n\n"}	509
+10:27:50.386
+{"type":"report","output":"#### Bewertung\n\n"}	47
+10:27:50.566
+{"type":"report","output":"Die massive Investition unterstreicht die Bedeutung von Hardware-Innovationen für den Fortschritt im AI-Bereich. Nvidia profitiert dabei von der enormen Nachfrage nach spezialisierten AI-Chips und festigt seine Rolle als Schlüsselunternehmen der Branche.\n\n"}	287
+10:27:54.427
+{"type":"report","output":"### 4.2 Amazon und OpenAI: Gespräche über 50-Milliarden-Dollar-Investition\n\n"}	107
+10:27:55.735
+{"type":"report","output":"Amazon befindet sich laut Berichten in Gesprächen über eine Investition von 50 Milliarden US-Dollar in OpenAI. Dies zeigt, wie intensiv der Wettbewerb um die Vorherrschaft im AI-Markt ist und wie wichtig strategische Allianzen für den Zugang zu Spitzentechnologien werden ([TechCrunch, 2026](https://techcrunch.com/category/artificial-intelligence/)).\n\n"}	384
+10:27:57.244
+{"type":"report","output":"---\n\n"}	36
+10:27:57.291
+{"type":"report","output":"## 5. AI im Alltag: Neue Funktionen, gesellschaftliche Debatten und Nutzerfeedback\n\n"}	115
+10:27:57.592
+{"type":"report","output":"### 5.1 Google Gemini: Wechsel von ChatGPT und Import von Konversationen\n\n"}	105
+10:27:57.761
+{"type":"report","output":"Google testet mit Gemini eine Funktion, die es Nutzern ermöglicht, Konversationen aus anderen Chatbots wie ChatGPT zu importieren. Ziel ist es, die Präferenzen der Nutzer besser zu verstehen und maßgeschneiderte Antworten zu liefern ([PCMag, 2026](https://www.pcmag.com/news/categories/ai)).\n\n"}	324
+10:27:58.622
+{"type":"report","output":"#### Bewertung\n\n"}	47
+10:27:58.632
+{"type":"report","output":"Die Möglichkeit, bestehende Daten und Präferenzen zu übernehmen, könnte die Nutzerbindung an neue AI-Plattformen stärken. Gleichzeitig wirft dies Fragen zum Datenschutz und zur Interoperabilität von AI-Systemen auf.\n\n"}	248
+10:27:59.799
+{"type":"report","output":"### 5.2 DuckDuckGo: 90 % der Nutzer lehnen AI-Suche ab\n\n"}	87
+10:28:00.227
+{"type":"report","output":"Eine Umfrage unter 175.354 Nutzern von DuckDuckGo ergab, dass über 90 % die Option \"No AI\" bei der Suche bevorzugen. Dies zeigt eine erhebliche Skepsis gegenüber AI-gesteuerten Suchergebnissen und unterstreicht die Bedeutung von Wahlfreiheit und Transparenz ([PCMag, 2026](https://www.pcmag.com/news/categories/ai)).\n\n"}	351
+10:28:01.929
+{"type":"report","output":"---\n\n"}	36
+10:28:01.954
+{"type":"report","output":"## 6. AI und Regulierung: Politische und gesellschaftliche Herausforderungen\n\n"}	109
+10:28:02.175
+{"type":"report","output":"### 6.1 Forderungen nach Grok-Verbot in den USA\n\n"}	80
+10:28:02.582
+{"type":"report","output":"Eine Koalition fordert ein bundesweites Verbot von Grok, dem AI-Chatbot von xAI, wegen nicht einvernehmlicher sexueller Inhalte. Die Debatte zeigt, wie regulatorische und ethische Fragen zunehmend in den Fokus rücken, insbesondere bei AI-Systemen mit großem Einfluss auf die öffentliche Meinungsbildung ([TechCrunch, 2026](https://techcrunch.com/category/artificial-intelligence/)).\n\n"}	415
+10:28:06.571
+{"type":"report","output":"### 6.2 Steuerliche Anreize für AI in Indien\n\n"}	77
+10:28:06.914
+{"type":"report","output":"Indien bietet Unternehmen, die AI-Workloads ins Land bringen, Steuerfreiheit bis 2047. Damit will das Land sich als globales Zentrum für AI-Infrastruktur etablieren und internationale Investitionen anziehen ([TechCrunch, 2026](https://techcrunch.com/category/artificial-intelligence/)).\n\n"}	319
+10:28:07.749
+{"type":"report","output":"---\n\n"}	36
+10:28:07.764
+{"type":"report","output":"## 7. AI in der Praxis: Anwendungen, Risiken und Skandale\n\n"}	90
+10:28:07.991
+{"type":"report","output":"### 7.1 Waymo Robotaxis: Neue Genehmigung, aber auch Zwischenfälle\n\n"}	99
+10:28:08.256
+{"type":"report","output":"Waymo hat die Erlaubnis erhalten, Robotaxis am Flughafen San Francisco (SFO) einzusetzen. Allerdings gab es kürzlich einen Vorfall, bei dem ein Waymo-Robotaxi ein Kind in Santa Monica angefahren hat. Dies wirft Fragen zur Sicherheit autonomer Fahrzeuge auf ([PCMag, 2026](https://www.pcmag.com/news/categories/ai); [TechCrunch, 2026](https://techcrunch.com/category/artificial-intelligence/)).\n\n"}	426
+10:28:09.650
+{"type":"report","output":"### 7.2 Sicherheitslücke bei AI-Spielzeug: 50.000 Chatprotokolle von Kindern offengelegt\n\n"}	121
+10:28:10.118
+{"type":"report","output":"Ein gravierender Sicherheitsvorfall bei einem AI-Spielzeugunternehmen führte dazu, dass über 50.000 Chatprotokolle von Kindern durch einen einfachen Gmail-Login zugänglich waren. Dies verdeutlicht die dringende Notwendigkeit strenger Datenschutzmaßnahmen, insbesondere bei Produkten für Minderjährige ([PCMag, 2026](https://www.pcmag.com/news/categories/ai)).\n\n"}	392
+10:28:11.962
+{"type":"report","output":"---\n\n"}	36
+10:28:11.971
+{"type":"report","output":"## 8. AI und Kreativität: Neue Tools für Entwickler und Nutzer\n\n"}	95
+10:28:12.120
+{"type":"report","output":"### 8.1 Googles Project Genie: Virtuelle Welten für Training und Spieleentwicklung\n\n"}	115
+10:28:13.215
+{"type":"report","output":"Mit dem Project Genie stellt Google ein Tool vor, das auf dem Genie-3-Modell basiert und die Erstellung virtueller Welten für das Training von AI-Agenten oder die Entwicklung von Spielen ermöglicht. Die Anwendung könnte sowohl in der Forschung als auch in der Unterhaltungsindustrie neue Maßstäbe setzen ([PCMag, 2026](https://www.pcmag.com/news/categories/ai)).\n\n"}	395
+10:28:15.198
+{"type":"report","output":"### 8.2 OpenAI’s Sora: Herausforderungen nach erfolgreichem Launch\n\n"}	99
+10:28:15.369
+{"type":"report","output":"Die Sora-App von OpenAI, die ursprünglich mit großem Erfolg gestartet ist, kämpft aktuell mit Problemen. Dies zeigt, dass auch etablierte Anbieter mit Skalierungs- und Qualitätsproblemen konfrontiert sind ([TechCrunch, 2026](https://techcrunch.com/category/artificial-intelligence/)).\n\n"}	317
+10:28:16.934
+{"type":"report","output":"---\n\n"}	36
+10:28:16.944
+{"type":"report","output":"## 9. AI und Arbeitsmarkt: Automatisierung, Jobverluste und neue Chancen\n\n"}	105
+10:28:17.410
+{"type":"report","output":"### 9.1 Amazon streicht 16.000 weitere Stellen\n\n"}	79
+10:28:17.606
+{"type":"report","output":"Amazon hat angekündigt, weitere 16.000 Arbeitsplätze zu streichen – ein Trend, der eng mit der zunehmenden Automatisierung und dem Einsatz von AI in vielen Unternehmensbereichen zusammenhängt ([PCMag, 2026](https://www.pcmag.com/news/categories/ai)).\n\n"}	283
+10:28:20.847
+{"type":"report","output":"### 9.2 Forschung: AI hilft beim Programmieren, behindert aber Skill-Entwicklung\n\n"}	113
+10:28:22.017
+{"type":"report","output":"Neue Studien zeigen, dass AI zwar bei der Code-Erstellung unterstützt, aber die Entwicklung grundlegender Fähigkeiten bei Nachwuchsentwicklern behindern kann. Dies wirft Fragen zur langfristigen Qualifikation und Ausbildung im IT-Bereich auf ([PCMag, 2026](https://www.pcmag.com/news/categories/ai)).\n\n"}	333
+10:28:25.226
+{"type":"report","output":"---\n\n"}	36
+10:28:25.226
+{"type":"report","output":"## 10. AI-Modelle und Open Source: Neue Wettbewerber und Innovationen\n\n"}	102
+10:28:25.845
+{"type":"report","output":"### 10.1 Arcee AI: 400-Milliarden-Parameter-Modell als Open Source\n\n"}	99
+10:28:26.391
+{"type":"report","output":"Das Startup Arcee AI hat ein Open-Source-Sprachmodell mit 400 Milliarden Parametern entwickelt, das Meta’s Llama übertreffen soll. Dies könnte die Open-Source-Community stärken und den Wettbewerb im Bereich großer Sprachmodelle intensivieren ([TechCrunch, 2026](https://techcrunch.com/category/artificial-intelligence/)).\n\n"}	354
+10:28:27.333
+{"type":"report","output":"---\n\n"}	36
+10:28:27.346
+{"type":"report","output":"## 11. AI und Nutzerpräferenzen: Anpassung und Personalisierung\n\n"}	96
+10:28:27.598
+{"type":"report","output":"### 11.1 ChatGPT: Temporärer Chat mit Erinnerungsfunktion\n\n"}	90
+10:28:27.910
+{"type":"report","output":"OpenAI testet eine neue Funktion für ChatGPT, bei der ein temporärer Chatmodus die Präferenzen der Nutzer \"merkt\" und die Antworten entsprechend anpasst. Dies könnte die Nutzererfahrung verbessern, wirft aber erneut Fragen zum Datenschutz auf ([PCMag, 2026](https://www.pcmag.com/news/categories/ai)).\n\n"}	336
+10:28:29.426
+{"type":"report","output":"---\n\n"}	36
+10:28:29.469
+{"type":"report","output":"## 12. Zusammenfassung und Ausblick\n\n"}	68
+10:28:29.938
+{"type":"report","output":"Die aktuellen Entwicklungen im Bereich Künstliche Intelligenz sind geprägt von enormer Dynamik, zunehmender Komplexität und einer wachsenden gesellschaftlichen Debatte. Die wichtigsten Trends lassen sich wie folgt zusammenfassen:\n\n"}	262
+10:28:30.787
+{"type":"report","output":"- **Konsolidierung und Mega-Investitionen:** Die Fusion von SpaceX und xAI sowie die Milliardeninvestitionen von Nvidia und Amazon zeigen, dass der AI-Sektor zunehmend von wenigen, finanzstarken Akteuren dominiert wird.\n"}	250
+10:28:32.061
+{"type":"report","output":"- **Nutzerkontrolle und Datenschutz:** Die Einführung von AI-Kill-Switches und die Ablehnung von AI-Suche durch große Nutzergruppen verdeutlichen den Wunsch nach Transparenz und Selbstbestimmung.\n"}	226
+10:28:32.910
+{"type":"report","output":"- **Regulierung und Ethik:** Forderungen nach Verboten und neue steuerliche Anreize zeigen, dass AI längst ein politisches Thema ist.\n"}	164
+10:28:33.485
+{"type":"report","output":"- **Technologische Innovation und Risiken:** Von autonomen AI-Agenten bis zu Sicherheitslücken bei Kinderspielzeug – Fortschritt und Risiken gehen Hand in Hand.\n"}	191
+10:28:34.125
+{"type":"report","output":"- **Arbeitsmarkt und Bildung:** Automatisierung führt zu Jobverlusten, während AI-gestützte Tools die Ausbildung neuer Fachkräfte beeinflussen.\n\n"}	176
+10:28:34.785
+{"type":"report","output":"### Eigene Einschätzung\n\n"}	56
+10:28:34.829
+{"type":"report","output":"Die aktuellen Nachrichten belegen, dass wir an einem Wendepunkt stehen: AI ist nicht mehr nur ein Werkzeug, sondern ein gesellschaftlicher Akteur mit enormem Einfluss auf Wirtschaft, Politik und Alltag. Die Konzentration von Macht und Ressourcen in wenigen Händen, gepaart mit neuen Möglichkeiten zur Nutzerkontrolle, verlangt nach einer ausgewogenen Regulierung und einer breiten gesellschaftlichen Debatte. Gleichzeitig zeigen Innovationen wie OpenClaw oder Arcee AI, dass auch kleinere Akteure und Open-Source-Initiativen weiterhin Impulse setzen können.\n\n"}	590
+10:28:38.112
+{"type":"report","output":"---\n\n"}	36
+10:28:38.129
+{"type":"report","output":"## Bild: Vergleich aktueller AI-Features\n\n"}	73
+10:28:38.415
+{"type":"report","output":"![AI Feature Comparison Chart](/outputs/images/research_7ac3fd115251/img_937ee976_0.png)\n\n"}	121
+10:28:38.668
+{"type":"report","output":"---\n\n"}	36
+10:28:38.690
+{"type":"report","output":"## Referenzen\n\n"}	46
+10:28:38.719
+{"type":"report","output":"- PCMag. (2026, February 3). The Latest AI News and Analysis | PCMag. [https://www.pcmag.com/news/categories/ai](https://www.pcmag.com/news/categories/ai)\n"}	185
+10:28:39.231
+{"type":"report","output":"- TechCrunch. (2026, February 3). AI News & Artificial Intelligence | TechCrunch. [https://techcrunch.com/category/artificial-intelligence/](https://techcrunch.com/category/artificial-intelligence/)\n\n"}	231
+10:28:39.554
+{"type":"report","output":"---\n\n"}	36
+10:28:39.566
+{"type":"report","output":"*Hinweis: Die in diesem Bericht verwendeten Quellen wurden nach Aktualität, Relevanz und Zuverlässigkeit ausgewählt. Alle Aussagen und Bewertungen basieren auf den zum Zeitpunkt der Erstellung verfügbaren Informationen.*"}	249
+10:28:41.652
+{"type":"logs","content":"report_written","output":"📝 Report written for 'What are the latest news on ai'","metadata":null}	123
+10:28:41.668
+{"type":"path","output":{"pdf":"outputs/task_1770110809_bec4b06e03.pdf","docx":"outputs/task_1770110809_bec4b06e03.docx","md":"outputs/task_1770110809_bec4b06e03.md","json":"outputs/task_1770110809_bec4b06e03.json"}}	216
+10:28:42.116
