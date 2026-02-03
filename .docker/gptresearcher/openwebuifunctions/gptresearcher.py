@@ -156,7 +156,7 @@ class Logger:
 
 
 class ModelCaller:
-    def __init__(self, logger: Logger, model: str, user: dict = None, request: Request = None):
+    def __init__(self, logger: Logger, model: str, user: dict = None, request: Request = None, timeout: int = 300):
         """
         Constructor for ModelCaller
 
@@ -165,11 +165,13 @@ class ModelCaller:
             model (str): Model ID to call. E.g.: "llama3.2:latest"
             user (dict, optional): User information. Defaults to None.
             request (Request, optional): Request object. Defaults to None.
+            timeout (int, optional): Timeout for model calls in seconds. Defaults to 300.
         """
         self.logger = logger
         self.model = model
         self.user = user
         self.request = request
+        self.timeout = timeout
 
     async def do_prompt(self, prompt: str = "", role: str = "user", messages: Optional[List[Dict[str, str]]] = None, **kwargs) -> str:
         """
@@ -240,7 +242,10 @@ class ModelCaller:
             }
             # add additional kwargs
             payload.update(kwargs)
-            result = await generate_chat_completion(self.request, payload, Users.get_user_by_id(self.user["id"]))
+            result = await asyncio.wait_for(
+                generate_chat_completion(self.request, payload, Users.get_user_by_id(self.user["id"])),
+                timeout=self.timeout
+            )
             return result["choices"][0]["message"]["content"]
         except Exception as e:
             self.logger.log(f"Error: {e}", "ModelCaller")
@@ -254,13 +259,13 @@ class ModelCaller:
 class MessageHandler:
     """Handles different WebSocket message types"""
 
-    def __init__(self, state: ResearchState, logger: Logger, server_url: str, external_server_url: str, emitter: Callable[[Dict[str, Any]], Awaitable[None]], verbose: bool = False, download_reports: bool = True, download_images: bool = True, download_scraped_images: bool = False):
+    def __init__(self, state: ResearchState, logger: Logger, internal_server_url: str, external_server_url: str, emitter: Callable[[Dict[str, Any]], Awaitable[None]], verbose: bool = False, download_reports: bool = True, download_images: bool = True, download_scraped_images: bool = False):
         """
         Constructor for MessageHandler
         Args:
             state (ResearchState): Research state instance
             logger (Logger): Logger instance
-            server_url (str): Base URL of the GPT Researcher server
+            internal_server_url (str): Internal URL of the GPT Researcher container
             external_server_url (str): External URL of the GPT Researcher server
             emitter (Callable[[Dict[str, Any]], Awaitable[None]]): Event emitter function
             verbose (bool): Verbose logging flag
@@ -272,7 +277,7 @@ class MessageHandler:
         self.emitter = emitter
         self.verbose = verbose
         self.logger = logger
-        self.server_url = server_url
+        self.internal_server_url = internal_server_url
         self.external_server_url = external_server_url
         self.download_reports = download_reports
         self.download_images = download_images
@@ -436,16 +441,17 @@ class Pipe:
         Configuration valves for GPT Researcher Pipe Function
         """
         # Connection
-        GPT_RESEARCHER_DOMAIN: str = Field(
+        GPT_RESEARCHER_INTERNAL_DOMAIN: str = Field(
             default="gptresearcher-server:8000",
-            description="Domain of GPT Researcher container",
+            description="Internal Domain of GPT Researcher. Must be accessible by the OpenWebUI server. Used for backend communication.",
         )
-        GPT_RESEARCHER_SSL: bool = Field(default=True, description="Enable ssl for GPT Researcher container")
+        GPT_RESEARCHER_INTERNAL_SSL: bool = Field(default=True, description="Enable ssl for internal GPT Researcher communication")
         GPT_RESEARCHER_EXTERNAL_DOMAIN: str = Field(
             default="",
             description="External Domain of GPT Researcher. Must be accessible by your browser. Used to generate download links.",
         )
-        GPT_RESEARCHER_EXTERNAL_SSL: bool = Field(default=True, description="Enable ssl for external GPT Researcher domain")
+        GPT_RESEARCHER_EXTERNAL_SSL: bool = Field(default=True, description="Enable ssl for external GPT Researcher communication")
+        TIMEOUT_SECONDS: int = Field(default=300, description="Timeout for GPT Researcher requests in seconds. Minimum is 10 seconds.")
 
         # Model Configuration
         DEFAULT_MODEL: str = Field(
@@ -465,7 +471,7 @@ class Pipe:
         DEEP_RESEARCH_DEPTH: int = Field(default=2, description="Research depth")
 
         # Debug
-        VERBOSE: bool = Field(default=True, description="Enable verbose logging")
+        VERBOSE: bool = Field(default=False, description="Enable verbose logging")
 
         # Files
         DOWNLOAD_REPORTS: bool = Field(default=True, description="Enable report attachments. (Needs external domain configured)")
@@ -613,7 +619,7 @@ class Pipe:
 
         return result
 
-    def get_gpt_researcher_url(self, url_type: str = "") -> str:
+    def get_gpt_researcher_internal_url(self, url_type: str = "") -> str:
         """
         Returns the GPT Researcher URL based on type
         Args:
@@ -621,20 +627,20 @@ class Pipe:
         Returns:
             str: Constructed URL
         """
-        if not self.valves.GPT_RESEARCHER_DOMAIN.strip():
+        if not self.valves.GPT_RESEARCHER_INTERNAL_DOMAIN.strip():
             return ""
         # remove trailing slashes at the end
-        domain = self.valves.GPT_RESEARCHER_DOMAIN.strip().rstrip("/")
+        domain = self.valves.GPT_RESEARCHER_INTERNAL_DOMAIN.strip().rstrip("/")
         # remove protocols on the left if there is any
         domain = domain.lstrip("http://").lstrip("https://").lstrip("ws://").lstrip("wss://")
         # remove /ws if there is any
         domain = domain.rstrip("/ws")
 
         if url_type == "ws":
-            protocol = "wss" if self.valves.GPT_RESEARCHER_SSL else "ws"
+            protocol = "wss" if self.valves.GPT_RESEARCHER_INTERNAL_SSL else "ws"
             return f"{protocol}://{domain}/ws"
         else:
-            protocol = "https" if self.valves.GPT_RESEARCHER_SSL else "http"
+            protocol = "https" if self.valves.GPT_RESEARCHER_INTERNAL_SSL else "http"
             return f"{protocol}://{domain}"
 
     def get_gpt_researcher_external_url(self, url_type: str = "") -> str:
@@ -660,6 +666,23 @@ class Pipe:
         else:
             protocol = "https" if self.valves.GPT_RESEARCHER_EXTERNAL_SSL else "http"
             return f"{protocol}://{domain}"
+
+    def get_timeout_seconds(self) -> int:
+        """
+        Get the timeout in seconds for GPT Researcher requests
+
+        Returns:
+            int: Timeout in seconds
+        """
+        # try cast to int. If fails, return default 300 seconds
+        try:
+            seconds = int(self.valves.TIMEOUT_SECONDS)
+            if seconds < 10:
+                return 300
+            return seconds
+        except ValueError:
+            seconds = 300
+        return seconds
 
     #########################
     ######## PROCESS ########
@@ -695,7 +718,7 @@ class Pipe:
         self.event_call = __event_call__
         self.body = body
         self.request = __request__
-        self.model_caller = ModelCaller(logger=self.logger, model=self.valves.DEFAULT_MODEL, user=self.user, request=self.request)
+        self.model_caller = ModelCaller(logger=self.logger, model=self.valves.DEFAULT_MODEL, user=self.user, request=self.request, timeout=self.get_timeout_seconds())
 
         # make sure there is a message to process
         if not self.get_last_message():
@@ -862,8 +885,8 @@ class Pipe:
             async with aiohttp.ClientSession() as session:
                 for alt_text, img_path in matches:
                     try:
-                        url = f"{self.get_gpt_researcher_url()}/outputs/{img_path}"
-                        async with session.get(url, timeout=aiohttp.ClientTimeout(total=30)) as resp:
+                        url = f"{self.get_gpt_researcher_internal_url()}/outputs/{img_path}"
+                        async with session.get(url, timeout=aiohttp.ClientTimeout(total=self.get_timeout_seconds())) as resp:
                             if resp.status == 200:
                                 img_bytes = await resp.read()
                                 img_b64 = base64.b64encode(img_bytes).decode()
@@ -897,7 +920,7 @@ class Pipe:
         """
         self.logger.log(f"Starting research: '{query}...', Type: {report_type}", "CONDUCT_RESEARCH", True)
         state = ResearchState()
-        handler = MessageHandler(state, self.logger, self.get_gpt_researcher_url(), self.get_gpt_researcher_external_url(), self.emitter, self.valves.VERBOSE,
+        handler = MessageHandler(state, self.logger, self.get_gpt_researcher_internal_url(), self.get_gpt_researcher_external_url(), self.emitter, self.valves.VERBOSE,
                                  self.valves.DOWNLOAD_REPORTS, self.valves.DOWNLOAD_IMAGES, self.valves.DOWNLOAD_SCRAPED_IMAGES)
 
         try:
@@ -910,13 +933,16 @@ class Pipe:
 
             request_config = self._build_request_config(query, report_type)
             timeout = aiohttp.ClientTimeout(
-                total=None, connect=60, sock_connect=60, sock_read=None
+                total=None,                                 # No total limit (research can take a long time. As long as the server is responsive, we keep it open)
+                connect=self.get_timeout_seconds(),         # Connection time
+                sock_connect=self.get_timeout_seconds(),    # Socket connection time
+                sock_read=self.get_timeout_seconds()        # Count server as dead if no data read in this time. Successful heartbeats also reset this timer.
             )
-            self.logger.log(f"Connecting to WebSocket at {self.get_gpt_researcher_url('ws')}", "CONDUCT_RESEARCH", False)
+            self.logger.log(f"Connecting to WebSocket at {self.get_gpt_researcher_internal_url('ws')}", "CONDUCT_RESEARCH", False)
 
             async with aiohttp.ClientSession(timeout=timeout) as session:
                 async with session.ws_connect(
-                    self.get_gpt_researcher_url("ws"), heartbeat=30
+                    self.get_gpt_researcher_internal_url("ws"), heartbeat=int(self.get_timeout_seconds() / 4)
                 ) as ws:
 
                     start_msg = f"start {json.dumps(request_config)}"
