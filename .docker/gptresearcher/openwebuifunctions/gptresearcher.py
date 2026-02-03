@@ -455,8 +455,8 @@ class Pipe:
 
         # Model Configuration
         DEFAULT_MODEL: str = Field(
-            default="llama3.2:latest",
-            description="Model for classification and follow-ups",
+            default="gpt-4o-mini",
+            description="Model for classification and follow-ups (which are bypassed to GPT Researcher). Must exist in OpenWebUI OpenAI Connection!",
         )
 
         # Research Settings
