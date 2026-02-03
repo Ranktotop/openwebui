@@ -254,13 +254,14 @@ class ModelCaller:
 class MessageHandler:
     """Handles different WebSocket message types"""
 
-    def __init__(self, state: ResearchState, logger: Logger, server_url: str, emitter: Callable[[Dict[str, Any]], Awaitable[None]], verbose: bool = False, download_reports: bool = True, download_images: bool = True, download_scraped_images: bool = False):
+    def __init__(self, state: ResearchState, logger: Logger, server_url: str, external_server_url: str, emitter: Callable[[Dict[str, Any]], Awaitable[None]], verbose: bool = False, download_reports: bool = True, download_images: bool = True, download_scraped_images: bool = False):
         """
         Constructor for MessageHandler
         Args:
             state (ResearchState): Research state instance
             logger (Logger): Logger instance
             server_url (str): Base URL of the GPT Researcher server
+            external_server_url (str): External URL of the GPT Researcher server
             emitter (Callable[[Dict[str, Any]], Awaitable[None]]): Event emitter function
             verbose (bool): Verbose logging flag
             download_reports (bool): Flag to enable report downloading
@@ -272,9 +273,11 @@ class MessageHandler:
         self.verbose = verbose
         self.logger = logger
         self.server_url = server_url
+        self.external_server_url = external_server_url
         self.download_reports = download_reports
         self.download_images = download_images
         self.download_scraped_images = download_scraped_images
+        self.download_links = []
 
     async def handle_logs(self, content: str, output: str, metadata: Any = None) -> None:
         """
@@ -352,51 +355,22 @@ class MessageHandler:
         if any(key in output for key in ["pdf", "docx", "md", "json"]):
             # Define file types with their MIME types and icons
             file_types = {
-                "pdf": {"mime": "application/pdf", "icon": "📄", "label": "PDF Report"},
-                "docx": {"mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "icon": "📝", "label": "Word Document"},
-                "md": {"mime": "text/markdown", "icon": "📋", "label": "Markdown Report"},
-                "json": {"mime": "application/json", "icon": "📊", "label": "JSON Data"}
+                "pdf": {"icon": "📄", "label": "PDF Report"},
+                "docx": {"icon": "📝", "label": "Word Document"},
+                "md": {"icon": "📋", "label": "Markdown Report"},
+                "json": {"icon": "📊", "label": "JSON Data"}
             }
 
-            # Download and emit all available files if enabled
-            if self.download_reports:
-                files_to_emit = []
+            # Download and emit all available files if enabled and external server URL is provided
+            if self.download_reports and self.external_server_url:
                 for file_type, config in file_types.items():
                     file_path = output.get(file_type, "")
                     if file_path:
-                        try:
-                            url = f"{self.server_url}/{file_path}"
-                            self.logger.log(f"Downloading {file_type.upper()} from: {url}", "MessageHandler")
-
-                            async with aiohttp.ClientSession() as session:
-                                async with session.get(url, timeout=aiohttp.ClientTimeout(total=30)) as resp:
-                                    if resp.status == 200:
-                                        file_bytes = await resp.read()
-                                        file_b64 = base64.b64encode(file_bytes).decode()
-                                        filename = file_path.split("/")[-1]
-
-                                        self.logger.log(f"{file_type.upper()} downloaded: {len(file_bytes)} bytes", "MessageHandler")
-
-                                        # ✅ Sammle File-Daten
-                                        files_to_emit.append({
-                                            "name": filename,
-                                            "type": config["mime"],
-                                            "content": file_b64
-                                        })
-                                    else:
-                                        self.logger.log(f"{file_type.upper()} download failed: HTTP {resp.status}", "MessageHandler")
-                        except Exception as e:
-                            self.logger.log(f"{file_type.upper()} download error: {e}", "MessageHandler")
-
-                # emit all reports
-                if files_to_emit:
-                    await self.emitter({
-                        "type": "files",  # oder "chat:message:files"
-                        "data": {
-                            "files": files_to_emit
-                        }
-                    })
-                    self.logger.log(f"Emitted {len(files_to_emit)} files", "MessageHandler")
+                        # Create direct link to GPT Researcher server
+                        url = f"{self.external_server_url}/{file_path}"
+                        download_link = f'{config["icon"]} **[{config["label"]}]({url})**'
+                        self.download_links.append(download_link)
+                        self.logger.log(f"Added download link for {file_type.upper()}: {url}", "MessageHandler")
 
             # Mark research complete
             self.state.mark_complete()
@@ -467,6 +441,11 @@ class Pipe:
             description="Domain of GPT Researcher container",
         )
         GPT_RESEARCHER_SSL: bool = Field(default=True, description="Enable ssl for GPT Researcher container")
+        GPT_RESEARCHER_EXTERNAL_DOMAIN: str = Field(
+            default="",
+            description="External Domain of GPT Researcher. Must be accessible by your browser. Used to generate download links.",
+        )
+        GPT_RESEARCHER_EXTERNAL_SSL: bool = Field(default=True, description="Enable ssl for external GPT Researcher domain")
 
         # Model Configuration
         DEFAULT_MODEL: str = Field(
@@ -489,7 +468,7 @@ class Pipe:
         VERBOSE: bool = Field(default=True, description="Enable verbose logging")
 
         # Files
-        DOWNLOAD_REPORTS: bool = Field(default=True, description="Enable report downloading")
+        DOWNLOAD_REPORTS: bool = Field(default=True, description="Enable report attachments. (Needs external domain configured)")
         DOWNLOAD_IMAGES: bool = Field(default=True, description="Enable image downloading")
         DOWNLOAD_SCRAPED_IMAGES: bool = Field(default=False, description="Enable scraped image downloading")
 
@@ -642,12 +621,45 @@ class Pipe:
         Returns:
             str: Constructed URL
         """
+        if not self.valves.GPT_RESEARCHER_DOMAIN.strip():
+            return ""
+        # remove trailing slashes at the end
+        domain = self.valves.GPT_RESEARCHER_DOMAIN.strip().rstrip("/")
+        # remove protocols on the left if there is any
+        domain = domain.lstrip("http://").lstrip("https://").lstrip("ws://").lstrip("wss://")
+        # remove /ws if there is any
+        domain = domain.rstrip("/ws")
+
         if url_type == "ws":
             protocol = "wss" if self.valves.GPT_RESEARCHER_SSL else "ws"
-            return f"{protocol}://{self.valves.GPT_RESEARCHER_DOMAIN}/ws"
+            return f"{protocol}://{domain}/ws"
         else:
             protocol = "https" if self.valves.GPT_RESEARCHER_SSL else "http"
-            return f"{protocol}://{self.valves.GPT_RESEARCHER_DOMAIN}"
+            return f"{protocol}://{domain}"
+
+    def get_gpt_researcher_external_url(self, url_type: str = "") -> str:
+        """
+        Returns the GPT Researcher External URL based on type
+        Args:
+            url_type (str): Type of URL to return ('ws' for WebSocket, otherwise HTTP) 
+        Returns:
+            str: Constructed external URL or empty string if not configured
+        """
+        if not self.valves.GPT_RESEARCHER_EXTERNAL_DOMAIN.strip():
+            return ""
+        # remove trailing slashes at the end
+        domain = self.valves.GPT_RESEARCHER_EXTERNAL_DOMAIN.strip().rstrip("/")
+        # remove protocols on the left if there is any
+        domain = domain.lstrip("http://").lstrip("https://").lstrip("ws://").lstrip("wss://")
+        # remove /ws if there is any
+        domain = domain.rstrip("/ws")
+
+        if url_type == "ws":
+            protocol = "wss" if self.valves.GPT_RESEARCHER_EXTERNAL_SSL else "ws"
+            return f"{protocol}://{domain}/ws"
+        else:
+            protocol = "https" if self.valves.GPT_RESEARCHER_EXTERNAL_SSL else "http"
+            return f"{protocol}://{domain}"
 
     #########################
     ######## PROCESS ########
@@ -885,7 +897,7 @@ class Pipe:
         """
         self.logger.log(f"Starting research: '{query}...', Type: {report_type}", "CONDUCT_RESEARCH", True)
         state = ResearchState()
-        handler = MessageHandler(state, self.logger, self.get_gpt_researcher_url(), self.emitter, self.valves.VERBOSE,
+        handler = MessageHandler(state, self.logger, self.get_gpt_researcher_url(), self.get_gpt_researcher_external_url(), self.emitter, self.valves.VERBOSE,
                                  self.valves.DOWNLOAD_REPORTS, self.valves.DOWNLOAD_IMAGES, self.valves.DOWNLOAD_SCRAPED_IMAGES)
 
         try:
@@ -913,26 +925,35 @@ class Pipe:
                     await self._handle_websocket_stream(ws, handler)
 
             report = state.get_full_report()
-            if self.valves.DOWNLOAD_IMAGES:
-                report = await self._embed_images(report)
             self.logger.log(
-                f"[RESEARCH DONE] Report size: {len(report)} chars", "CONDUCT_RESEARCH", False
+                f"Report size: {len(report)} chars", "CONDUCT_RESEARCH", False
             )
 
             if report:
+                # add images if enabled
+                if self.valves.DOWNLOAD_IMAGES:
+                    report = await self._embed_images(report)
+                # Links an Report anhängen
+                if handler.download_links:
+                    report += "\n\n---\n\n**📥 Downloads:**\n\n" + "\n\n".join(handler.download_links)
+
                 return report
             else:
-                self.logger.log("[RESEARCH] ⚠️ No report generated", "CONDUCT_RESEARCH", False)
+                self.logger.log("⚠️ No report generated", "CONDUCT_RESEARCH", False)
                 return "⚠️ Research abgeschlossen, aber kein Report generiert."
 
         except Exception as e:
-            self.logger.log(f"[RESEARCH] ❌ Error during research: {str(e)}", "CONDUCT_RESEARCH", False)
+            self.logger.log(f"❌ Error during research: {str(e)}", "CONDUCT_RESEARCH", False)
             traceback.print_exc()
             report = state.get_full_report()
             if report:
+                # add images if enabled
                 if self.valves.DOWNLOAD_IMAGES:
                     report = await self._embed_images(report)
-                self.logger.log(f"[RESEARCH] Partial report size: {len(report)} chars", "CONDUCT_RESEARCH", False)
+                # Links an Report anhängen
+                if handler.download_links:
+                    report += "\n\n---\n\n**📥 Downloads:**\n\n" + "\n\n".join(handler.download_links)
+                self.logger.log(f"Partial report size: {len(report)} chars", "CONDUCT_RESEARCH", False)
                 return f"{report}\n\n---\n⚠️ Verbindung unterbrochen, Partial-Report."
             return f"❌ Research error: {str(e)}"
 
