@@ -803,35 +803,35 @@ class Pipe:
             ValueError: If refinement model does not return valid JSON
         """
         research_analyzer_prompt = """
-        Du bist ein präziser Analyse-Assistent für Rechercheaufträge. Deine Aufgabe ist es, einen vorliegenden Chatverlauf zwischen einem Nutzer und einer KI zu analysieren. Prüfe, ob die Summe aller Nutzerantworten ausreicht, um den Rechercheauftrag vollständig und eindeutig auszuführen.
+        You are a precise analysis assistant for research tasks. Your job is to analyze an existing chat conversation between a user and an AI. Check whether the sum of all user responses is sufficient to execute the research task completely and unambiguously.
 
-        **Analyse-Logik:**
-        Betrachte den gesamten bisherigen Gesprächsverlauf. Sobald alle benötigten Informationen vorhanden sind, setze "is_ready" auf true.
+        **Analysis Logic:**
+        Consider the entire conversation history so far. As soon as all required information is available, set "is_ready" to true.
 
-        **Kriterien für ein "is_ready: true":**
-        1. **Subjekt/Objekt:** Ist klar definiert, wer oder was recherchiert werden soll?
-        2. **Fokus/Kontext:** Wurde eine spezifische Fragestellung oder ein Zielbereich festgelegt?
-        3. **Umfang & Typ:** Ist klar, ob eine Standard-Recherche (research_report) oder eine komplexe Tiefenanalyse (deep) gewünscht ist?
+        **Criteria for "is_ready: true":**
+        1. **Subject/Object:** Is it clearly defined who or what should be researched?
+        2. **Focus/Context:** Has a specific question or target area been specified?
+        3. **Scope & Type:** Is it clear whether a standard research (research_report) or a complex deep analysis (deep) is desired?
 
-        **Definition der Typen (Feld "type"):**
-        - **research_report:** Standardwert für normale Informationsabfragen, Biografien oder Fakten-Checks.
-        - **deep:** Zu wählen bei hoher Komplexität, wissenschaftlichen Fragestellungen, umfangreichen Marktanalysen oder wenn der Nutzer explizit eine "sehr tiefe" oder "umfassende" Analyse fordert.
-        - **Wichtig:** Wenn aus dem Verlauf nicht hervorgeht, welche Tiefe benötigt wird, setze "is_ready" auf false und frage in "question" explizit nach, ob ein kompakter Report oder eine komplexe Tiefenanalyse gewünscht ist.
+        **Definition of Types (field "type"):**
+        - **research_report:** Default value for normal information queries, biographies, or fact checks.
+        - **deep:** To be chosen for high complexity, scientific questions, comprehensive market analyses, or when the user explicitly demands a "very deep" or "comprehensive" analysis.
+        - **Important:** If the conversation history does not indicate which depth is required, set "is_ready" to false and explicitly ask in "question" whether a compact report or a complex deep analysis is desired.
 
-        **Anforderungen an die Felder:**
+        **Field Requirements:**
         - **is_ready:** boolean.
-        - **type:** "research_report", "deep" oder null (wenn is_ready false).
-        - **question:** Falls Infos fehlen oder der Typ unklar ist: Eine höfliche Rückfrage in der Nutzersprache. Falls is_ready true: null.
-        - **summary:** Falls is_ready true: Eine präzise, konsolidierte Zusammenfassung des Auftrags in der Nutzersprache als Aufforderung formuliert. Falls is_ready false: null.
+        - **type:** "research_report", "deep", or null (if is_ready false).
+        - **question:** If info is missing or type is unclear: A polite follow-up question in the user's language. If is_ready true: null.
+        - **summary:** If is_ready true: A precise, consolidated summary of the task in the user's language, formulated as an instruction. If is_ready false: null.
 
-        **Ausgabeformat:**
-        Antworte ausschließlich im JSON-Format ohne Text davor oder danach.
+        **Output Format:**
+        Respond exclusively in JSON format without any text before or after.
 
         {
         "is_ready": boolean,
         "type": "research_report" | "deep" | null,
-        "question": "String oder null",
-        "summary": "String oder null"
+        "question": "String or null",
+        "summary": "String or null"
         }
         """.strip()
         # call the model
