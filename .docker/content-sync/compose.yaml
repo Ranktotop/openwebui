@@ -1,0 +1,35 @@
+services:
+  openwebui-content-sync:
+    image: ranktotop/openwebui:content-sync-latest
+    restart: unless-stopped
+    
+    environment:
+      # Secrets via ENV
+      - OPENWEBUI_API_KEY=${OPENWEBUI_API_KEY}
+      - GITHUB_TOKEN=${GITHUB_TOKEN:-}
+      - CONFLUENCE_API_KEY=${CONFLUENCE_API_KEY:-}
+      - JIRA_API_KEY=${JIRA_API_KEY:-}
+      
+      # Optional overrides
+      - OPENWEBUI_BASE_URL=${OPENWEBUI_BASE_URL}
+      - STORAGE_PATH=/data
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+    
+    volumes:
+      # Config mit Mappings
+      - ./config.yaml:/root/config.yaml:ro
+      # Persistenter Storage for sync hashes etc.
+      - openwebui_content_sync:/data
+      # Bind shared data for local file sync (read-only)
+      - ${DATA_PATH}/shared:/shared:ro    
+    networks:
+      default:
+        aliases:
+          - openwebui_content_sync
+
+volumes:
+  openwebui_content_sync:
+
+networks:
+  default:
+    driver: bridge

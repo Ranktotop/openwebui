@@ -1,0 +1,39 @@
+log_level: info
+
+schedule:
+  interval: 1h
+
+storage:
+  path: /data
+
+openwebui:
+  base_url: "" # Aus ENV
+  api_key: "" # Aus ENV
+
+# Local Folders Adapter
+local_folders:
+  enabled: true
+  mappings:
+    - folder_path: "/shared" # ← Muss mit dem Mount-Path übereinstimmen!
+      knowledge_id: "your-knowledge-base-id"
+
+    # Optional: Mehrere Ordner zu verschiedenen Knowledge Bases
+    - folder_path: "/shared/docs"
+      knowledge_id: "docs-kb-id"
+    - folder_path: "/shared/guides"
+      knowledge_id: "guides-kb-id"
+
+# GitHub (optional)
+github:
+  enabled: false
+  token: ""
+  mappings: []
+
+# Confluence (optional)
+confluence:
+  enabled: false
+  base_url: ""
+  username: ""
+  api_key: ""
+  space_mappings: []
+  parent_page_mappings: []
