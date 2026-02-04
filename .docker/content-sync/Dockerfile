@@ -9,13 +9,6 @@ RUN apk add --no-cache git
 # Repo klonen
 RUN git clone https://github.com/castai/openwebui-content-sync.git ./
 
-# Fix-Script
-RUN find . -name "client.go" -type f && \
-    sed -i '/^type Knowledge struct {/,/^}/a\\n// KnowledgeListResponse represents the paginated response\ntype KnowledgeListResponse struct {\n\tItems []*Knowledge `json:"items"`\n\tTotal int `json:"total"`\n}' $(find . -name "client.go" -path "*/openwebui/*") && \
-    sed -i 's/var knowledge \[\]\*Knowledge/var response KnowledgeListResponse/g' $(find . -name "client.go" -path "*/openwebui/*") && \
-    sed -i 's/Decode(&knowledge)/Decode(\&response)/g' $(find . -name "client.go" -path "*/openwebui/*") && \
-    sed -i 's/return knowledge, nil/return response.Items, nil/g' $(find . -name "client.go" -path "*/openwebui/*")
-
 # Download dependencies
 RUN go mod download
 
