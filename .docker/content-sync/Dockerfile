@@ -9,9 +9,9 @@ RUN apk add --no-cache git
 # Repo klonen
 RUN git clone https://github.com/castai/openwebui-content-sync.git ./
 
-# Patch anwenden
-COPY .docker/content-sync/fix-knowledge-pagination.patch .
-RUN git apply fix-knowledge-pagination.patch
+# Fix-Script kopieren und ausführen
+COPY .docker/content-sync/fix-api.sh .
+RUN chmod +x fix-api.sh && ./fix-api.sh
 
 # Download dependencies
 RUN go mod download
